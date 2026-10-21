@@ -2365,11 +2365,6 @@
     "display_name": "Pailune Secret Vault"
   },
   {
-    "key": 1000283,
-    "name": "Knowledge_Node_Kwe_PailuneCampsite",
-    "display_name": "Pailune Camp"
-  },
-  {
     "key": 1002218,
     "name": "Knowledge_Node_Kwe_ValgrindTomb",
     "display_name": "Valgrind Tomb"
@@ -27528,5 +27523,5970 @@
     "key": 2147483036,
     "name": "Knowledge_Recipe_Banana_Bread",
     "display_name": "Fruit Bread"
+  },
+  {
+    "key": 1005803,
+    "name": "Knowledge_RotationRate",
+    "display_name": "Handling"
+  },
+  {
+    "key": 1005804,
+    "name": "Knowledge_AccRate",
+    "display_name": "Acceleration"
+  },
+  {
+    "key": 1005805,
+    "name": "Knowledge_JumpRate",
+    "display_name": "Jump Power"
+  },
+  {
+    "key": 1004875,
+    "name": "Knowledge_Lacy",
+    "display_name": "Lacey"
+  },
+  {
+    "key": 1004668,
+    "name": "Knowledge_BridlefernFarm_Owner",
+    "display_name": "Bradenfern Farm Owner"
+  },
+  {
+    "key": 1004669,
+    "name": "Knowledge_CalphadeFarm_Owner",
+    "display_name": "Calphade Farmhouse Owner"
+  },
+  {
+    "key": 1004670,
+    "name": "Knowledge_FlowerDustBeeFarm_Owner",
+    "display_name": "Pollengarth Apiary Owner"
+  },
+  {
+    "key": 1004671,
+    "name": "Knowledge_GlenbrightFarm_Owner",
+    "display_name": "Glenbright Farm Owner"
+  },
+  {
+    "key": 1004672,
+    "name": "Knowledge_NectarwoodBeeFarm_Owner",
+    "display_name": "Nectarwood Apiary Owner"
+  },
+  {
+    "key": 1004673,
+    "name": "Knowledge_SkoghornFarm_Owner",
+    "display_name": "Skoghorn Farm Owner"
+  },
+  {
+    "key": 1004674,
+    "name": "Knowledge_LacusFarm_Owner",
+    "display_name": "Lacus Farm Owner"
+  },
+  {
+    "key": 1004675,
+    "name": "Knowledge_CanalsideFarm_Owner",
+    "display_name": "Canalside Farm Owner"
+  },
+  {
+    "key": 1004676,
+    "name": "Knowledge_RustleleafFarm_Owner",
+    "display_name": "Rustleleaf Farm Owner"
+  },
+  {
+    "key": 1004677,
+    "name": "Knowledge_PurringtonFarm_Owner",
+    "display_name": "Furlington Farm Owner"
+  },
+  {
+    "key": 1004678,
+    "name": "Knowledge_HayscentFarm_Owner",
+    "display_name": "Hayscent Farm Owner"
+  },
+  {
+    "key": 1004679,
+    "name": "Knowledge_IronwoodFarm_Owner",
+    "display_name": "Ironwood Farm Owner"
+  },
+  {
+    "key": 1004680,
+    "name": "Knowledge_GreenfieldFarm_Owner",
+    "display_name": "Greenfield Farm Owner"
+  },
+  {
+    "key": 1004681,
+    "name": "Knowledge_ClearBellFarm_Owner",
+    "display_name": "Bluebell Farm Owner"
+  },
+  {
+    "key": 1004682,
+    "name": "Knowledge_StonewellFarm_Owner",
+    "display_name": "Stonewell Farm Owner"
+  },
+  {
+    "key": 1004683,
+    "name": "Knowledge_HoneywoodBeeFarm_Owner",
+    "display_name": "Honeywood Apiary Owner"
+  },
+  {
+    "key": 1004684,
+    "name": "Knowledge_SpringdaleFarm_Owner",
+    "display_name": "Springdale Farm Owner"
+  },
+  {
+    "key": 1004685,
+    "name": "Knowledge_SlopeseedFarm_Owner",
+    "display_name": "Slopeseed Farm Owner"
+  },
+  {
+    "key": 1004686,
+    "name": "Knowledge_SundellFarm_Owner",
+    "display_name": "Sundell Farm Owner"
+  },
+  {
+    "key": 1004687,
+    "name": "Knowledge_SunharvestFarm_Owner",
+    "display_name": "Sunharvest Farm Owner"
+  },
+  {
+    "key": 1004688,
+    "name": "Knowledge_SeedrowFarm_Owner",
+    "display_name": "Seedrow Farm Owner"
+  },
+  {
+    "key": 1004689,
+    "name": "Knowledge_GreenpondFarm_Owner",
+    "display_name": "Greenpond Farm Owner"
+  },
+  {
+    "key": 1004690,
+    "name": "Knowledge_HayroofFarm_Owner",
+    "display_name": "Hayroof Farm Owner"
+  },
+  {
+    "key": 1004691,
+    "name": "Knowledge_WhitemillFarm_Owner",
+    "display_name": "Whitemill Farm Owner"
+  },
+  {
+    "key": 1004692,
+    "name": "Knowledge_FullharvestFarm_Owner",
+    "display_name": "Fullharvest Farm Owner"
+  },
+  {
+    "key": 1004693,
+    "name": "Knowledge_WindroseFarm_Owner",
+    "display_name": "Windrose Farm Owner"
+  },
+  {
+    "key": 1004694,
+    "name": "Knowledge_CornfieldFarm_Owner",
+    "display_name": "Cornfield Farmhouse Owner"
+  },
+  {
+    "key": 1004695,
+    "name": "Knowledge_CacaoFarm_Owner",
+    "display_name": "Cacao Farm Owner"
+  },
+  {
+    "key": 1004696,
+    "name": "Knowledge_WatermelonFarm_Owner",
+    "display_name": "Redsand Farm Owner"
+  },
+  {
+    "key": 1004697,
+    "name": "Knowledge_RedRockFarm_Owner",
+    "display_name": "Redrock Farm Owner"
+  },
+  {
+    "key": 1004698,
+    "name": "Knowledge_SunsetVillage_Owner",
+    "display_name": "Sunset Valley Farm Owner"
+  },
+  {
+    "key": 1004699,
+    "name": "Knowledge_VelluaVillage_Owner",
+    "display_name": "Vellua Farm Owner"
+  },
+  {
+    "key": 1004700,
+    "name": "Knowledge_Saddlecap_Owner",
+    "display_name": "Saddlecap Ranch Owner"
+  },
+  {
+    "key": 1004701,
+    "name": "Knowledge_SvinholtRanch_Owner",
+    "display_name": "Svinholt Ranch Owner"
+  },
+  {
+    "key": 1005199,
+    "name": "Knowledge_NHM_Street_Trader_1",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005202,
+    "name": "Knowledge_NHM_Street_Trader_4",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005205,
+    "name": "Knowledge_NHM_Street_Trader_7",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005211,
+    "name": "Knowledge_NHM_Street_Trader_13",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005214,
+    "name": "Knowledge_NHM_Street_Trader_16",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005217,
+    "name": "Knowledge_NHM_Street_Trader_19",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005220,
+    "name": "Knowledge_NHM_Street_Trader_22",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005223,
+    "name": "Knowledge_NHM_Street_Trader_25",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005226,
+    "name": "Knowledge_NHM_Street_Trader_28",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005232,
+    "name": "Knowledge_NHM_Street_Trader_34",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005235,
+    "name": "Knowledge_NHM_Street_Trader_37",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005238,
+    "name": "Knowledge_NHM_Street_Trader_40",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005241,
+    "name": "Knowledge_NHM_Street_Trader_43",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005244,
+    "name": "Knowledge_NHM_Street_Trader_46",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005247,
+    "name": "Knowledge_NHM_Street_Trader_49",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005254,
+    "name": "Knowledge_NHM_Street_Trader_55",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005257,
+    "name": "Knowledge_NHM_Street_Trader_58",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005260,
+    "name": "Knowledge_NHM_Street_Trader_61",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005266,
+    "name": "Knowledge_NHM_Street_Trader_67",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005269,
+    "name": "Knowledge_NHM_Street_Trader_70",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005272,
+    "name": "Knowledge_NHM_Street_Trader_73",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005275,
+    "name": "Knowledge_NHM_Street_Trader_76",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005287,
+    "name": "Knowledge_NHM_Street_Trader_88",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005293,
+    "name": "Knowledge_NHM_Street_Trader_94",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005299,
+    "name": "Knowledge_NHM_Street_Trader_100",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005302,
+    "name": "Knowledge_NHM_Street_Trader_103",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005308,
+    "name": "Knowledge_NHM_Street_Trader_109",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005311,
+    "name": "Knowledge_NHM_Street_Trader_112",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005317,
+    "name": "Knowledge_NHM_Street_Trader_118",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005320,
+    "name": "Knowledge_NHM_Street_Trader_121",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005323,
+    "name": "Knowledge_NHM_Street_Trader_124",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005326,
+    "name": "Knowledge_NHM_Street_Trader_127",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005329,
+    "name": "Knowledge_NHM_Street_Trader_130",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005200,
+    "name": "Knowledge_NHM_Street_Trader_2",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005203,
+    "name": "Knowledge_NHM_Street_Trader_5",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005206,
+    "name": "Knowledge_NHM_Street_Trader_8",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005209,
+    "name": "Knowledge_NHM_Street_Trader_11",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005212,
+    "name": "Knowledge_NHM_Street_Trader_14",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005215,
+    "name": "Knowledge_NHM_Street_Trader_17",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005218,
+    "name": "Knowledge_NHM_Street_Trader_20",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005221,
+    "name": "Knowledge_NHM_Street_Trader_23",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005224,
+    "name": "Knowledge_NHM_Street_Trader_26",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005230,
+    "name": "Knowledge_NHM_Street_Trader_32",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005233,
+    "name": "Knowledge_NHM_Street_Trader_35",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005239,
+    "name": "Knowledge_NHM_Street_Trader_41",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005242,
+    "name": "Knowledge_NHM_Street_Trader_44",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005245,
+    "name": "Knowledge_NHM_Street_Trader_47",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005248,
+    "name": "Knowledge_NHM_Street_Trader_50",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005258,
+    "name": "Knowledge_NHM_Street_Trader_59",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005264,
+    "name": "Knowledge_NHM_Street_Trader_65",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005270,
+    "name": "Knowledge_NHM_Street_Trader_71",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005273,
+    "name": "Knowledge_NHM_Street_Trader_74",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005276,
+    "name": "Knowledge_NHM_Street_Trader_77",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005279,
+    "name": "Knowledge_NHM_Street_Trader_80",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005282,
+    "name": "Knowledge_NHM_Street_Trader_83",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005291,
+    "name": "Knowledge_NHM_Street_Trader_92",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005294,
+    "name": "Knowledge_NHM_Street_Trader_95",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005303,
+    "name": "Knowledge_NHM_Street_Trader_104",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005309,
+    "name": "Knowledge_NHM_Street_Trader_110",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005312,
+    "name": "Knowledge_NHM_Street_Trader_113",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005313,
+    "name": "Knowledge_NHM_Street_Trader_114",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005315,
+    "name": "Knowledge_NHM_Street_Trader_116",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005318,
+    "name": "Knowledge_NHM_Street_Trader_119",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005324,
+    "name": "Knowledge_NHM_Street_Trader_125",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005330,
+    "name": "Knowledge_NHM_Street_Trader_131",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005201,
+    "name": "Knowledge_NHM_Street_Trader_3",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005204,
+    "name": "Knowledge_NHM_Street_Trader_6",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005207,
+    "name": "Knowledge_NHM_Street_Trader_9",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005210,
+    "name": "Knowledge_NHM_Street_Trader_12",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005216,
+    "name": "Knowledge_NHM_Street_Trader_18",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005219,
+    "name": "Knowledge_NHM_Street_Trader_21",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005222,
+    "name": "Knowledge_NHM_Street_Trader_24",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005225,
+    "name": "Knowledge_NHM_Street_Trader_27",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005228,
+    "name": "Knowledge_NHM_Street_Trader_30",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005237,
+    "name": "Knowledge_NHM_Street_Trader_39",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005240,
+    "name": "Knowledge_NHM_Street_Trader_42",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005243,
+    "name": "Knowledge_NHM_Street_Trader_45",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005246,
+    "name": "Knowledge_NHM_Street_Trader_48",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005249,
+    "name": "Knowledge_NHM_Street_Trader_51",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005253,
+    "name": "Knowledge_NHM_Street_Trader_54",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005256,
+    "name": "Knowledge_NHM_Street_Trader_57",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005259,
+    "name": "Knowledge_NHM_Street_Trader_60",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005262,
+    "name": "Knowledge_NHM_Street_Trader_63",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005265,
+    "name": "Knowledge_NHM_Street_Trader_66",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005271,
+    "name": "Knowledge_NHM_Street_Trader_72",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005277,
+    "name": "Knowledge_NHM_Street_Trader_78",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005283,
+    "name": "Knowledge_NHM_Street_Trader_84",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005286,
+    "name": "Knowledge_NHM_Street_Trader_87",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005292,
+    "name": "Knowledge_NHM_Street_Trader_93",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005295,
+    "name": "Knowledge_NHM_Street_Trader_96",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005301,
+    "name": "Knowledge_NHM_Street_Trader_102",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005310,
+    "name": "Knowledge_NHM_Street_Trader_111",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005314,
+    "name": "Knowledge_NHM_Street_Trader_115",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005316,
+    "name": "Knowledge_NHM_Street_Trader_117",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005319,
+    "name": "Knowledge_NHM_Street_Trader_120",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005322,
+    "name": "Knowledge_NHM_Street_Trader_123",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005325,
+    "name": "Knowledge_NHM_Street_Trader_126",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005331,
+    "name": "Knowledge_NHM_Street_Trader_132",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005208,
+    "name": "Knowledge_NHM_Street_Trader_10",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005213,
+    "name": "Knowledge_NHM_Street_Trader_15",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005227,
+    "name": "Knowledge_NHM_Street_Trader_29",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005229,
+    "name": "Knowledge_NHM_Street_Trader_31",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005231,
+    "name": "Knowledge_NHM_Street_Trader_33",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005234,
+    "name": "Knowledge_NHM_Street_Trader_36",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005236,
+    "name": "Knowledge_NHM_Street_Trader_38",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005250,
+    "name": "Knowledge_NHM_Street_Trader_52",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005255,
+    "name": "Knowledge_NHM_Street_Trader_56",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005261,
+    "name": "Knowledge_NHM_Street_Trader_62",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005263,
+    "name": "Knowledge_NHM_Street_Trader_64",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005267,
+    "name": "Knowledge_NHM_Street_Trader_68",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005268,
+    "name": "Knowledge_NHM_Street_Trader_69",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005274,
+    "name": "Knowledge_NHM_Street_Trader_75",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005278,
+    "name": "Knowledge_NHM_Street_Trader_79",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005280,
+    "name": "Knowledge_NHM_Street_Trader_81",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005281,
+    "name": "Knowledge_NHM_Street_Trader_82",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005284,
+    "name": "Knowledge_NHM_Street_Trader_85",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005285,
+    "name": "Knowledge_NHM_Street_Trader_86",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005288,
+    "name": "Knowledge_NHM_Street_Trader_89",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005289,
+    "name": "Knowledge_NHM_Street_Trader_90",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005290,
+    "name": "Knowledge_NHM_Street_Trader_91",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005296,
+    "name": "Knowledge_NHM_Street_Trader_97",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005297,
+    "name": "Knowledge_NHM_Street_Trader_98",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005298,
+    "name": "Knowledge_NHM_Street_Trader_99",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005300,
+    "name": "Knowledge_NHM_Street_Trader_101",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005304,
+    "name": "Knowledge_NHM_Street_Trader_105",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005305,
+    "name": "Knowledge_NHM_Street_Trader_106",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005306,
+    "name": "Knowledge_NHM_Street_Trader_107",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005307,
+    "name": "Knowledge_NHM_Street_Trader_108",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005321,
+    "name": "Knowledge_NHM_Street_Trader_122",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005327,
+    "name": "Knowledge_NHM_Street_Trader_128",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005328,
+    "name": "Knowledge_NHM_Street_Trader_129",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005332,
+    "name": "Knowledge_NHM_Street_Trader_133",
+    "display_name": "Trading Stall"
+  },
+  {
+    "key": 1005251,
+    "name": "Knowledge_NHM_Street_Trader_53",
+    "display_name": "Pailune Trading Post"
+  },
+  {
+    "key": 1004774,
+    "name": "Knowledge_Node_Kwe_PailuneCampsite_Graymane",
+    "display_name": "Pailune Camp"
+  },
+  {
+    "key": 1005194,
+    "name": "Knowledge_Structure_Common_Trade",
+    "display_name": "Trading Post"
+  },
+  {
+    "key": 1005195,
+    "name": "Knowledge_Structure_Common_RoyalSupply",
+    "display_name": "Royal Trading Post"
+  },
+  {
+    "key": 1005336,
+    "name": "Knowledge_GreenSea",
+    "display_name": "Green Sea Turtle"
+  },
+  {
+    "key": 1005337,
+    "name": "Knowledge_OliveRidley",
+    "display_name": "Olive Ridley Sea Turtle"
+  },
+  {
+    "key": 1005338,
+    "name": "Knowledge_Hawksbill",
+    "display_name": "Hawksbill Sea Turtle"
+  },
+  {
+    "key": 1005076,
+    "name": "Knowledge_RedPanda",
+    "display_name": "Red Panda"
+  },
+  {
+    "key": 1004787,
+    "name": "Knowledge_Legend_Macaw_Parrot",
+    "display_name": "Hyacinth Macaw"
+  },
+  {
+    "key": 1004788,
+    "name": "Knowledge_Legend_Machine_Eagle",
+    "display_name": "Iron Eagle"
+  },
+  {
+    "key": 1004791,
+    "name": "Knowledge_Legend_WildSpirit_Boar",
+    "display_name": "Mountain God Boar"
+  },
+  {
+    "key": 1004868,
+    "name": "Knowledge_Unique_Marni_MachineKnight",
+    "display_name": "Marni's Machina Knight"
+  },
+  {
+    "key": 1004789,
+    "name": "Knowledge_TumbleWeed",
+    "display_name": "Tumbleweed"
+  },
+  {
+    "key": 1005155,
+    "name": "Knowledge_Wood_Branch_WildSpirit",
+    "display_name": "Divine Tree Branch"
+  },
+  {
+    "key": 1005189,
+    "name": "Knowledge_Recipe_Wood_Branch_01_II",
+    "display_name": "Sprout Branch"
+  },
+  {
+    "key": 1005156,
+    "name": "Knowledge_Recipe_Wood_Branch_01_III",
+    "display_name": "Sapling Branch"
+  },
+  {
+    "key": 1005157,
+    "name": "Knowledge_Recipe_Wood_Branch_01_IV",
+    "display_name": "Perennial Branch"
+  },
+  {
+    "key": 1005158,
+    "name": "Knowledge_Recipe_Wood_Branch_01_V",
+    "display_name": "Mature Tree Branch"
+  },
+  {
+    "key": 1005159,
+    "name": "Knowledge_Recipe_Wood_Branch_01_VI",
+    "display_name": "Giant Tree Branch"
+  },
+  {
+    "key": 1005160,
+    "name": "Knowledge_Recipe_Wood_Branch_01_VII",
+    "display_name": "Ancient Tree Branch"
+  },
+  {
+    "key": 1005161,
+    "name": "Knowledge_Recipe_Wood_Branch_01_VIII",
+    "display_name": "Spirit Tree Branch"
+  },
+  {
+    "key": 1005162,
+    "name": "Knowledge_Recipe_Wood_Branch_01_IX",
+    "display_name": "Sacred Tree Branch"
+  },
+  {
+    "key": 1005163,
+    "name": "Knowledge_Recipe_Wood_Branch_01_X",
+    "display_name": "World Tree Branch"
+  },
+  {
+    "key": 1005190,
+    "name": "Knowledge_Recipe_Wood_Branch_02_II",
+    "display_name": "Sturdy Sprout Branch"
+  },
+  {
+    "key": 1005164,
+    "name": "Knowledge_Recipe_Wood_Branch_02_III",
+    "display_name": "Sturdy Sapling Branch"
+  },
+  {
+    "key": 1005165,
+    "name": "Knowledge_Recipe_Wood_Branch_02_IV",
+    "display_name": "Sturdy Perennial Branch"
+  },
+  {
+    "key": 1005166,
+    "name": "Knowledge_Recipe_Wood_Branch_02_V",
+    "display_name": "Sturdy Mature Tree Branch"
+  },
+  {
+    "key": 1005167,
+    "name": "Knowledge_Recipe_Wood_Branch_02_VI",
+    "display_name": "Sturdy Giant Tree Branch"
+  },
+  {
+    "key": 1005168,
+    "name": "Knowledge_Recipe_Wood_Branch_02_VII",
+    "display_name": "Sturdy Ancient Tree Branch"
+  },
+  {
+    "key": 1005169,
+    "name": "Knowledge_Recipe_Wood_Branch_02_VIII",
+    "display_name": "Sturdy Spirit Tree Branch"
+  },
+  {
+    "key": 1005170,
+    "name": "Knowledge_Recipe_Wood_Branch_02_IX",
+    "display_name": "Sturdy Sacred Tree Branch"
+  },
+  {
+    "key": 1005171,
+    "name": "Knowledge_Recipe_Wood_Branch_02_X",
+    "display_name": "Sturdy World Tree Branch"
+  },
+  {
+    "key": 1005191,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_II",
+    "display_name": "Bamboo Shoot"
+  },
+  {
+    "key": 1005172,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_III",
+    "display_name": "Bamboo Sapling Stalk"
+  },
+  {
+    "key": 1005173,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_IV",
+    "display_name": "Perennial Bamboo Stalk"
+  },
+  {
+    "key": 1005174,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_V",
+    "display_name": "Mature Bamboo Stalk"
+  },
+  {
+    "key": 1005175,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_VI",
+    "display_name": "Giant Bamboo Stalk"
+  },
+  {
+    "key": 1005176,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_VII",
+    "display_name": "Ancient Bamboo Stalk"
+  },
+  {
+    "key": 1005177,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_VIII",
+    "display_name": "Spirit Bamboo Stalk"
+  },
+  {
+    "key": 1005178,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_IX",
+    "display_name": "Sacred Bamboo Stalk"
+  },
+  {
+    "key": 1005179,
+    "name": "Knowledge_Recipe_Bamboo_Branch_01_X",
+    "display_name": "World Bamboo Stalk"
+  },
+  {
+    "key": 1005192,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_II",
+    "display_name": "Sturdy Bamboo Shoot"
+  },
+  {
+    "key": 1005180,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_III",
+    "display_name": "Sturdy Bamboo Sapling Stalk"
+  },
+  {
+    "key": 1005181,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_IV",
+    "display_name": "Sturdy Perennial Bamboo Stalk"
+  },
+  {
+    "key": 1005182,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_V",
+    "display_name": "Sturdy Mature Bamboo Stalk"
+  },
+  {
+    "key": 1005183,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_VI",
+    "display_name": "Sturdy Giant Bamboo Stalk"
+  },
+  {
+    "key": 1005184,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_VII",
+    "display_name": "Sturdy Ancient Bamboo Stalk"
+  },
+  {
+    "key": 1005185,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_VIII",
+    "display_name": "Sturdy Spirit Bamboo Stalk"
+  },
+  {
+    "key": 1005186,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_IX",
+    "display_name": "Sturdy Sacred Bamboo Stalk"
+  },
+  {
+    "key": 1005187,
+    "name": "Knowledge_Recipe_Bamboo_Branch_02_X",
+    "display_name": "Sturdy World Bamboo Stalk"
+  },
+  {
+    "key": 1004785,
+    "name": "Knowledge_Legendary_GoldStar_OneHandCannon",
+    "display_name": "Golden Fire"
+  },
+  {
+    "key": 1004775,
+    "name": "Knowledge_Archria_OneHandSword",
+    "display_name": "Acria Sword"
+  },
+  {
+    "key": 1004776,
+    "name": "Knowledge_Moon_Blade_TwoHandSword",
+    "display_name": "Woldo"
+  },
+  {
+    "key": 1004777,
+    "name": "Knowledge_Star_OneHandRapier",
+    "display_name": "Sword of Starlight"
+  },
+  {
+    "key": 1004792,
+    "name": "Knowledge_Collection_Prop_Picture_0070",
+    "display_name": "Acclaimed - Stefan Lanford"
+  },
+  {
+    "key": 1005001,
+    "name": "Knowledge_Collection_Prop_Picture_0071",
+    "display_name": "Acclaimed - The Great Delesyia"
+  },
+  {
+    "key": 1005073,
+    "name": "Knowledge_Collection_Prop_Picture_0077",
+    "display_name": "Acclaimed - The Mighty Delesyia"
+  },
+  {
+    "key": 1005071,
+    "name": "Knowledge_Collection_Prop_Picture_0078",
+    "display_name": "Acclaimed - Demeniss Soldiers"
+  },
+  {
+    "key": 1005060,
+    "name": "Knowledge_Collection_Prop_Picture_0072",
+    "display_name": "Notable - Crescent Moon"
+  },
+  {
+    "key": 1005061,
+    "name": "Knowledge_Collection_Prop_Picture_0073",
+    "display_name": "Notable - Crescent Moon"
+  },
+  {
+    "key": 1005062,
+    "name": "Knowledge_Collection_Prop_Picture_0074",
+    "display_name": "Notable - Full Moon"
+  },
+  {
+    "key": 1005063,
+    "name": "Knowledge_Collection_Prop_Picture_0075",
+    "display_name": "Notable - Crescent Moon"
+  },
+  {
+    "key": 1005064,
+    "name": "Knowledge_Collection_Prop_Picture_0076",
+    "display_name": "Notable - The Three Moons"
+  },
+  {
+    "key": 1005368,
+    "name": "Knowledge_Collection_Prop_Carpet",
+    "display_name": "Carpet"
+  },
+  {
+    "key": 1005478,
+    "name": "Knowledge_Item_Collection_Prop_Automata_0001",
+    "display_name": "Clanging Little Knight"
+  },
+  {
+    "key": 1005479,
+    "name": "Knowledge_Item_Collection_Prop_Automata_0002",
+    "display_name": "Clanging Red Jester"
+  },
+  {
+    "key": 1005480,
+    "name": "Knowledge_Item_Collection_Prop_Automata_0003",
+    "display_name": "Clanging King"
+  },
+  {
+    "key": 1005481,
+    "name": "Knowledge_Item_Collection_Prop_Automata_0004",
+    "display_name": "VZ-O and Z-One"
+  },
+  {
+    "key": 1005461,
+    "name": "Knowledge_Collection_Prop_FlowerHanger",
+    "display_name": "Hanging Planter"
+  },
+  {
+    "key": 1005369,
+    "name": "Knowledge_Collection_Prop_Chandelier",
+    "display_name": "Starcluster Light"
+  },
+  {
+    "key": 1005462,
+    "name": "Knowledge_Collection_Prop_Streetlamp",
+    "display_name": "Streetlight"
+  },
+  {
+    "key": 1005463,
+    "name": "Knowledge_Collection_Prop_Firepot",
+    "display_name": "Brazier"
+  },
+  {
+    "key": 1005464,
+    "name": "Knowledge_Collection_Prop_Well",
+    "display_name": "Well"
+  },
+  {
+    "key": 1005465,
+    "name": "Knowledge_Collection_Prop_Fountain",
+    "display_name": "Fountain"
+  },
+  {
+    "key": 1005466,
+    "name": "Knowledge_Collection_Prop_Sotdae",
+    "display_name": "Sotdae"
+  },
+  {
+    "key": 1005467,
+    "name": "Knowledge_Collection_Prop_Blacksmithstone",
+    "display_name": "Grindstone"
+  },
+  {
+    "key": 1005468,
+    "name": "Knowledge_Collection_Prop_Anvil",
+    "display_name": "Anvil"
+  },
+  {
+    "key": 1005469,
+    "name": "Knowledge_Collection_Prop_WildPot",
+    "display_name": "Field Pot"
+  },
+  {
+    "key": 1005470,
+    "name": "Knowledge_Collection_Prop_Campfire",
+    "display_name": "Bonfire"
+  },
+  {
+    "key": 1005472,
+    "name": "Knowledge_Collection_Prop_Catwheel",
+    "display_name": "Cat Wheel"
+  },
+  {
+    "key": 1005483,
+    "name": "Knowledge_item_Collection_Prop_Luxury_0001_index01",
+    "display_name": "Moonlit Frost Unicorn Statue"
+  },
+  {
+    "key": 1005484,
+    "name": "Knowledge_item_Collection_Prop_Luxury_0002",
+    "display_name": "Noonday Radiance Dolphin Statue"
+  },
+  {
+    "key": 1005485,
+    "name": "Knowledge_item_Collection_Prop_Luxury_0002_index01",
+    "display_name": "Dawnstill Dolphin Statue"
+  },
+  {
+    "key": 1005487,
+    "name": "Knowledge_item_Collection_prop_Luxury_0003_index01",
+    "display_name": "Faded Past Blue Whale Statue"
+  },
+  {
+    "key": 1005488,
+    "name": "Knowledge_item_Collection_Prop_Luxury_0004",
+    "display_name": "Kinetic Legendary Fisherman of Time"
+  },
+  {
+    "key": 1005493,
+    "name": "Knowledge_item_Collection_Prop_Luxury_0008_index01",
+    "display_name": "Chalice of Moondrop"
+  },
+  {
+    "key": 1005384,
+    "name": "Knowledge_Bank_License_CopperPaper",
+    "display_name": "Personal Bond Strongbox Permit"
+  },
+  {
+    "key": 1004144,
+    "name": "Knowledge_Collection_Prop_Ceramic_0056",
+    "display_name": "Flower Bird Glass Pottery"
+  },
+  {
+    "key": 1004145,
+    "name": "Knowledge_Collection_Prop_Ceramic_0059",
+    "display_name": "The Blue Mirage"
+  },
+  {
+    "key": 1005473,
+    "name": "Knowledge_Craft_Sewing",
+    "display_name": "Loom"
+  },
+  {
+    "key": 1005474,
+    "name": "Knowledge_Craft_Carpenter",
+    "display_name": "Workstation"
+  },
+  {
+    "key": 1004706,
+    "name": "Knowledge_Riding_Bear_Claw",
+    "display_name": "White Bear's Claws"
+  },
+  {
+    "key": 1004707,
+    "name": "Knowledge_Riding_Wolf_Tooth",
+    "display_name": "Fang of Silver Fang"
+  },
+  {
+    "key": 1004708,
+    "name": "Knowledge_Riding_Deer_Horn",
+    "display_name": "Snowwhite Deer's Antlers"
+  },
+  {
+    "key": 1004709,
+    "name": "Knowledge_Riding_AlpineIbex_Horn",
+    "display_name": "Icicle Edge Alpine Ibex Horns"
+  },
+  {
+    "key": 1004710,
+    "name": "Knowledge_Riding_Warthog_Tooth",
+    "display_name": "Rock Tusk Warthog Tusk"
+  },
+  {
+    "key": 1004759,
+    "name": "Knowledge_Pet_Phoenix_Feather",
+    "display_name": "Phoenix Feather"
+  },
+  {
+    "key": 1004780,
+    "name": "Knowledge_Recipe_Goblin_Pumpkin_Helm_I",
+    "display_name": "Pumpkin Head"
+  },
+  {
+    "key": 1005564,
+    "name": "Knowledge_Recipe_Titan_PlateArmor_Armor",
+    "display_name": "Lightning Bolt Plate Armor"
+  },
+  {
+    "key": 1005565,
+    "name": "Knowledge_Recipe_Paphneil_PlateArmor_Armor",
+    "display_name": "Scorchflame Plate Armor"
+  },
+  {
+    "key": 1005566,
+    "name": "Knowledge_Recipe_king_LostPeople_PlateArmor_Armor",
+    "display_name": "Frostcursed Plate Armor"
+  },
+  {
+    "key": 1004148,
+    "name": "Knowledge_Recipe_gimmick_foodstorage_0001",
+    "display_name": "Kuku Cooler"
+  },
+  {
+    "key": 1004342,
+    "name": "Knowledge_Recipe_gimmick_foodstorage_0002",
+    "display_name": "Enhanced Kuku Cooler"
+  },
+  {
+    "key": 1005406,
+    "name": "Knowledge_Recipe_Item_lamp_streetlamp_03",
+    "display_name": "Wooden Streetlight"
+  },
+  {
+    "key": 1005407,
+    "name": "Knowledge_Recipe_Item_lamp_streetlamp_03_index01",
+    "display_name": "Red Wooden Streetlight"
+  },
+  {
+    "key": 1005408,
+    "name": "Knowledge_Recipe_Item_lamp_streetlamp_03_index02",
+    "display_name": "Bright Wooden Streetlight"
+  },
+  {
+    "key": 1005409,
+    "name": "Knowledge_Recipe_Item_gimmick_lamp_streetlamp_0001",
+    "display_name": "Cold Streetlight"
+  },
+  {
+    "key": 1005410,
+    "name": "Knowledge_Recipe_Item_gimmick_lamp_streetlamp_0001_index01",
+    "display_name": "Warm Streetlight"
+  },
+  {
+    "key": 1005411,
+    "name": "Knowledge_Recipe_Item_gimmick_lamp_streetlamp_0001_index02",
+    "display_name": "Soft Streetlight"
+  },
+  {
+    "key": 1005412,
+    "name": "Knowledge_Recipe_Item_lamp_firepot_01_on",
+    "display_name": "Tripod Brazier"
+  },
+  {
+    "key": 1005413,
+    "name": "Knowledge_Recipe_Item_lamp_firepot_03_on",
+    "display_name": "Tall Quad-Base Brazier"
+  },
+  {
+    "key": 1005414,
+    "name": "Knowledge_Recipe_Item_lamp_firepot_04_on",
+    "display_name": "Short Quad-Base Brazier"
+  },
+  {
+    "key": 1005415,
+    "name": "Knowledge_Recipe_Item_lamp_firepot_05_on",
+    "display_name": "Wind-Guarded Quad-Base Brazier"
+  },
+  {
+    "key": 1005416,
+    "name": "Knowledge_Recipe_Item_lamp_firepot_06_on",
+    "display_name": "Hexagonal Brazier"
+  },
+  {
+    "key": 1005417,
+    "name": "Knowledge_Recipe_Item_lamp_brazier_02_on",
+    "display_name": "Quad-Base Crown of Thorns Brazier"
+  },
+  {
+    "key": 1005418,
+    "name": "Knowledge_Recipe_Item_lamp_standtorch_01_on",
+    "display_name": "Tripod Guide Torch"
+  },
+  {
+    "key": 1005419,
+    "name": "Knowledge_Recipe_Item_lamp_standtorch_02_on",
+    "display_name": "Tripod Guardian Torch"
+  },
+  {
+    "key": 1005457,
+    "name": "Knowledge_Recipe_Item_Collection_Prop_Automata_0001",
+    "display_name": "Clanging Little Knight"
+  },
+  {
+    "key": 1005458,
+    "name": "Knowledge_Recipe_Item_Collection_Prop_Automata_0002",
+    "display_name": "Clanging Red Jester"
+  },
+  {
+    "key": 1005459,
+    "name": "Knowledge_Recipe_Item_Collection_Prop_Automata_0003",
+    "display_name": "Clanging King"
+  },
+  {
+    "key": 1005460,
+    "name": "Knowledge_Recipe_Item_Collection_Prop_Automata_0004",
+    "display_name": "VZ-O and Z-One"
+  },
+  {
+    "key": 1005544,
+    "name": "Knowledge_Recipe_Item_gimmick_jukebox_0001",
+    "display_name": "Faust's Music Box"
+  },
+  {
+    "key": 1005420,
+    "name": "Knowledge_Recipe_Item_hanger_streetlamp_flowerpot_01",
+    "display_name": "Wooden Gerbera Hanging Planter"
+  },
+  {
+    "key": 1005421,
+    "name": "Knowledge_Recipe_Item_hanger_streetlamp_flowerpot_02",
+    "display_name": "Wooden Violet Hanging Planter"
+  },
+  {
+    "key": 1005422,
+    "name": "Knowledge_Recipe_Item_hanger_streetlamp_flowerpot_03",
+    "display_name": "Wooden Purple Gerbera Hanging Planter"
+  },
+  {
+    "key": 1005423,
+    "name": "Knowledge_Recipe_Item_hanger_streetlamp_flowerpot_04",
+    "display_name": "Redtree Violet Hanging Planter"
+  },
+  {
+    "key": 1005424,
+    "name": "Knowledge_Recipe_Item_gimmick_tool_FlowerHanger_01",
+    "display_name": "Wooden Pororin Hanging Planter"
+  },
+  {
+    "key": 1005425,
+    "name": "Knowledge_Recipe_Item_gimmick_tool_FlowerHanger_02",
+    "display_name": "Wooden Florindale Hanging Planter"
+  },
+  {
+    "key": 1005350,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0001",
+    "display_name": "Round Twilight Floral Carpet"
+  },
+  {
+    "key": 1005351,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0002",
+    "display_name": "Mist-woven Carpet"
+  },
+  {
+    "key": 1005352,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0003",
+    "display_name": "Frost-woven Carpet"
+  },
+  {
+    "key": 1005353,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0004",
+    "display_name": "Moonlit Garden Carpet"
+  },
+  {
+    "key": 1005354,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0005",
+    "display_name": "Rhombic Vermillion Carpet"
+  },
+  {
+    "key": 1005355,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0006",
+    "display_name": "Large Twilight Floral Carpet"
+  },
+  {
+    "key": 1005356,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0006_index01",
+    "display_name": "Large Moonlit Garden Carpet"
+  },
+  {
+    "key": 1005357,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0007",
+    "display_name": "Large Stone Knotted Carpet"
+  },
+  {
+    "key": 1005358,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0008",
+    "display_name": "Sunset Plaid Carpet"
+  },
+  {
+    "key": 1005359,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0008_index01",
+    "display_name": "Double Mist-woven Carpet"
+  },
+  {
+    "key": 1005360,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0009",
+    "display_name": "Large Rosy Dragonscale Carpet"
+  },
+  {
+    "key": 1005552,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0013",
+    "display_name": "Wide Dawndrop Garden Carpet"
+  },
+  {
+    "key": 1005553,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0014",
+    "display_name": "Round Wide Mist-woven Carpet"
+  },
+  {
+    "key": 1005554,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0015",
+    "display_name": "Wide Multicolor Knotted Carpet"
+  },
+  {
+    "key": 1005555,
+    "name": "Knowledge_Recipe_Item_gimmick_in_dpf_carpet_0016",
+    "display_name": "Round Wide Moonlit Garden Carpet"
+  },
+  {
+    "key": 1005389,
+    "name": "Knowledge_Recipe_Item_gimmick_tool_blacksmithstone",
+    "display_name": "Grindstone"
+  },
+  {
+    "key": 1005390,
+    "name": "Knowledge_Recipe_Item_gimmick_craft_anvil_01",
+    "display_name": "Anvil"
+  },
+  {
+    "key": 1005391,
+    "name": "Knowledge_Recipe_Item_gimmick_craft_cook_campfire_04",
+    "display_name": "Field Pot"
+  },
+  {
+    "key": 1005392,
+    "name": "Knowledge_Recipe_Item_gimmick_craft_cook_campfire_05",
+    "display_name": "Bonfire"
+  },
+  {
+    "key": 1005393,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0001",
+    "display_name": "Wooden Roof Well"
+  },
+  {
+    "key": 1005394,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0001_index01",
+    "display_name": "Red Wooden Roof Well"
+  },
+  {
+    "key": 1005395,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0002",
+    "display_name": "Brick Roof Well"
+  },
+  {
+    "key": 1005396,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0003",
+    "display_name": "Thatched Roof Well"
+  },
+  {
+    "key": 1005397,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0004",
+    "display_name": "Well"
+  },
+  {
+    "key": 1005398,
+    "name": "Knowledge_Recipe_Item_gimmick_well_0004_index01",
+    "display_name": "Redsand Well"
+  },
+  {
+    "key": 1005399,
+    "name": "Knowledge_Recipe_Item_drinkingfountain_01",
+    "display_name": "Brookfield Fountain"
+  },
+  {
+    "key": 1005400,
+    "name": "Knowledge_Recipe_Item_dpf_fountain_01",
+    "display_name": "Lion Head Fountain"
+  },
+  {
+    "key": 1005401,
+    "name": "Knowledge_Recipe_Item_dpf_fountain_09",
+    "display_name": "Leaf Fountain"
+  },
+  {
+    "key": 1005402,
+    "name": "Knowledge_Recipe_Item_dpf_fountain_02",
+    "display_name": "Stone Pagoda Fountain"
+  },
+  {
+    "key": 1005403,
+    "name": "Knowledge_Recipe_Item_dpf_fountain_02_desert",
+    "display_name": "Redsand Stone Pagoda Fountain"
+  },
+  {
+    "key": 1005404,
+    "name": "Knowledge_Recipe_Item_dpf_fountain_06",
+    "display_name": "Silent Gazer Fountain"
+  },
+  {
+    "key": 1005405,
+    "name": "Knowledge_Recipe_Item_fountain_statue_02",
+    "display_name": "Sculpted Fish Fountain"
+  },
+  {
+    "key": 1005426,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0001",
+    "display_name": "Rope Sotdae"
+  },
+  {
+    "key": 1005427,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0002",
+    "display_name": "Pheasant Sotdae"
+  },
+  {
+    "key": 1005428,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0003",
+    "display_name": "Four-Way Sotdae"
+  },
+  {
+    "key": 1005429,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0004",
+    "display_name": "Duck Sotdae"
+  },
+  {
+    "key": 1005430,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0005",
+    "display_name": "Crow Sotdae"
+  },
+  {
+    "key": 1005431,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0006",
+    "display_name": "Stone Duck Sotdae"
+  },
+  {
+    "key": 1005432,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0007",
+    "display_name": "Red-Crowned Crane Sotdae"
+  },
+  {
+    "key": 1005433,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0008",
+    "display_name": "Stone Nest Sotdae"
+  },
+  {
+    "key": 1005434,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0009",
+    "display_name": "Sotdae"
+  },
+  {
+    "key": 1005435,
+    "name": "Knowledge_Recipe_Item_gimmick_sotdae_set_0010",
+    "display_name": "Twin-Branched Sotdae"
+  },
+  {
+    "key": 1005455,
+    "name": "Knowledge_Recipe_Item_catwheel_01",
+    "display_name": "Pororin Cat Wheel"
+  },
+  {
+    "key": 1005456,
+    "name": "Knowledge_Recipe_Item_catwheel_02",
+    "display_name": "Marni Cat Wheel"
+  },
+  {
+    "key": 1004879,
+    "name": "Knowledge_Quest_Paper_Bastion_Secret",
+    "display_name": "Bastier's Secret Letter"
+  },
+  {
+    "key": 1005673,
+    "name": "Knowledge_Graymane_Token_Roy",
+    "display_name": "Greymane's Token"
+  },
+  {
+    "key": 1005674,
+    "name": "Knowledge_Grace_HiddenDagger",
+    "display_name": "Hidden Dagger"
+  },
+  {
+    "key": 1004942,
+    "name": "Knowledge_Book_Octabus_Research_Diary",
+    "display_name": "Octavius's Research Log"
+  },
+  {
+    "key": 1004950,
+    "name": "Knowledge_Book_Antumbra_Temple",
+    "display_name": "Antumbra Underground Temple Vol. 1"
+  },
+  {
+    "key": 1004951,
+    "name": "Knowledge_Book_Antumbra_Temple_II",
+    "display_name": "Antumbra Underground Temple Vol. 2"
+  },
+  {
+    "key": 1005686,
+    "name": "Knowledge_Book_Sebastian_Diary_Reeddevil",
+    "display_name": "Sebastian's Journal - Scarecrow of the Reed Field"
+  },
+  {
+    "key": 1005703,
+    "name": "Knowledge_book_folktales_Kailok",
+    "display_name": "The Calf That Cleaved Horns"
+  },
+  {
+    "key": 1005704,
+    "name": "Knowledge_book_folktales_Nuclear",
+    "display_name": "The Forbidden Gateway"
+  },
+  {
+    "key": 1005666,
+    "name": "Knowledge_Investigation_Beighen_Mission_01",
+    "display_name": "Secret Society's Base"
+  },
+  {
+    "key": 1005667,
+    "name": "Knowledge_Investigation_Beighen_Mission_02",
+    "display_name": "Mysterious Faction"
+  },
+  {
+    "key": 1005668,
+    "name": "Knowledge_Investigation_Beighen_Mission_03",
+    "display_name": "Resistance Order Captain"
+  },
+  {
+    "key": 1004880,
+    "name": "Knowledge_Quest_Paper_Letter",
+    "display_name": "Jian's Letter"
+  },
+  {
+    "key": 1004941,
+    "name": "Knowledge_Quest_WantedPaper_Traitor_Hit_List",
+    "display_name": "Traitor Hit List"
+  },
+  {
+    "key": 1005676,
+    "name": "Knowledge_LaveMyurdin_Ring",
+    "display_name": "Myurdin's Ring"
+  },
+  {
+    "key": 1005687,
+    "name": "Knowledge_Book_Sebastian_Diary_Ludvig",
+    "display_name": "Sebastian's Journal \u2013 Jackal of Pailune"
+  },
+  {
+    "key": 1005705,
+    "name": "Knowledge_book_folktales_Imp_Banquet",
+    "display_name": "Benevolence of the Despoiled Beast"
+  },
+  {
+    "key": 1005707,
+    "name": "Knowledge_book_folktales_CassiusMorten",
+    "display_name": "The Tarnished Shield of Silver"
+  },
+  {
+    "key": 1005708,
+    "name": "Knowledge_book_folktales_Ludvig_OneArmed",
+    "display_name": "The Left Arm of Betrayal"
+  },
+  {
+    "key": 1005709,
+    "name": "Knowledge_book_folktales_Myurdin",
+    "display_name": "Tale of the Renegade Bear"
+  },
+  {
+    "key": 1005713,
+    "name": "Knowledge_book_folktales_Seraphim",
+    "display_name": "Tale of the Wish-Eater"
+  },
+  {
+    "key": 1005827,
+    "name": "Knowledge_gimmick_leatherpaper_0001",
+    "display_name": "Blood Commandments of the Black Bears"
+  },
+  {
+    "key": 1005672,
+    "name": "Knowledge_Pail_Cup_Oath",
+    "display_name": "Chalice of Oaths"
+  },
+  {
+    "key": 1004878,
+    "name": "Knowledge_Quest_Paper_Crowman_Adoptation",
+    "display_name": "Damaged Consent to Adoption"
+  },
+  {
+    "key": 1005543,
+    "name": "Knowledge_Quest_Paper_Ward_List",
+    "display_name": "Consent to Adoption"
+  },
+  {
+    "key": 1005828,
+    "name": "Knowledge_Crowman_Fabric_Helm",
+    "display_name": "Crow Cloth Blindfold"
+  },
+  {
+    "key": 1004882,
+    "name": "Knowledge_Quest_Paper_Gregor_Letter",
+    "display_name": "Records of Tributes to Gregor"
+  },
+  {
+    "key": 1004883,
+    "name": "Knowledge_Quest_Paper_Gregor_Record",
+    "display_name": "Letter Regarding Tributes to Gregor"
+  },
+  {
+    "key": 1004885,
+    "name": "Knowledge_Quest_Paper_MasterDoo_Ideology",
+    "display_name": "Master Du's Beliefs"
+  },
+  {
+    "key": 1005078,
+    "name": "Knowledge_Hexe_Wooden_Toy",
+    "display_name": "Wooden Soldier Figurine"
+  },
+  {
+    "key": 1004881,
+    "name": "Knowledge_Quest_Paper_Antumbra_Contract",
+    "display_name": "Pact of Antumbra"
+  },
+  {
+    "key": 1004917,
+    "name": "Knowledge_Quest_Paper_UltimateWeapon_Blueprint_01",
+    "display_name": "Ultimate Weapon Interior Blueprint"
+  },
+  {
+    "key": 1004918,
+    "name": "Knowledge_Quest_Paper_UltimateWeapon_Blueprint_02",
+    "display_name": "Ultimate Weapon Exterior Blueprint"
+  },
+  {
+    "key": 1004919,
+    "name": "Knowledge_Quest_Paper_Orc_TechnicalList",
+    "display_name": "Orc Technician List"
+  },
+  {
+    "key": 1004920,
+    "name": "Knowledge_Quest_Paper_CaliburnSoldiers_Letter",
+    "display_name": "Righteous Inquisitor's Letter"
+  },
+  {
+    "key": 1005675,
+    "name": "Knowledge_Imp_Banquet_Horn",
+    "display_name": "Sawed-Off Horns"
+  },
+  {
+    "key": 1005677,
+    "name": "Knowledge_Bastier_Seal_Letter",
+    "display_name": "Bastier's Sealed Secret Letter"
+  },
+  {
+    "key": 1005681,
+    "name": "Knowledge_Paper_WhiteCrow_Witch_Letter",
+    "display_name": "White Crow's Letter"
+  },
+  {
+    "key": 1004933,
+    "name": "Knowledge_Quest_Paper_Military_Notice",
+    "display_name": "Soldier Recruitment Post"
+  },
+  {
+    "key": 1004943,
+    "name": "Knowledge_Book_Azerian_Diary",
+    "display_name": "Azerian's Journal"
+  },
+  {
+    "key": 1004952,
+    "name": "Knowledge_Book_Antumbra_Temple_III",
+    "display_name": "Antumbra Underground Temple Vol. 3"
+  },
+  {
+    "key": 1004953,
+    "name": "Knowledge_Book_Antumbra_Temple_IV",
+    "display_name": "Antumbra Underground Temple Vol. 4"
+  },
+  {
+    "key": 1004955,
+    "name": "Knowledge_Book_Bastier_Journal",
+    "display_name": "Bastier Journal"
+  },
+  {
+    "key": 1004956,
+    "name": "Knowledge_Book_Biological_Journal",
+    "display_name": "Test Subject Log"
+  },
+  {
+    "key": 1004965,
+    "name": "Knowledge_Book_Tariv_Storybook",
+    "display_name": "Tariv Fairytale"
+  },
+  {
+    "key": 1005688,
+    "name": "Knowledge_Book_Sebastian_Diary_Gregor",
+    "display_name": "Sebastian's Journal \u2013 The Halberd of Carnage at Fort Ironclad"
+  },
+  {
+    "key": 1005689,
+    "name": "Knowledge_Book_Sebastian_Diary_Caliburn",
+    "display_name": "Sebastian's Journal \u2013 The Duke Who Claimed Demeniss"
+  },
+  {
+    "key": 1005691,
+    "name": "Knowledge_Book_Sebastian_Diary_HexeMarie",
+    "display_name": "Sebastian's Journal \u2013 The Mother Who Lost the Child of Tariv"
+  },
+  {
+    "key": 1005699,
+    "name": "Knowledge_Book_Sebastian_Diary_Trukan",
+    "display_name": "Sebastian's Journal - The Ascended of Jijeong Temple"
+  },
+  {
+    "key": 1005706,
+    "name": "Knowledge_book_folktales_CrowCaller",
+    "display_name": "Tale of the Orphaned Crow"
+  },
+  {
+    "key": 1005710,
+    "name": "Knowledge_book_folktales_Fortain",
+    "display_name": "The Shadowbound Knight"
+  },
+  {
+    "key": 1005711,
+    "name": "Knowledge_book_folktales_Bastier",
+    "display_name": "The Duke's Bloodhound"
+  },
+  {
+    "key": 1005094,
+    "name": "Knowledge_gimmick_mon_hexe_babycradle_0001",
+    "display_name": "Baby Cradle"
+  },
+  {
+    "key": 1004884,
+    "name": "Knowledge_Quest_Paper_DemenissPolice",
+    "display_name": "Demeniss Tribunal"
+  },
+  {
+    "key": 1004957,
+    "name": "Knowledge_Book_Marni_CtrafingJournal",
+    "display_name": "Marni's Invention Log"
+  },
+  {
+    "key": 1005712,
+    "name": "Knowledge_book_folktales_GolemDragon",
+    "display_name": "Tale of the Goldwrought Wyrm"
+  },
+  {
+    "key": 1005725,
+    "name": "Knowledge_book_folktales_Aircastle",
+    "display_name": "The Flying Fortress of Death"
+  },
+  {
+    "key": 1004994,
+    "name": "Knowledge_gimmick_tool_paper_machinemantis_0001",
+    "display_name": "Clockwork Mantis Joint Design"
+  },
+  {
+    "key": 1005098,
+    "name": "Knowledge_gimmick_tool_paper_machinemantis_0001_index01",
+    "display_name": "Clockwork Mantis Core Design"
+  },
+  {
+    "key": 1005099,
+    "name": "Knowledge_gimmick_tool_paper_machinemantis_0001_index02",
+    "display_name": "Clockwork Mantis Processor Design"
+  },
+  {
+    "key": 1005100,
+    "name": "Knowledge_gimmick_tool_paper_machinemantis_0001_index03",
+    "display_name": "Clockwork Mantis Design"
+  },
+  {
+    "key": 1004990,
+    "name": "Knowledge_gimmick_tool_paper_goldenstar_0001",
+    "display_name": "Golden Star Heart Design"
+  },
+  {
+    "key": 1004991,
+    "name": "Knowledge_gimmick_tool_paper_goldenstar_0002",
+    "display_name": "Golden Star Heart Design"
+  },
+  {
+    "key": 1004992,
+    "name": "Knowledge_gimmick_tool_paper_goldenstar_0003",
+    "display_name": "Golden Star Heart Design"
+  },
+  {
+    "key": 1005690,
+    "name": "Knowledge_Book_Sebastian_Diary_MasterDoo",
+    "display_name": "Sebastian's Journal - Goblin of the Cloister"
+  },
+  {
+    "key": 1005724,
+    "name": "Knowledge_book_folktales_Varnia_Dragon",
+    "display_name": "Wings of Virtue"
+  },
+  {
+    "key": 1004755,
+    "name": "Knowledge_Umbra_JiJeongTa",
+    "display_name": "Umbra's Weakness"
+  },
+  {
+    "key": 1005070,
+    "name": "Knowledge_Broken_Graymane_Token",
+    "display_name": "Shattered Greymane Token"
+  },
+  {
+    "key": 1004944,
+    "name": "Knowledge_Book_Old_Kliff_Diary",
+    "display_name": "Goyen's Journal"
+  },
+  {
+    "key": 1004905,
+    "name": "Knowledge_Quest_Paper_DeadHunter_Journal",
+    "display_name": "Dead Hunter's Log"
+  },
+  {
+    "key": 1004915,
+    "name": "Knowledge_Quest_Paper_Heresy_WarningFlyer",
+    "display_name": "Heresy Warning Flyer"
+  },
+  {
+    "key": 1004968,
+    "name": "Knowledge_Book_Heresy_Manual_01",
+    "display_name": "Heretical Religion Guidebook"
+  },
+  {
+    "key": 1005079,
+    "name": "Knowledge_Tarnished_Crown",
+    "display_name": "Faded Deer Antler"
+  },
+  {
+    "key": 1005696,
+    "name": "Knowledge_Book_Sebastian_Diary_DeerKing",
+    "display_name": "Sebastian's Journal \u2013 The Staglord of Icemoor Castle Ruins"
+  },
+  {
+    "key": 1005386,
+    "name": "Knowledge_Quest_Faction_Legendary_Wolf",
+    "display_name": "Legendary Wolf Storybook"
+  },
+  {
+    "key": 1005685,
+    "name": "Knowledge_Arboria_Caretaker_Journal",
+    "display_name": "Caretaker's Journal"
+  },
+  {
+    "key": 1004947,
+    "name": "Knowledge_Book_Dusty_Diary",
+    "display_name": "Dusty Journal"
+  },
+  {
+    "key": 1004970,
+    "name": "Knowledge_Book_Confidential_Record_01",
+    "display_name": "Classified Investigation Records"
+  },
+  {
+    "key": 1004948,
+    "name": "Knowledge_Book_Vordis_Research_Diary",
+    "display_name": "Vordis Research Log"
+  },
+  {
+    "key": 1004964,
+    "name": "Knowledge_Book_Chaser_Journal",
+    "display_name": "Tracker's Torn Journal"
+  },
+  {
+    "key": 1004974,
+    "name": "Knowledge_Book_Walter_Document",
+    "display_name": "Walter's Research Journal"
+  },
+  {
+    "key": 1005701,
+    "name": "Knowledge_Book_Sebastian_Diary_MarniExcavatron",
+    "display_name": "Sebastian's Journal \u2013 Karin Quarry's Excavatron"
+  },
+  {
+    "key": 1005105,
+    "name": "Knowledge_gimmick_miningmachine_0001",
+    "display_name": "Excavatron Vessel"
+  },
+  {
+    "key": 1005106,
+    "name": "Knowledge_gimmick_miningmachine_0002",
+    "display_name": "Excavatron Vessel"
+  },
+  {
+    "key": 1005107,
+    "name": "Knowledge_gimmick_miningmachine_0003",
+    "display_name": "Excavatron Vessel"
+  },
+  {
+    "key": 1004899,
+    "name": "Knowledge_Quest_Paper_Verdict_Treason",
+    "display_name": "Treason Verdict"
+  },
+  {
+    "key": 1005714,
+    "name": "Knowledge_book_folktales_Sizlek",
+    "display_name": "Tale of the Restless Master"
+  },
+  {
+    "key": 1005829,
+    "name": "Knowledge_gimmick_warningsign_0001",
+    "display_name": "Warning"
+  },
+  {
+    "key": 1005830,
+    "name": "Knowledge_gimmick_torturechair_0001",
+    "display_name": "Engraved Torture Chair"
+  },
+  {
+    "key": 1005831,
+    "name": "Knowledge_gimmick_warningsign_0002",
+    "display_name": "Warning"
+  },
+  {
+    "key": 1005715,
+    "name": "Knowledge_book_folktales_Gwen_Kraver",
+    "display_name": "Tale of the Witch's Runt"
+  },
+  {
+    "key": 1005716,
+    "name": "Knowledge_book_folktales_Hemon_Beindel",
+    "display_name": "Tale of the Insatiable Hound"
+  },
+  {
+    "key": 1005720,
+    "name": "Knowledge_book_folktales_Darkness_King",
+    "display_name": "The Eternal Reign of Winter"
+  },
+  {
+    "key": 1004906,
+    "name": "Knowledge_Quest_Paper_LongleafForest_PatrolRecord",
+    "display_name": "Longleaf Forest Patrol Report"
+  },
+  {
+    "key": 1004924,
+    "name": "Knowledge_Quest_Faction_Wolf_Pursuer_Record",
+    "display_name": "Humans Held Captive by the Wolf Trackers"
+  },
+  {
+    "key": 1004929,
+    "name": "Knowledge_Quest_Faction_Sizlek_Plan",
+    "display_name": "Sizlek's Plan"
+  },
+  {
+    "key": 1004966,
+    "name": "Knowledge_Book_MasterJournal_01",
+    "display_name": "A Master's Journal"
+  },
+  {
+    "key": 1005068,
+    "name": "Knowledge_Hexe_Ring",
+    "display_name": "Hexe Pendant"
+  },
+  {
+    "key": 1005680,
+    "name": "Knowledge_WhithHorn_ChildBoots",
+    "display_name": "Child's Boots"
+  },
+  {
+    "key": 1005683,
+    "name": "Knowledge_ToWhiteBear_FromMyurdin_Letter",
+    "display_name": "Myurdin's Letter"
+  },
+  {
+    "key": 1004934,
+    "name": "Knowledge_Quest_Paper_Askelund_Judgment",
+    "display_name": "Fort Askelund Written Judgment"
+  },
+  {
+    "key": 1004961,
+    "name": "Knowledge_Book_Askelund_SlaveJournal",
+    "display_name": "Fort Askelund Slaver's Journal"
+  },
+  {
+    "key": 1005697,
+    "name": "Knowledge_Book_Sebastian_Diary_WhiteBear",
+    "display_name": "Sebastian's Journal \u2013 The White Bear of Pailune's Northern Snowy Mountains"
+  },
+  {
+    "key": 1004935,
+    "name": "Knowledge_Quest_Paper_Child_Notice",
+    "display_name": "Missing Child Poster"
+  },
+  {
+    "key": 1004936,
+    "name": "Knowledge_Quest_Paper_Child_Notice_02",
+    "display_name": "Missing Child Poster"
+  },
+  {
+    "key": 1004937,
+    "name": "Knowledge_Quest_Paper_Child_Notice_03",
+    "display_name": "Missing Child Poster"
+  },
+  {
+    "key": 1004938,
+    "name": "Knowledge_Quest_Paper_Child_Notice_04",
+    "display_name": "Missing Child Poster"
+  },
+  {
+    "key": 1004939,
+    "name": "Knowledge_Quest_Paper_Beighen_Notice",
+    "display_name": "Beighen Poster"
+  },
+  {
+    "key": 1004954,
+    "name": "Knowledge_Book_Ancient_Lore",
+    "display_name": "Tale of the Defeated Ancients"
+  },
+  {
+    "key": 1005059,
+    "name": "Knowledge_GiantBallista_Book",
+    "display_name": "Pailunese Guard's Journal"
+  },
+  {
+    "key": 1005700,
+    "name": "Knowledge_Book_Sebastian_Diary_Titan",
+    "display_name": "Sebastian's Journal \u2013 The Lightning God of Windsong Peaks"
+  },
+  {
+    "key": 1005717,
+    "name": "Knowledge_book_folktales_Tarandus",
+    "display_name": "Tale of the Sightless Apothecary"
+  },
+  {
+    "key": 1005721,
+    "name": "Knowledge_book_folktales_AncientPriscus",
+    "display_name": "Tale of the Geomancer"
+  },
+  {
+    "key": 1004897,
+    "name": "Knowledge_Quest_Paper_Dismissal_Document",
+    "display_name": "Discharge Order"
+  },
+  {
+    "key": 1004898,
+    "name": "Knowledge_Quest_Paper_Navy_Inquiry_Report",
+    "display_name": "Internal Naval Investigation Records"
+  },
+  {
+    "key": 1004912,
+    "name": "Knowledge_Quest_Paper_Sentry_Journal",
+    "display_name": "A Guard's Memoir"
+  },
+  {
+    "key": 1004890,
+    "name": "Knowledge_Quest_Paper_MoonScribbles_01",
+    "display_name": "Child's Moon Doodle"
+  },
+  {
+    "key": 1004891,
+    "name": "Knowledge_Quest_Paper_MoonScribbles_02",
+    "display_name": "Child's Moon Doodle"
+  },
+  {
+    "key": 1004892,
+    "name": "Knowledge_Quest_Paper_MoonScribbles_03",
+    "display_name": "Child's Moon Doodle"
+  },
+  {
+    "key": 1004958,
+    "name": "Knowledge_Book_BiologicalResearch_Journal",
+    "display_name": "Research Log on Living Subjects"
+  },
+  {
+    "key": 1004959,
+    "name": "Knowledge_Book_Orphanage_Register_01",
+    "display_name": "Orphanage Registry"
+  },
+  {
+    "key": 1004900,
+    "name": "Knowledge_Quest_Paper_Torn_Order",
+    "display_name": "Torn Subjugation Order"
+  },
+  {
+    "key": 1005679,
+    "name": "Knowledge_Karzul_SlaughterLedger",
+    "display_name": "Bradie Gu's Slaughter Ledger"
+  },
+  {
+    "key": 1004901,
+    "name": "Knowledge_Quest_Paper_Zoo_Flyer",
+    "display_name": "Wildlife Park Flyer"
+  },
+  {
+    "key": 1004921,
+    "name": "Knowledge_Zoo_Entry_Ticket",
+    "display_name": "Wildlife Park Ticket"
+  },
+  {
+    "key": 1005702,
+    "name": "Knowledge_Book_Sebastian_Diary_TheScarletExcecutioner",
+    "display_name": "Sebastian's Journal - The Warden of Demeniss Wildlife Park"
+  },
+  {
+    "key": 1004914,
+    "name": "Knowledge_Quest_Paper_Seizure_Tag",
+    "display_name": "Seizure Notice"
+  },
+  {
+    "key": 1004945,
+    "name": "Knowledge_Book_Tax_Collection_Ledger",
+    "display_name": "Tax Collection Ledger"
+  },
+  {
+    "key": 1004913,
+    "name": "Knowledge_Quest_Paper_Delinquency_Notice",
+    "display_name": "Notice of Arrears"
+  },
+  {
+    "key": 1004916,
+    "name": "Knowledge_Quest_Paper_Heresy_Registry",
+    "display_name": "Heretic Register"
+  },
+  {
+    "key": 1005058,
+    "name": "Knowledge_Family_Crest_Surcoat",
+    "display_name": "Surcoat Embroidered with a House Crest"
+  },
+  {
+    "key": 1004960,
+    "name": "Knowledge_Book_Tristan_Journal",
+    "display_name": "Tristan's Journal"
+  },
+  {
+    "key": 1004949,
+    "name": "Knowledge_Book_Marni_Tech_Book",
+    "display_name": "Marni's Skills from Marshell"
+  },
+  {
+    "key": 1004963,
+    "name": "Knowledge_Book_Sparring_Journal",
+    "display_name": "Duel Log"
+  },
+  {
+    "key": 1005075,
+    "name": "Knowledge_Quest_Hexe_Marie_Experiment",
+    "display_name": "Hexe Marie's Experimental Log"
+  },
+  {
+    "key": 1004988,
+    "name": "Knowledge_gimmick_ex_dpf_bell_0001",
+    "display_name": "Crosshatched Bell"
+  },
+  {
+    "key": 1005096,
+    "name": "Knowledge_Book_WyvernJournal",
+    "display_name": "Balthazar's Wyvern Observation Journal"
+  },
+  {
+    "key": 1004886,
+    "name": "Knowledge_Quest_Paper_MineFortress_Blueprint",
+    "display_name": "Storm Crusher Blueprint"
+  },
+  {
+    "key": 1005682,
+    "name": "Knowledge_Paper_Engineer_Working_Memo",
+    "display_name": "Note of a Mechanic's Grumblings"
+  },
+  {
+    "key": 1005692,
+    "name": "Knowledge_Book_Sebastian_Diary_MineFortress",
+    "display_name": "Sebastian's Journal - Iron Cart at the Aeronautical Research Base"
+  },
+  {
+    "key": 1004887,
+    "name": "Knowledge_Quest_Paper_LaserTank_Blueprint",
+    "display_name": "Thunder Crusher Blueprint"
+  },
+  {
+    "key": 1005693,
+    "name": "Knowledge_Book_Sebastian_Diary_ValvegardWallFort",
+    "display_name": "Sebastian's Journal \u2013 Iron Cart at the Valvegard Garrison"
+  },
+  {
+    "key": 1004888,
+    "name": "Knowledge_Quest_Paper_Marnihouse_Blueprint",
+    "display_name": "Marni's Bio-Capsule Design"
+  },
+  {
+    "key": 1004889,
+    "name": "Knowledge_Quest_Paper_BioExperiment_Blueprint",
+    "display_name": "H.A.L.L. Bio-Capsule Design"
+  },
+  {
+    "key": 1005694,
+    "name": "Knowledge_Book_Sebastian_Diary_MarniLab",
+    "display_name": "Sebastian's Journal \u2013 The Iron Gatekeeper of Marni's Laboratorium"
+  },
+  {
+    "key": 1005684,
+    "name": "Knowledge_Mechanicus_Marni_Memo",
+    "display_name": "Notes on Mechanicus's Development"
+  },
+  {
+    "key": 1004902,
+    "name": "Knowledge_Quest_Paper_Balthazar_Memo",
+    "display_name": "Balthazar's Note"
+  },
+  {
+    "key": 1004903,
+    "name": "Knowledge_Quest_Paper_Wyvern_Species_Memo",
+    "display_name": "Wyvern Traits"
+  },
+  {
+    "key": 1004972,
+    "name": "Knowledge_Book_MarniAirship_Journal",
+    "display_name": "Marni Airship Journal"
+  },
+  {
+    "key": 1004973,
+    "name": "Knowledge_Book_Airship_Journal",
+    "display_name": "REN-X Flight Journal"
+  },
+  {
+    "key": 1004993,
+    "name": "Knowledge_gimmick_tool_paper_whitehorn_0001",
+    "display_name": "White Horn Blueprint"
+  },
+  {
+    "key": 1004940,
+    "name": "Knowledge_Quest_WantedPaper_Arsonist_TheFaceless",
+    "display_name": "Bounty Notice - The Masked Liberator"
+  },
+  {
+    "key": 1005678,
+    "name": "Knowledge_Scorched_HandMirror",
+    "display_name": "Fire-Scorched Mirror"
+  },
+  {
+    "key": 1005695,
+    "name": "Knowledge_Book_Sebastian_Diary_TheFaceless",
+    "display_name": "Sebastian's Journal \u2013 The Faceless of Crimson Desert"
+  },
+  {
+    "key": 1005081,
+    "name": "Knowledge_gimmick_shud_statue_0001",
+    "display_name": "The Masked Liberator's Bust"
+  },
+  {
+    "key": 1005832,
+    "name": "Knowledge_TheFaceless_Helm",
+    "display_name": "The Mask of Liberation"
+  },
+  {
+    "key": 1004893,
+    "name": "Knowledge_Quest_Paper_Bankruptcy_Document",
+    "display_name": "Notice of Bankruptcy"
+  },
+  {
+    "key": 1004894,
+    "name": "Knowledge_Quest_Paper_Merrick_SeizureList",
+    "display_name": "Merrick Seizure List"
+  },
+  {
+    "key": 1004895,
+    "name": "Knowledge_Quest_Paper_Merrick_Letter",
+    "display_name": "Merrick's Letter"
+  },
+  {
+    "key": 1004896,
+    "name": "Knowledge_Quest_Paper_NoblePropertyList",
+    "display_name": "Noble House's Assets List"
+  },
+  {
+    "key": 1004962,
+    "name": "Knowledge_Book_Merrick_Memoris_01",
+    "display_name": "Merrick's Journal"
+  },
+  {
+    "key": 1005698,
+    "name": "Knowledge_Book_Sebastian_Diary_GoldenKnightMerrick",
+    "display_name": "Sebastian's Journal - The Crimson Desert's Knight of Fortune"
+  },
+  {
+    "key": 1005718,
+    "name": "Knowledge_book_folktales_GoldenKnightMerrick",
+    "display_name": "Tale of the Gilded Hoarder"
+  },
+  {
+    "key": 1004904,
+    "name": "Knowledge_Quest_Paper_Merchant_Warning",
+    "display_name": "Warning for the Merchant Guild"
+  },
+  {
+    "key": 1005074,
+    "name": "Knowledge_Quest_Paper_Hyena_Cave_Recapture",
+    "display_name": "Hyena Den Reclamation Report"
+  },
+  {
+    "key": 1004946,
+    "name": "Knowledge_Book_Urdavah_Research_Book",
+    "display_name": "Urdavah Book"
+  },
+  {
+    "key": 1004969,
+    "name": "Knowledge_Book_Pursuers_Journal_01",
+    "display_name": "Pursuers' Journal"
+  },
+  {
+    "key": 1004971,
+    "name": "Knowledge_Book_Technician_Journal",
+    "display_name": "Kidnapped Engineer's Journal"
+  },
+  {
+    "key": 1004975,
+    "name": "Knowledge_Book_Ravok_Journal_01",
+    "display_name": "Chief Priest's Journal"
+  },
+  {
+    "key": 1005719,
+    "name": "Knowledge_book_folktales_Muskan",
+    "display_name": "The Emperor of Sand and Stone"
+  },
+  {
+    "key": 1005722,
+    "name": "Knowledge_book_folktales_AncientPraevus",
+    "display_name": "Tale of the Pyromancer"
+  },
+  {
+    "key": 1005723,
+    "name": "Knowledge_book_folktales_BossHyenaSkevald",
+    "display_name": "Tale of the Carrion King"
+  },
+  {
+    "key": 1005095,
+    "name": "Knowledge_Book_KukuBirdJournal",
+    "display_name": "Leaping Kuku Bird Research Journal"
+  },
+  {
+    "key": 1004907,
+    "name": "Knowledge_Quest_Paper_Cult_Order",
+    "display_name": "Directive of the Order"
+  },
+  {
+    "key": 1005057,
+    "name": "Knowledge_Quest_Paper_Lumberjack_Testimony",
+    "display_name": "Lumberjacks' Witness Report"
+  },
+  {
+    "key": 1004594,
+    "name": "Knowledge_Paper_HowToMakeFundAccount",
+    "display_name": "Investment Offer"
+  },
+  {
+    "key": 1004713,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_1",
+    "display_name": "Archive Entry #1"
+  },
+  {
+    "key": 1004714,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_2",
+    "display_name": "Archive Entry #2"
+  },
+  {
+    "key": 1004715,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_3",
+    "display_name": "Archive Entry #3"
+  },
+  {
+    "key": 1004716,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_4",
+    "display_name": "Archive Entry #4"
+  },
+  {
+    "key": 1004717,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_5",
+    "display_name": "Archive Entry #5"
+  },
+  {
+    "key": 1004718,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_7",
+    "display_name": "Archive Entry #7"
+  },
+  {
+    "key": 1004719,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_8",
+    "display_name": "Archive Entry #8"
+  },
+  {
+    "key": 1004720,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_16",
+    "display_name": "Archive Entry #16"
+  },
+  {
+    "key": 1004721,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_17",
+    "display_name": "Archive Entry #17"
+  },
+  {
+    "key": 1004722,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_18",
+    "display_name": "Archive Entry #18"
+  },
+  {
+    "key": 1004723,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_19",
+    "display_name": "Archive Entry #19"
+  },
+  {
+    "key": 1004724,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_25",
+    "display_name": "Archive Entry #25"
+  },
+  {
+    "key": 1004725,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_26",
+    "display_name": "Archive Entry #26"
+  },
+  {
+    "key": 1004726,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_35",
+    "display_name": "Archive Entry #35"
+  },
+  {
+    "key": 1004727,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_36",
+    "display_name": "Archive Entry #36"
+  },
+  {
+    "key": 1004728,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_38",
+    "display_name": "Archive Entry #38"
+  },
+  {
+    "key": 1004729,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_39",
+    "display_name": "Archive Entry #39"
+  },
+  {
+    "key": 1004730,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_45",
+    "display_name": "Archive Entry #45"
+  },
+  {
+    "key": 1004731,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_46",
+    "display_name": "Archive Entry #46"
+  },
+  {
+    "key": 1004732,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_47",
+    "display_name": "Archive Entry #47"
+  },
+  {
+    "key": 1004733,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_48",
+    "display_name": "Archive Entry #48"
+  },
+  {
+    "key": 1004734,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_53",
+    "display_name": "Archive Entry #53"
+  },
+  {
+    "key": 1004735,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_54",
+    "display_name": "Archive Entry #54"
+  },
+  {
+    "key": 1004736,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_59",
+    "display_name": "Archive Entry #59"
+  },
+  {
+    "key": 1004737,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_60",
+    "display_name": "Archive Entry #60"
+  },
+  {
+    "key": 1004738,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_61",
+    "display_name": "Archive Entry #61"
+  },
+  {
+    "key": 1004739,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_62",
+    "display_name": "Archive Entry #62"
+  },
+  {
+    "key": 1004740,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_66",
+    "display_name": "Archive Entry #66"
+  },
+  {
+    "key": 1004741,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_67",
+    "display_name": "Archive Entry #67"
+  },
+  {
+    "key": 1004742,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_71",
+    "display_name": "Archive Entry #71"
+  },
+  {
+    "key": 1004743,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_72",
+    "display_name": "Archive Entry #72"
+  },
+  {
+    "key": 1004744,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_77",
+    "display_name": "Archive Entry #77"
+  },
+  {
+    "key": 1004745,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_78",
+    "display_name": "Archive Entry #78"
+  },
+  {
+    "key": 1004746,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_82",
+    "display_name": "Archive Entry #82"
+  },
+  {
+    "key": 1004747,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_83",
+    "display_name": "Archive Entry #83"
+  },
+  {
+    "key": 1004748,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_89",
+    "display_name": "Archive Entry #89"
+  },
+  {
+    "key": 1004749,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_90",
+    "display_name": "Archive Entry #90"
+  },
+  {
+    "key": 1004750,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_98",
+    "display_name": "Archive Entry #98"
+  },
+  {
+    "key": 1004751,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_99",
+    "display_name": "Archive Entry #99"
+  },
+  {
+    "key": 1004752,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_100",
+    "display_name": "Archive Entry #100"
+  },
+  {
+    "key": 1004753,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_106",
+    "display_name": "Archive Entry #106"
+  },
+  {
+    "key": 1004754,
+    "name": "KnowledgeGroup_Alustin_Journal_Book_107",
+    "display_name": "Archive Entry #107"
+  },
+  {
+    "key": 1005101,
+    "name": "KnowledgeGroup_Scholarstone_Book_1",
+    "display_name": "Trove of Wisdom, Scholastone - Chapter 1"
+  },
+  {
+    "key": 1005102,
+    "name": "KnowledgeGroup_Scholarstone_Book_2",
+    "display_name": "Trove of Wisdom, Scholastone - Chapter 2"
+  },
+  {
+    "key": 1005385,
+    "name": "Knowledge_FactionNodeProtect",
+    "display_name": "Stronghold Protection"
+  },
+  {
+    "key": 1004876,
+    "name": "Knowledge_BlackStar_Evade",
+    "display_name": "Blackstar: Evade"
+  },
+  {
+    "key": 1005652,
+    "name": "Knowledge_Paper_MarniDragon_Boss_Rescue",
+    "display_name": "Bio Power Source Experimental Log"
+  },
+  {
+    "key": 1004865,
+    "name": "Knowledge_Visione_Chip_BossRematch_Matthias",
+    "display_name": "Matthias"
+  },
+  {
+    "key": 1004807,
+    "name": "Knowledge_Visione_Chip_BossRematch_KailoktheHornsplitter",
+    "display_name": "Kailok, the Hornsplitter"
+  },
+  {
+    "key": 1004793,
+    "name": "Knowledge_Visione_Chip_BossRematch_ReedDevil",
+    "display_name": "Reed Devil"
+  },
+  {
+    "key": 1004794,
+    "name": "Knowledge_Visione_Chip_BossRematch_Imp_Banquet",
+    "display_name": "Kearush the Slayer"
+  },
+  {
+    "key": 1004795,
+    "name": "Knowledge_Visione_Chip_BossRematch_MarniExcavatron",
+    "display_name": "Marni's Excavatron"
+  },
+  {
+    "key": 1004796,
+    "name": "Knowledge_Visione_Chip_BossRematch_DeerKing",
+    "display_name": "Saigord the Staglord"
+  },
+  {
+    "key": 1004797,
+    "name": "Knowledge_Visione_Chip_BossRematch_QueenSpider",
+    "display_name": "Queen Spider"
+  },
+  {
+    "key": 1004798,
+    "name": "Knowledge_Visione_Chip_BossRematch_LithustheFormshaken",
+    "display_name": "Lithus, the Cubewalker"
+  },
+  {
+    "key": 1004799,
+    "name": "Knowledge_Visione_Chip_BossRematch_VordistheFormshaken",
+    "display_name": "Vordis, the Runewalker"
+  },
+  {
+    "key": 1004800,
+    "name": "Knowledge_Visione_Chip_BossRematch_ThryxtheFormshaken",
+    "display_name": "The Crimson Nightmare"
+  },
+  {
+    "key": 1004801,
+    "name": "Knowledge_Visione_Chip_BossRematch_Gears",
+    "display_name": "Giath"
+  },
+  {
+    "key": 1004802,
+    "name": "Knowledge_Visione_Chip_BossRematch_SizlektheInsatiable",
+    "display_name": "Sizlek the Insatiable"
+  },
+  {
+    "key": 1004803,
+    "name": "Knowledge_Visione_Chip_BossRematch_CroggtheCatfishman",
+    "display_name": "Sir Catfish"
+  },
+  {
+    "key": 1004804,
+    "name": "Knowledge_Visione_Chip_BossRematch_Beindel",
+    "display_name": "Hemon Beindel"
+  },
+  {
+    "key": 1004805,
+    "name": "Knowledge_Visione_Chip_BossRematch_Gwen_Kraver",
+    "display_name": "Gwen Kraber"
+  },
+  {
+    "key": 1004806,
+    "name": "Knowledge_Visione_Chip_BossRematch_Silver_Armor",
+    "display_name": "Cassius Morten"
+  },
+  {
+    "key": 1004808,
+    "name": "Knowledge_Visione_Chip_BossRematch_KWalter_Bleed",
+    "display_name": "Walter Lanford"
+  },
+  {
+    "key": 1004809,
+    "name": "Knowledge_Visione_Chip_BossRematch_Karanda",
+    "display_name": "Karanda"
+  },
+  {
+    "key": 1004810,
+    "name": "Knowledge_Visione_Chip_BossRematch_WhiteHorn",
+    "display_name": "White Horn, Shepherd of Souls"
+  },
+  {
+    "key": 1004811,
+    "name": "Knowledge_Visione_Chip_BossRematch_MudWalkerLutemir",
+    "display_name": "Lutemir, the Mudwalker"
+  },
+  {
+    "key": 1004812,
+    "name": "Knowledge_Visione_Chip_BossRematch_CrussistheFormshaken",
+    "display_name": "Crussis, the Bloodwalker"
+  },
+  {
+    "key": 1004813,
+    "name": "Knowledge_Visione_Chip_BossRematch_NorthernWarrior",
+    "display_name": "White Bearclaw"
+  },
+  {
+    "key": 1004814,
+    "name": "Knowledge_Visione_Chip_BossRematch_WhiteBear",
+    "display_name": "White Bear of the High Mountains"
+  },
+  {
+    "key": 1004815,
+    "name": "Knowledge_Visione_Chip_BossRematch_TarandustheAshen",
+    "display_name": "Tarandus the Ashen"
+  },
+  {
+    "key": 1004816,
+    "name": "Knowledge_Visione_Chip_BossRematch_Myordin",
+    "display_name": "Myurdin"
+  },
+  {
+    "key": 1004817,
+    "name": "Knowledge_Visione_Chip_BossRematch_Ludvig",
+    "display_name": "Ludvig"
+  },
+  {
+    "key": 1004877,
+    "name": "Knowledge_Visione_Chip_BossRematch_Ludvig_OneArmed",
+    "display_name": "One-Armed Ludvig"
+  },
+  {
+    "key": 1004818,
+    "name": "Knowledge_Visione_Chip_BossRematch_Titan",
+    "display_name": "Titan"
+  },
+  {
+    "key": 1004820,
+    "name": "Knowledge_Visione_Chip_BossRematch_Drylands_Golem",
+    "display_name": "Antiquum, the Stonewalker"
+  },
+  {
+    "key": 1004821,
+    "name": "Knowledge_Visione_Chip_BossRematch_OrcuMer",
+    "display_name": "T'rukan the Ascended"
+  },
+  {
+    "key": 1004822,
+    "name": "Knowledge_Visione_Chip_BossRematch_GregortheHalberdofCarnage",
+    "display_name": "Gregor, the Halberd of Carnage"
+  },
+  {
+    "key": 1004823,
+    "name": "Knowledge_Visione_Chip_BossRematch_TristanDragonbane",
+    "display_name": "Tristan, the Flame Knight"
+  },
+  {
+    "key": 1004824,
+    "name": "Knowledge_Visione_Chip_BossRematch_Bridie_Gu",
+    "display_name": "Bradie Gu"
+  },
+  {
+    "key": 1004825,
+    "name": "Knowledge_Visione_Chip_BossRematch_RagingTempest",
+    "display_name": "The Raging Tempest"
+  },
+  {
+    "key": 1004826,
+    "name": "Knowledge_Visione_Chip_BossRematch_MazzultheDarkJusticiar",
+    "display_name": "Mazzul, the Dark Justiciar"
+  },
+  {
+    "key": 1004827,
+    "name": "Knowledge_Visione_Chip_BossRematch_FortaintheHexboundKnight",
+    "display_name": "Fortain the Cursed Knight"
+  },
+  {
+    "key": 1004828,
+    "name": "Knowledge_Visione_Chip_BossRematch_TheScarletExcecutioner",
+    "display_name": "The Crimson Warden"
+  },
+  {
+    "key": 1004829,
+    "name": "Knowledge_Visione_Chip_BossRematch_GarnierTroupeMecharnival",
+    "display_name": "Keglord Garnier Mk. XXIII"
+  },
+  {
+    "key": 1004830,
+    "name": "Knowledge_Visione_Chip_BossRematch_Basteer",
+    "display_name": "Lucian Bastier"
+  },
+  {
+    "key": 1004831,
+    "name": "Knowledge_Visione_Chip_BossRematch_NewmoonRufus",
+    "display_name": "New Moon Reaper"
+  },
+  {
+    "key": 1004832,
+    "name": "Knowledge_Visione_Chip_BossRematch_FullmoonCyrus",
+    "display_name": "Full Moon Reaper"
+  },
+  {
+    "key": 1004833,
+    "name": "Knowledge_Visione_Chip_BossRematch_HalfmoonBlaine",
+    "display_name": "Half Moon Reaper"
+  },
+  {
+    "key": 1004834,
+    "name": "Knowledge_Visione_Chip_BossRematch_Hexe_Marie",
+    "display_name": "Hexe Marie"
+  },
+  {
+    "key": 1004835,
+    "name": "Knowledge_Visione_Chip_BossRematch_Draven",
+    "display_name": "Draven, the Crowcaller"
+  },
+  {
+    "key": 1004836,
+    "name": "Knowledge_Visione_Chip_BossRematch_Tank_Laser",
+    "display_name": "Thunder Crusher"
+  },
+  {
+    "key": 1004837,
+    "name": "Knowledge_Visione_Chip_BossRematch_Tank_Lase",
+    "display_name": "Storm Crusher"
+  },
+  {
+    "key": 1004838,
+    "name": "Knowledge_Visione_Chip_BossRematch_LandSpider_Queen",
+    "display_name": "Queen Stoneback Crab"
+  },
+  {
+    "key": 1004839,
+    "name": "Knowledge_Visione_Chip_BossRematch_GearhornRENW",
+    "display_name": "Clockwork White Horn"
+  },
+  {
+    "key": 1004840,
+    "name": "Knowledge_Visione_Chip_BossRematch_BalthazarWyrmspeaker",
+    "display_name": "Balthazar, the Wyvernflame"
+  },
+  {
+    "key": 1004841,
+    "name": "Knowledge_Visione_Chip_BossRematch_MechanicusMk12",
+    "display_name": "Mechanicus"
+  },
+  {
+    "key": 1004874,
+    "name": "Knowledge_Visione_Chip_BossRematch_Marni_MachineMantis",
+    "display_name": "Clockwork Mantis"
+  },
+  {
+    "key": 1004843,
+    "name": "Knowledge_Visione_Chip_BossRematch_MachineTank_55056",
+    "display_name": "Dreadnought"
+  },
+  {
+    "key": 1004844,
+    "name": "Knowledge_Visione_Chip_BossRematch_MachineKnight",
+    "display_name": "Marni's Machina Knight"
+  },
+  {
+    "key": 1004848,
+    "name": "Knowledge_Visione_Chip_BossRematch_Mask_Liberator_Leader",
+    "display_name": "The Masked Liberator"
+  },
+  {
+    "key": 1004849,
+    "name": "Knowledge_Visione_Chip_BossRematch_samuel",
+    "display_name": "Samara, the Sandwatcher"
+  },
+  {
+    "key": 1004850,
+    "name": "Knowledge_Visione_Chip_BossRematch_GoldenArmor",
+    "display_name": "Merrick, the Knight of Fortune"
+  },
+  {
+    "key": 1004851,
+    "name": "Knowledge_Visione_Chip_BossRematch_Ogre",
+    "display_name": "Ogre"
+  },
+  {
+    "key": 1004846,
+    "name": "Knowledge_Visione_Chip_BossRematch_LandSpider_BismuthQueen",
+    "display_name": "Queen Bismuth Oreback Crab"
+  },
+  {
+    "key": 1004847,
+    "name": "Knowledge_Visione_Chip_BossRematch_Muscan",
+    "display_name": "Muskan"
+  },
+  {
+    "key": 1004866,
+    "name": "Knowledge_Visione_Chip_BossRematch_Old_Kliff",
+    "display_name": "Goyen"
+  },
+  {
+    "key": 1004867,
+    "name": "Knowledge_Visione_Chip_BossRematch_Master_Doo",
+    "display_name": "Master Du"
+  },
+  {
+    "key": 1004852,
+    "name": "Knowledge_Visione_Chip_BossRematch_AwakenCaliburn",
+    "display_name": "Corrupted Caliburn"
+  },
+  {
+    "key": 1004856,
+    "name": "Knowledge_Visione_Chip_BossRematch_AntumbrasSpear",
+    "display_name": "Antumbra's Spear"
+  },
+  {
+    "key": 1004857,
+    "name": "Knowledge_Visione_Chip_BossRematch_AntumbrasSword",
+    "display_name": "Antumbra's Sword"
+  },
+  {
+    "key": 1004858,
+    "name": "Knowledge_Visione_Chip_BossRematch_AntumbrasStaff",
+    "display_name": "Antumbra's Staff"
+  },
+  {
+    "key": 1004859,
+    "name": "Knowledge_Visione_Chip_BossRematch_Priscus",
+    "display_name": "Priscus the Ancient"
+  },
+  {
+    "key": 1004860,
+    "name": "Knowledge_Visione_Chip_BossRematch_Praevus",
+    "display_name": "Praevus the Ancient"
+  },
+  {
+    "key": 1004861,
+    "name": "Knowledge_Visione_Chip_BossRematch_Primus",
+    "display_name": "Primus the Ancient"
+  },
+  {
+    "key": 1004862,
+    "name": "Knowledge_Visione_Chip_BossRematch_TheForgottenGeneral",
+    "display_name": "The Forgotten General"
+  },
+  {
+    "key": 1004863,
+    "name": "Knowledge_Visione_Chip_BossRematch_DarkKing",
+    "display_name": "Beloth, the Darksworn"
+  },
+  {
+    "key": 1004864,
+    "name": "Knowledge_Visione_Chip_BossRematch_AntumbraArchon",
+    "display_name": "Ator, Archon of Antumbra"
+  },
+  {
+    "key": 1005014,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0001",
+    "display_name": "Archive Entry #1"
+  },
+  {
+    "key": 1005015,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0002",
+    "display_name": "Archive Entry #2"
+  },
+  {
+    "key": 1005016,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0003",
+    "display_name": "Archive Entry #3"
+  },
+  {
+    "key": 1005017,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0004",
+    "display_name": "Archive Entry #4"
+  },
+  {
+    "key": 1005018,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0005",
+    "display_name": "Archive Entry #5"
+  },
+  {
+    "key": 1005019,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0006",
+    "display_name": "Archive Entry #7"
+  },
+  {
+    "key": 1005020,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0007",
+    "display_name": "Archive Entry #8"
+  },
+  {
+    "key": 1005021,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0008",
+    "display_name": "Archive Entry #16"
+  },
+  {
+    "key": 1005022,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0009",
+    "display_name": "Archive Entry #17"
+  },
+  {
+    "key": 1005023,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0010",
+    "display_name": "Archive Entry #18"
+  },
+  {
+    "key": 1005024,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0011",
+    "display_name": "Archive Entry #19"
+  },
+  {
+    "key": 1005025,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0012",
+    "display_name": "Archive Entry #25"
+  },
+  {
+    "key": 1005026,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0013",
+    "display_name": "Archive Entry #26"
+  },
+  {
+    "key": 1005027,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0014",
+    "display_name": "Archive Entry #35"
+  },
+  {
+    "key": 1005028,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0015",
+    "display_name": "Archive Entry #36"
+  },
+  {
+    "key": 1005029,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0016",
+    "display_name": "Archive Entry #38"
+  },
+  {
+    "key": 1005030,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0017",
+    "display_name": "Archive Entry #39"
+  },
+  {
+    "key": 1005031,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0018",
+    "display_name": "Archive Entry #45"
+  },
+  {
+    "key": 1005032,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0019",
+    "display_name": "Archive Entry #46"
+  },
+  {
+    "key": 1005033,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0020",
+    "display_name": "Archive Entry #47"
+  },
+  {
+    "key": 1005034,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0021",
+    "display_name": "Archive Entry #48"
+  },
+  {
+    "key": 1005035,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0022",
+    "display_name": "Archive Entry #53"
+  },
+  {
+    "key": 1005036,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0023",
+    "display_name": "Archive Entry #54"
+  },
+  {
+    "key": 1005037,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0024",
+    "display_name": "Archive Entry #59"
+  },
+  {
+    "key": 1005038,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0025",
+    "display_name": "Archive Entry #60"
+  },
+  {
+    "key": 1005039,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0026",
+    "display_name": "Archive Entry #61"
+  },
+  {
+    "key": 1005040,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0027",
+    "display_name": "Archive Entry #62"
+  },
+  {
+    "key": 1005041,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0028",
+    "display_name": "Archive Entry #66"
+  },
+  {
+    "key": 1005042,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0029",
+    "display_name": "Archive Entry #67"
+  },
+  {
+    "key": 1005043,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0030",
+    "display_name": "Archive Entry #71"
+  },
+  {
+    "key": 1005044,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0031",
+    "display_name": "Archive Entry #72"
+  },
+  {
+    "key": 1005045,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0032",
+    "display_name": "Archive Entry #77"
+  },
+  {
+    "key": 1005046,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0033",
+    "display_name": "Archive Entry #78"
+  },
+  {
+    "key": 1005047,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0034",
+    "display_name": "Archive Entry #82"
+  },
+  {
+    "key": 1005048,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0035",
+    "display_name": "Archive Entry #83"
+  },
+  {
+    "key": 1005049,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0036",
+    "display_name": "Archive Entry #89"
+  },
+  {
+    "key": 1005050,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0037",
+    "display_name": "Archive Entry #90"
+  },
+  {
+    "key": 1005051,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0038",
+    "display_name": "Archive Entry #98"
+  },
+  {
+    "key": 1005052,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0039",
+    "display_name": "Archive Entry #99"
+  },
+  {
+    "key": 1005053,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0040",
+    "display_name": "Archive Entry #100"
+  },
+  {
+    "key": 1005054,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0041",
+    "display_name": "Archive Entry #106"
+  },
+  {
+    "key": 1005055,
+    "name": "Knowledge_Visione_Chip_Alustin_Journal_0042",
+    "display_name": "Archive Entry #107"
+  },
+  {
+    "key": 1004922,
+    "name": "Knowledge_Quest_Faction_Old_Royal_Edict",
+    "display_name": "Pailune Alliance Declaration"
+  },
+  {
+    "key": 1004930,
+    "name": "Knowledge_Quest_Faction_Neutralzone_Strategy_Report",
+    "display_name": "Neutral Territory Strategy Report"
+  },
+  {
+    "key": 1004931,
+    "name": "Knowledge_Quest_Faction_Bastier_Report",
+    "display_name": "Gorthak Reconnaissance Report"
+  },
+  {
+    "key": 1004932,
+    "name": "Knowledge_Quest_Faction_Demeniss_Notice",
+    "display_name": "Demenissian Grand General's Letter"
+  },
+  {
+    "key": 1004984,
+    "name": "Knowledge_Quest_Faction_Solumena_Doctrine",
+    "display_name": "Solumena Doctrine"
+  },
+  {
+    "key": 1004985,
+    "name": "Knowledge_Quest_Faction_Witch_Journal",
+    "display_name": "Record of Axiom and Balance"
+  },
+  {
+    "key": 1004927,
+    "name": "Knowledge_Quest_Faction_Solumena_Inspection_Report",
+    "display_name": "Solumena Inspection Report"
+  },
+  {
+    "key": 1004928,
+    "name": "Knowledge_Quest_Faction_Solumena_Heresy_Report",
+    "display_name": "Solumena Heresy Inspection Report"
+  },
+  {
+    "key": 1004925,
+    "name": "Knowledge_Quest_Faction_Payment_Statement",
+    "display_name": "Billing Statement"
+  },
+  {
+    "key": 1004926,
+    "name": "Knowledge_Quest_Faction_Silvermoon_Merchant_Letter",
+    "display_name": "Letter to the Great Magnate of the Silvermoon Trade Group - Gratitude for the Sailfish Trade"
+  },
+  {
+    "key": 1005103,
+    "name": "Knowledge_Quest_Faction_Silvermoon_Merchant_Letter_I",
+    "display_name": "Letter to the Great Magnate of the Silvermoon Trade Group - Gratitude for the Razor Clam Trade"
+  },
+  {
+    "key": 1005104,
+    "name": "Knowledge_Quest_Faction_Silvermoon_Merchant_Letter_II",
+    "display_name": "Letter to the Great Magnate of the Silvermoon Trade Group - An Apology for the Delayed Payment"
+  },
+  {
+    "key": 1004978,
+    "name": "Knowledge_Quest_Faction_GoldLeaf_Membership_Pledge",
+    "display_name": "Goldleaf Merchant Guild Pledge"
+  },
+  {
+    "key": 1004977,
+    "name": "Knowledge_Quest_Faction_Urdavah_Mount_Study",
+    "display_name": "Urdavah Mount Research Journal"
+  },
+  {
+    "key": 1004979,
+    "name": "Knowledge_Quest_Faction_Shai_Record",
+    "display_name": "About Shais"
+  },
+  {
+    "key": 1004980,
+    "name": "Knowledge_Quest_Faction_Herb_Journal",
+    "display_name": "A Herbalist's Log"
+  },
+  {
+    "key": 1004983,
+    "name": "Knowledge_Quest_Faction_Tariv_Textbook",
+    "display_name": "Tariv Textbook"
+  },
+  {
+    "key": 1004982,
+    "name": "Knowledge_Quest_Faction_Pirate_Logbook",
+    "display_name": "A Sailor's Voyage Log"
+  },
+  {
+    "key": 1004986,
+    "name": "Knowledge_Quest_Faction_Pailune_Chronicle",
+    "display_name": "Pailune Travelog"
+  },
+  {
+    "key": 1004981,
+    "name": "Knowledge_Quest_Faction_Crimsondesert_Chronicle",
+    "display_name": "Crimson Desert Travelog"
+  },
+  {
+    "key": 1005124,
+    "name": "Knowledge_gimmick_tool_paper_workboard_0004",
+    "display_name": "Skyroot Research Records"
+  },
+  {
+    "key": 1004923,
+    "name": "Knowledge_Quest_Faction_Urdavah_Letter",
+    "display_name": "Letter from Scholastone Institute"
+  },
+  {
+    "key": 1004976,
+    "name": "Knowledge_Quest_Faction_Research_Book",
+    "display_name": "Research Report"
+  },
+  {
+    "key": 1005387,
+    "name": "Knowledge_Quest_Faction_Urdavah_Eco_Energy",
+    "display_name": "Urdavah Earthwise Energy Development Log"
+  },
+  {
+    "key": 1005125,
+    "name": "Knowledge_gimmick_tool_paper_flyer_0001",
+    "display_name": "Latest Visione Advertisement"
+  },
+  {
+    "key": 1005121,
+    "name": "Knowledge_gimmick_tool_paper_workboard_0001",
+    "display_name": "Star Orbit Tracking Record"
+  },
+  {
+    "key": 1005122,
+    "name": "Knowledge_gimmick_tool_paper_workboard_0002",
+    "display_name": "Propellant Research Records"
+  },
+  {
+    "key": 1005123,
+    "name": "Knowledge_gimmick_tool_paper_workboard_0003",
+    "display_name": "Projectile Research Records"
+  },
+  {
+    "key": 1005080,
+    "name": "Knowledge_gimmick_tool_paper_runewalkervordis_0001",
+    "display_name": "Walker Painting"
+  },
+  {
+    "key": 1005002,
+    "name": "Knowledge_cd_decals_deferred_boss_0001_dry",
+    "display_name": "Mural of Umbra"
+  },
+  {
+    "key": 1005003,
+    "name": "Knowledge_cd_decals_deferred_boss_0002_dry",
+    "display_name": "Mural of Umbra"
+  },
+  {
+    "key": 1005004,
+    "name": "Knowledge_cd_decals_deferred_boss_0003_dry",
+    "display_name": "Mural of Kearush"
+  },
+  {
+    "key": 1005005,
+    "name": "Knowledge_cd_decals_deferred_boss_0004_dry",
+    "display_name": "Sacred Mural of Titan"
+  },
+  {
+    "key": 1005006,
+    "name": "Knowledge_cd_decals_deferred_boss_0005_dry",
+    "display_name": "Mural of a Well"
+  },
+  {
+    "key": 1005007,
+    "name": "Knowledge_cd_decals_deferred_boss_0006_dry",
+    "display_name": "Mural of Walker at Gate of Truth"
+  },
+  {
+    "key": 1005008,
+    "name": "Knowledge_cd_decals_deferred_boss_0007_dry",
+    "display_name": "Quarry Walker Mural"
+  },
+  {
+    "key": 1005009,
+    "name": "Knowledge_cd_decals_deferred_boss_0008_dry",
+    "display_name": "Blackstar Worship Mural"
+  },
+  {
+    "key": 1005010,
+    "name": "Knowledge_cd_decals_deferred_boss_0009_dry",
+    "display_name": "Lake Walker Mural"
+  },
+  {
+    "key": 1005126,
+    "name": "Knowledge_cd_decals_forward_graymane_0001_dry",
+    "display_name": "Woodland Spirit Mural"
+  },
+  {
+    "key": 1005142,
+    "name": "Knowledge_cd_decals_forward_graymane_0017_dry",
+    "display_name": "Brother Wolf Mural - Wolf of Greed"
+  },
+  {
+    "key": 1005143,
+    "name": "Knowledge_cd_decals_forward_graymane_0018_dry",
+    "display_name": "Brother Wolf Mural - The Wolf That Swallowed the Stone"
+  },
+  {
+    "key": 1005144,
+    "name": "Knowledge_cd_decals_forward_graymane_0019_dry",
+    "display_name": "Brother Wolf Mural - The Wolf That Devours the Forest"
+  },
+  {
+    "key": 1005145,
+    "name": "Knowledge_cd_decals_forward_graymane_0020_dry",
+    "display_name": "Brother Wolf Mural - Wolf of Death"
+  },
+  {
+    "key": 1005127,
+    "name": "Knowledge_cd_decals_forward_graymane_0002_dry",
+    "display_name": "Mural of the Ancient Trial"
+  },
+  {
+    "key": 1005128,
+    "name": "Knowledge_cd_decals_forward_graymane_0003_dry",
+    "display_name": "Mural of Creation and Apocalypse"
+  },
+  {
+    "key": 1004995,
+    "name": "Knowledge_gimmick_decal_text_0001",
+    "display_name": "Writing of Resentment"
+  },
+  {
+    "key": 1004998,
+    "name": "Knowledge_gimmick_tombstone_0001",
+    "display_name": "A Vow to the Frostwarden"
+  },
+  {
+    "key": 1005013,
+    "name": "Knowledge_gimmick_tombstone_0002",
+    "display_name": "Warning of an Ancient Calamity"
+  },
+  {
+    "key": 1004999,
+    "name": "Knowledge_gimmick_tombstone_0003",
+    "display_name": "Warning of an Ancient Calamity"
+  },
+  {
+    "key": 1005000,
+    "name": "Knowledge_gimmick_tombstone_0004",
+    "display_name": "Warning of an Ancient Calamity"
+  },
+  {
+    "key": 1005082,
+    "name": "Knowledge_gimmick_tombstone_0005",
+    "display_name": "Warning of the Barren Land"
+  },
+  {
+    "key": 1005083,
+    "name": "Knowledge_gimmick_tombstone_0006",
+    "display_name": "Warning from One Seeking Rest"
+  },
+  {
+    "key": 1005084,
+    "name": "Knowledge_gimmick_tombstone_0007",
+    "display_name": "Warning from One Waiting for the Strength to Return"
+  },
+  {
+    "key": 1005085,
+    "name": "Knowledge_gimmick_tombstone_0008",
+    "display_name": "Warning of the Silent Guardian"
+  },
+  {
+    "key": 1005086,
+    "name": "Knowledge_gimmick_tombstone_0009",
+    "display_name": "Warning of the Lonely Guardian"
+  },
+  {
+    "key": 1005087,
+    "name": "Knowledge_gimmick_tombstone_0010",
+    "display_name": "Warning of the Mighty One"
+  },
+  {
+    "key": 1005088,
+    "name": "Knowledge_gimmick_tombstone_0011",
+    "display_name": "Warning Beyond the Boulder"
+  },
+  {
+    "key": 1005089,
+    "name": "Knowledge_gimmick_tombstone_0012",
+    "display_name": "Warning of a Weary Killer"
+  },
+  {
+    "key": 1005090,
+    "name": "Knowledge_gimmick_tombstone_0013",
+    "display_name": "Warning of the Grave Foreteller"
+  },
+  {
+    "key": 1005091,
+    "name": "Knowledge_gimmick_tombstone_0014",
+    "display_name": "Warning of the Merciless"
+  },
+  {
+    "key": 1005092,
+    "name": "Knowledge_gimmick_tombstone_0015",
+    "display_name": "Punishment for Lutemir"
+  },
+  {
+    "key": 1004989,
+    "name": "Knowledge_gimmick_tombstone_0016",
+    "display_name": "A Tribute to Heroes"
+  },
+  {
+    "key": 1004987,
+    "name": "Knowledge_gimmick_tombstone_0017",
+    "display_name": "The Mountain Lord's Prayer"
+  },
+  {
+    "key": 1005093,
+    "name": "Knowledge_gimmick_tombstone_0019",
+    "display_name": "Worship of Balthazar"
+  },
+  {
+    "key": 1005111,
+    "name": "Knowledge_gimmick_tombstone_0020",
+    "display_name": "A Memorial for the Wolves"
+  },
+  {
+    "key": 1005112,
+    "name": "Knowledge_gimmick_tombstone_0021",
+    "display_name": "Cenotaph of the Greymane Warriors"
+  },
+  {
+    "key": 1005113,
+    "name": "Knowledge_gimmick_tombstone_0022",
+    "display_name": "Ritual to Awaken the Eldertree"
+  },
+  {
+    "key": 1005114,
+    "name": "Knowledge_gimmick_tombstone_0023",
+    "display_name": "Teachings of Jijeong Temple - Body and Mind"
+  },
+  {
+    "key": 1005115,
+    "name": "Knowledge_gimmick_tombstone_0024",
+    "display_name": "Teachings of Jijeong Temple - The Power of Flexibility"
+  },
+  {
+    "key": 1005116,
+    "name": "Knowledge_gimmick_tombstone_0025",
+    "display_name": "Teachings of Jijeong Temple - Inner Peace"
+  },
+  {
+    "key": 1005117,
+    "name": "Knowledge_gimmick_tombstone_0026",
+    "display_name": "Teachings of Jijeong Temple - Master the Breathing"
+  },
+  {
+    "key": 1005118,
+    "name": "Knowledge_gimmick_tombstone_0027",
+    "display_name": "Teachings of Jijeong Temple - Upright Mind"
+  },
+  {
+    "key": 1005119,
+    "name": "Knowledge_gimmick_tombstone_0028",
+    "display_name": "Memorial for the Sages of Tariv"
+  },
+  {
+    "key": 1005120,
+    "name": "Knowledge_gimmick_inscription_0001",
+    "display_name": "Memorial to the Tribute of Greymane"
+  },
+  {
+    "key": 1005833,
+    "name": "Knowledge_gimmick_tombstone_0029",
+    "display_name": "Dragon on the Village Rock"
+  },
+  {
+    "key": 1005834,
+    "name": "Knowledge_gimmick_tombstone_0030",
+    "display_name": "Dragon Rising with the Sun"
+  },
+  {
+    "key": 1005835,
+    "name": "Knowledge_gimmick_tombstone_0031",
+    "display_name": "The Dragon Raincaller"
+  },
+  {
+    "key": 1005836,
+    "name": "Knowledge_gimmick_tombstone_0032",
+    "display_name": "Dragon That Burned the Desert Bandits"
+  },
+  {
+    "key": 1005837,
+    "name": "Knowledge_gimmick_tombstone_0033",
+    "display_name": "The Dragon Born of Lightning"
+  },
+  {
+    "key": 1005838,
+    "name": "Knowledge_gimmick_tombstone_0034",
+    "display_name": "The Dragon That Cleared the Sandstorm"
+  },
+  {
+    "key": 1005097,
+    "name": "Knowledge_cd_decals_forward_scribble_0001_dry",
+    "display_name": "Writing Engraved with a Sword"
+  },
+  {
+    "key": 1005011,
+    "name": "Knowledge_Minigame_ClawMachine",
+    "display_name": "Claw Machine"
+  },
+  {
+    "key": 1005012,
+    "name": "Knowledge_Minigame_PinBall",
+    "display_name": "Pinball"
+  },
+  {
+    "key": 1005198,
+    "name": "Knowledge_Minigame_CushionBall",
+    "display_name": "Orb Roll"
+  },
+  {
+    "key": 1005477,
+    "name": "Knowledge_Jukebox_I",
+    "display_name": "Sound Box Music"
+  },
+  {
+    "key": 1004870,
+    "name": "Knowledge_Node_Her_HerStore_Wanted_Road",
+    "display_name": "Southern Hernand Constabulary"
+  },
+  {
+    "key": 1004871,
+    "name": "Knowledge_Node_Dem_DemStore_Wanted_SouthCourt",
+    "display_name": "Southern Demeniss Constabulary"
+  },
+  {
+    "key": 1004872,
+    "name": "Knowledge_Node_Dem_DemStore_Wanted_WestCourt",
+    "display_name": "Western Demeniss Constabulary"
+  },
+  {
+    "key": 1004873,
+    "name": "Knowledge_Node_Dem_DemStore_Wanted_EastCourt",
+    "display_name": "Eastern Demeniss Constabulary"
+  },
+  {
+    "key": 1005839,
+    "name": "Knowledge_Kliff_Abyss_Mp",
+    "display_name": "Spirit"
+  },
+  {
+    "key": 1005840,
+    "name": "Knowledge_Kliff_Abyss_Sp",
+    "display_name": "Stamina"
+  },
+  {
+    "key": 1005841,
+    "name": "Knowledge_Kliff_Abyss_HP",
+    "display_name": "Health"
+  },
+  {
+    "key": 1004772,
+    "name": "Knowledge_CrowSuperDash",
+    "display_name": "Focused Aerial Roll"
+  },
+  {
+    "key": 1005842,
+    "name": "Knowledge_Damian_Abyss_Mp",
+    "display_name": "Spirit"
+  },
+  {
+    "key": 1004756,
+    "name": "Knowledge_Damian_Detect_SuperFocus",
+    "display_name": "Focused Insight"
+  },
+  {
+    "key": 1004766,
+    "name": "Knowledge_Damian_Mabongpa",
+    "display_name": "Nature's Snare"
+  },
+  {
+    "key": 1004768,
+    "name": "Knowledge_Damian_Taeguk_Unleash",
+    "display_name": "Nature's Retribution"
+  },
+  {
+    "key": 1004770,
+    "name": "Knowledge_Damian_Taeguk_Trap_I",
+    "display_name": "Nature's Veil"
+  },
+  {
+    "key": 1004783,
+    "name": "Knowledge_Damian_ShieldThrowDeep",
+    "display_name": "Focused Shield Bash"
+  },
+  {
+    "key": 1005843,
+    "name": "Knowledge_Damian_Abyss_Sp",
+    "display_name": "Stamina"
+  },
+  {
+    "key": 1005252,
+    "name": "Knowledge_Damian_Rush",
+    "display_name": "Reckoning"
+  },
+  {
+    "key": 1005844,
+    "name": "Knowledge_Damian_Abyss_HP",
+    "display_name": "Health"
+  },
+  {
+    "key": 1004760,
+    "name": "Knowledge_Damian_BlackWolf",
+    "display_name": "Axiom Force"
+  },
+  {
+    "key": 1004761,
+    "name": "Knowledge_Damian_Rope_AirPull",
+    "display_name": "Aerial Maneuver"
+  },
+  {
+    "key": 1005148,
+    "name": "Knowledge_Damian_ShieldGlider_SuperDash",
+    "display_name": "Propel"
+  },
+  {
+    "key": 1004764,
+    "name": "Knowledge_Damian_BlackWolf_Pull",
+    "display_name": "Winch"
+  },
+  {
+    "key": 1004781,
+    "name": "Knowledge_Damian_BlackWolf_Teleport",
+    "display_name": "Ambush"
+  },
+  {
+    "key": 1004778,
+    "name": "Knowledge_Damian_Taeguk_Seal",
+    "display_name": "Mystical Storage"
+  },
+  {
+    "key": 1005845,
+    "name": "Knowledge_Oongka_Abyss_Mp",
+    "display_name": "Spirit"
+  },
+  {
+    "key": 1004757,
+    "name": "Knowledge_Oongka_Detect_SuperFocus",
+    "display_name": "Focused Insight"
+  },
+  {
+    "key": 1004767,
+    "name": "Knowledge_Oongka_Mabongpa",
+    "display_name": "Nature's Snare"
+  },
+  {
+    "key": 1004769,
+    "name": "Knowledge_Oongka_Taeguk_Unleash",
+    "display_name": "Nature's Retribution"
+  },
+  {
+    "key": 1004771,
+    "name": "Knowledge_Oongka_Taeguk_Trap_I",
+    "display_name": "Nature's Veil"
+  },
+  {
+    "key": 1004784,
+    "name": "Knowledge_Oongka_CloseShotDeep",
+    "display_name": "Focused Scatter Shot"
+  },
+  {
+    "key": 1005846,
+    "name": "Knowledge_Oongka_Abyss_Sp",
+    "display_name": "Stamina"
+  },
+  {
+    "key": 1005333,
+    "name": "Knowledge_Oongka_Rush",
+    "display_name": "Devastation"
+  },
+  {
+    "key": 1005847,
+    "name": "Knowledge_Oongka_Abyss_HP",
+    "display_name": "Health"
+  },
+  {
+    "key": 1004763,
+    "name": "Knowledge_Oongka_Rope_AirPull",
+    "display_name": "Aerial Maneuver"
+  },
+  {
+    "key": 1004762,
+    "name": "Knowledge_Oongka_BlackWolf",
+    "display_name": "Axiom Force"
+  },
+  {
+    "key": 1005149,
+    "name": "Knowledge_Oongka_RocketPack_SuperDash",
+    "display_name": "Boost"
+  },
+  {
+    "key": 1004765,
+    "name": "Knowledge_Oongka_BlackWolf_Pull",
+    "display_name": "Winch"
+  },
+  {
+    "key": 1004782,
+    "name": "Knowledge_Oongka_BlackWolf_Teleport",
+    "display_name": "Ambush"
+  },
+  {
+    "key": 1004779,
+    "name": "Knowledge_Oongka_Taeguk_Seal",
+    "display_name": "Mystical Storage"
+  },
+  {
+    "key": 1005749,
+    "name": "Knowledge_Skill_Ship_Wait",
+    "display_name": "Sailing Ship - Standby"
+  },
+  {
+    "key": 1005750,
+    "name": "Knowledge_Skill_Ship_MoveLv1",
+    "display_name": "MoveLv1"
+  },
+  {
+    "key": 1005751,
+    "name": "Knowledge_Skill_Ship_MoveLv2",
+    "display_name": "MoveLv2"
+  },
+  {
+    "key": 1005752,
+    "name": "Knowledge_Skill_Ship_MoveLv3",
+    "display_name": "MoveLv3"
+  },
+  {
+    "key": 1005753,
+    "name": "Knowledge_Skill_Ship_Cannon_Front",
+    "display_name": "Sailing Ship Cannon - Bow"
+  },
+  {
+    "key": 1005754,
+    "name": "Knowledge_Skill_Ship_Cannon_Right",
+    "display_name": "Sailing Ship Cannon - Aim to Starboard"
+  },
+  {
+    "key": 1005755,
+    "name": "Knowledge_Skill_Ship_Cannon_Left",
+    "display_name": "Sailing Ship Cannon - Aim to Port"
+  },
+  {
+    "key": 1005756,
+    "name": "Knowledge_Skill_Ship_Cannon_Back",
+    "display_name": "Sailing Ship Cannon - Stern"
+  },
+  {
+    "key": 1004595,
+    "name": "Knowledge_Passive_Faction_Weaken_DDD",
+    "display_name": "Faction Skill - Attack Reduction"
+  },
+  {
+    "key": 1004596,
+    "name": "Knowledge_Passive_Faction_Weaken_MaxHp",
+    "display_name": "Faction Skill - HP Reduction"
+  },
+  {
+    "key": 1005056,
+    "name": "Knowledge_Passive_Faction_Reoccupation",
+    "display_name": "Faction Skill - Re-Blockade"
+  },
+  {
+    "key": 1005154,
+    "name": "Knowledge_Passive_Faction_Demoralized",
+    "display_name": "Faction Skill - Invaded"
+  },
+  {
+    "key": 1005883,
+    "name": "Knowledge_Skill_Service_I",
+    "display_name": "Customer Service"
+  },
+  {
+    "key": 1005884,
+    "name": "Knowledge_Skill_Service_II",
+    "display_name": "Skilled Host"
+  },
+  {
+    "key": 1005885,
+    "name": "Knowledge_Skill_Service_III",
+    "display_name": "Expert Host"
+  },
+  {
+    "key": 1005886,
+    "name": "Knowledge_Skill_Smelting_I",
+    "display_name": "Smelting"
+  },
+  {
+    "key": 1005887,
+    "name": "Knowledge_Skill_Smelting_II",
+    "display_name": "Skilled Smelter"
+  },
+  {
+    "key": 1005888,
+    "name": "Knowledge_Skill_Smelting_III",
+    "display_name": "Expert Smelter"
+  },
+  {
+    "key": 1005665,
+    "name": "Knowledge_Breath",
+    "display_name": "Breathing"
+  },
+  {
+    "key": 1005741,
+    "name": "Knowledge_Awakening",
+    "display_name": "Enlightenment"
+  },
+  {
+    "key": 1005848,
+    "name": "Knowledge_RotationSpeedRate",
+    "display_name": "Maneuverability"
+  },
+  {
+    "key": 1005671,
+    "name": "Knowledge_Service",
+    "display_name": "Customer Service"
+  },
+  {
+    "key": 1005743,
+    "name": "Knowledge_Smelting",
+    "display_name": "Smelting"
+  },
+  {
+    "key": 1004666,
+    "name": "Knowledge_Aeserion_JiJeongTa_Deep",
+    "display_name": "Focused Force Palm"
+  },
+  {
+    "key": 1005545,
+    "name": "Knowledge_Mabongpa_ManualLockon",
+    "display_name": "Nature's Snare"
+  },
+  {
+    "key": 1004343,
+    "name": "Anamorphic_Stele",
+    "display_name": "Starlight Tombstone"
+  },
+  {
+    "key": 1005370,
+    "name": "Anamorphic_Book_Map",
+    "display_name": "Full Map in the Constellation Research Journal"
+  },
+  {
+    "key": 1005371,
+    "name": "Knowledge_Anamorphic_Shield",
+    "display_name": "Shield Constellation"
+  },
+  {
+    "key": 1005372,
+    "name": "Knowledge_Anamorphic_Adventurer",
+    "display_name": "Adventurer Constellation"
+  },
+  {
+    "key": 1005373,
+    "name": "Knowledge_Anamorphic_Wagon",
+    "display_name": "Wagon Constellation"
+  },
+  {
+    "key": 1005374,
+    "name": "Knowledge_Anamorphic_Hammer",
+    "display_name": "Hammer Constellation"
+  },
+  {
+    "key": 1005375,
+    "name": "Knowledge_Anamorphic_Treant_Owl",
+    "display_name": "Woodland Spirit Owl Constellation"
+  },
+  {
+    "key": 1005376,
+    "name": "Knowledge_Anamorphic_Sealing_Stone",
+    "display_name": "Sealed Stone Constellation"
+  },
+  {
+    "key": 1005377,
+    "name": "Knowledge_Anamorphic_Boat",
+    "display_name": "Ship Constellation"
+  },
+  {
+    "key": 1005378,
+    "name": "Knowledge_Anamorphic_Elephant",
+    "display_name": "Elephant Constellation"
+  },
+  {
+    "key": 1005379,
+    "name": "Knowledge_Anamorphic_Camel",
+    "display_name": "Camel Constellation"
+  },
+  {
+    "key": 1005380,
+    "name": "Knowledge_Anamorphic_Goblin",
+    "display_name": "Goblin Constellation"
+  },
+  {
+    "key": 1005381,
+    "name": "Knowledge_Anamorphic_Black_Dragon",
+    "display_name": "Black Dragon Constellation"
+  },
+  {
+    "key": 1005382,
+    "name": "Knowledge_Anamorphic_Black_Giant",
+    "display_name": "Giant Constellation"
+  },
+  {
+    "key": 1005383,
+    "name": "Knowledge_Anamorphic_Black_Key",
+    "display_name": "Key Constellation"
+  },
+  {
+    "key": 1004344,
+    "name": "Knowledge_AbyssRuins_Her_0051",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004345,
+    "name": "Knowledge_AbyssRuins_Her_0052",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004346,
+    "name": "Knowledge_AbyssRuins_Her_0053",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004347,
+    "name": "Knowledge_AbyssRuins_Her_0054",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004348,
+    "name": "Knowledge_AbyssRuins_Her_0055",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004349,
+    "name": "Knowledge_AbyssRuins_Her_0056",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004350,
+    "name": "Knowledge_AbyssRuins_Her_0057",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004351,
+    "name": "Knowledge_AbyssRuins_Her_0058",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004352,
+    "name": "Knowledge_AbyssRuins_Her_0059",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004353,
+    "name": "Knowledge_AbyssRuins_Her_0060",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004354,
+    "name": "Knowledge_AbyssRuins_Her_0061",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004355,
+    "name": "Knowledge_AbyssRuins_Her_0062",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004356,
+    "name": "Knowledge_AbyssRuins_Her_0063",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004357,
+    "name": "Knowledge_AbyssRuins_Her_0064",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004358,
+    "name": "Knowledge_AbyssRuins_Her_0065",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004359,
+    "name": "Knowledge_AbyssRuins_Her_0066",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004360,
+    "name": "Knowledge_AbyssRuins_Her_0067",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004361,
+    "name": "Knowledge_AbyssRuins_Her_0068",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004362,
+    "name": "Knowledge_AbyssRuins_Her_0069",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004363,
+    "name": "Knowledge_AbyssRuins_Her_0070",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004364,
+    "name": "Knowledge_AbyssRuins_Her_0071",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004365,
+    "name": "Knowledge_AbyssRuins_Her_0072",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004366,
+    "name": "Knowledge_AbyssRuins_Her_0073",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004367,
+    "name": "Knowledge_AbyssRuins_Her_0074",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004368,
+    "name": "Knowledge_AbyssRuins_Her_0075",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004369,
+    "name": "Knowledge_AbyssRuins_Her_0076",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004370,
+    "name": "Knowledge_AbyssRuins_Her_0077",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004371,
+    "name": "Knowledge_AbyssRuins_Her_0078",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004372,
+    "name": "Knowledge_AbyssRuins_Her_0079",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004373,
+    "name": "Knowledge_AbyssRuins_Her_0080",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004374,
+    "name": "Knowledge_AbyssRuins_Her_0081",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004375,
+    "name": "Knowledge_AbyssRuins_Her_0082",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004376,
+    "name": "Knowledge_AbyssRuins_Her_0083",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004377,
+    "name": "Knowledge_AbyssRuins_Her_0084",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004378,
+    "name": "Knowledge_AbyssRuins_Her_0085",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004379,
+    "name": "Knowledge_AbyssRuins_Her_0086",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004380,
+    "name": "Knowledge_AbyssRuins_Her_0087",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004381,
+    "name": "Knowledge_AbyssRuins_Her_0088",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004382,
+    "name": "Knowledge_AbyssRuins_Her_0089",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004383,
+    "name": "Knowledge_AbyssRuins_Her_0090",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004384,
+    "name": "Knowledge_AbyssRuins_Her_0091",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004385,
+    "name": "Knowledge_AbyssRuins_Her_0092",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004386,
+    "name": "Knowledge_AbyssRuins_Her_0093",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004387,
+    "name": "Knowledge_AbyssRuins_Her_0094",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004388,
+    "name": "Knowledge_AbyssRuins_Her_0095",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004389,
+    "name": "Knowledge_AbyssRuins_Her_0096",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004390,
+    "name": "Knowledge_AbyssRuins_Her_0097",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004391,
+    "name": "Knowledge_AbyssRuins_Her_0098",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004392,
+    "name": "Knowledge_AbyssRuins_Her_0099",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004393,
+    "name": "Knowledge_AbyssRuins_Her_0100",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004394,
+    "name": "Knowledge_AbyssRuins_Dem_0051",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004395,
+    "name": "Knowledge_AbyssRuins_Dem_0052",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004396,
+    "name": "Knowledge_AbyssRuins_Dem_0053",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004397,
+    "name": "Knowledge_AbyssRuins_Dem_0054",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004398,
+    "name": "Knowledge_AbyssRuins_Dem_0055",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004399,
+    "name": "Knowledge_AbyssRuins_Dem_0056",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004400,
+    "name": "Knowledge_AbyssRuins_Dem_0057",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004401,
+    "name": "Knowledge_AbyssRuins_Dem_0058",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004402,
+    "name": "Knowledge_AbyssRuins_Dem_0059",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004403,
+    "name": "Knowledge_AbyssRuins_Dem_0060",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004404,
+    "name": "Knowledge_AbyssRuins_Dem_0061",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004405,
+    "name": "Knowledge_AbyssRuins_Dem_0062",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004406,
+    "name": "Knowledge_AbyssRuins_Dem_0063",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004407,
+    "name": "Knowledge_AbyssRuins_Dem_0064",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004408,
+    "name": "Knowledge_AbyssRuins_Dem_0065",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004409,
+    "name": "Knowledge_AbyssRuins_Dem_0066",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004410,
+    "name": "Knowledge_AbyssRuins_Dem_0067",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004411,
+    "name": "Knowledge_AbyssRuins_Dem_0068",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004412,
+    "name": "Knowledge_AbyssRuins_Dem_0069",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004413,
+    "name": "Knowledge_AbyssRuins_Dem_0070",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004414,
+    "name": "Knowledge_AbyssRuins_Dem_0071",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004415,
+    "name": "Knowledge_AbyssRuins_Dem_0072",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004416,
+    "name": "Knowledge_AbyssRuins_Dem_0073",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004417,
+    "name": "Knowledge_AbyssRuins_Dem_0074",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004418,
+    "name": "Knowledge_AbyssRuins_Dem_0075",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004419,
+    "name": "Knowledge_AbyssRuins_Dem_0076",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004420,
+    "name": "Knowledge_AbyssRuins_Dem_0077",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004421,
+    "name": "Knowledge_AbyssRuins_Dem_0078",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004422,
+    "name": "Knowledge_AbyssRuins_Dem_0079",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004423,
+    "name": "Knowledge_AbyssRuins_Dem_0080",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004424,
+    "name": "Knowledge_AbyssRuins_Dem_0081",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004425,
+    "name": "Knowledge_AbyssRuins_Dem_0082",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004426,
+    "name": "Knowledge_AbyssRuins_Dem_0083",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004427,
+    "name": "Knowledge_AbyssRuins_Dem_0084",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004428,
+    "name": "Knowledge_AbyssRuins_Dem_0085",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004429,
+    "name": "Knowledge_AbyssRuins_Dem_0086",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004430,
+    "name": "Knowledge_AbyssRuins_Dem_0087",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004431,
+    "name": "Knowledge_AbyssRuins_Dem_0088",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004432,
+    "name": "Knowledge_AbyssRuins_Dem_0089",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004433,
+    "name": "Knowledge_AbyssRuins_Dem_0090",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004434,
+    "name": "Knowledge_AbyssRuins_Dem_0091",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004435,
+    "name": "Knowledge_AbyssRuins_Dem_0092",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004436,
+    "name": "Knowledge_AbyssRuins_Dem_0093",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004437,
+    "name": "Knowledge_AbyssRuins_Dem_0094",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004438,
+    "name": "Knowledge_AbyssRuins_Dem_0095",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004439,
+    "name": "Knowledge_AbyssRuins_Dem_0096",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004440,
+    "name": "Knowledge_AbyssRuins_Dem_0097",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004441,
+    "name": "Knowledge_AbyssRuins_Dem_0098",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004442,
+    "name": "Knowledge_AbyssRuins_Dem_0099",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004443,
+    "name": "Knowledge_AbyssRuins_Dem_0100",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004444,
+    "name": "Knowledge_AbyssRuins_Del_0051",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004445,
+    "name": "Knowledge_AbyssRuins_Del_0052",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004446,
+    "name": "Knowledge_AbyssRuins_Del_0053",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004447,
+    "name": "Knowledge_AbyssRuins_Del_0054",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004448,
+    "name": "Knowledge_AbyssRuins_Del_0055",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004449,
+    "name": "Knowledge_AbyssRuins_Del_0056",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004450,
+    "name": "Knowledge_AbyssRuins_Del_0057",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004451,
+    "name": "Knowledge_AbyssRuins_Del_0058",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004452,
+    "name": "Knowledge_AbyssRuins_Del_0059",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004453,
+    "name": "Knowledge_AbyssRuins_Del_0060",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004454,
+    "name": "Knowledge_AbyssRuins_Del_0061",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004455,
+    "name": "Knowledge_AbyssRuins_Del_0062",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004456,
+    "name": "Knowledge_AbyssRuins_Del_0063",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004457,
+    "name": "Knowledge_AbyssRuins_Del_0064",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004458,
+    "name": "Knowledge_AbyssRuins_Del_0065",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004459,
+    "name": "Knowledge_AbyssRuins_Del_0066",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004460,
+    "name": "Knowledge_AbyssRuins_Del_0067",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004461,
+    "name": "Knowledge_AbyssRuins_Del_0068",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004462,
+    "name": "Knowledge_AbyssRuins_Del_0069",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004463,
+    "name": "Knowledge_AbyssRuins_Del_0070",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004464,
+    "name": "Knowledge_AbyssRuins_Del_0071",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004465,
+    "name": "Knowledge_AbyssRuins_Del_0072",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004466,
+    "name": "Knowledge_AbyssRuins_Del_0073",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004467,
+    "name": "Knowledge_AbyssRuins_Del_0074",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004468,
+    "name": "Knowledge_AbyssRuins_Del_0075",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004469,
+    "name": "Knowledge_AbyssRuins_Del_0076",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004470,
+    "name": "Knowledge_AbyssRuins_Del_0077",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004471,
+    "name": "Knowledge_AbyssRuins_Del_0078",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004472,
+    "name": "Knowledge_AbyssRuins_Del_0079",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004473,
+    "name": "Knowledge_AbyssRuins_Del_0080",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004474,
+    "name": "Knowledge_AbyssRuins_Del_0081",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004475,
+    "name": "Knowledge_AbyssRuins_Del_0082",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004476,
+    "name": "Knowledge_AbyssRuins_Del_0083",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004477,
+    "name": "Knowledge_AbyssRuins_Del_0084",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004478,
+    "name": "Knowledge_AbyssRuins_Del_0085",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004479,
+    "name": "Knowledge_AbyssRuins_Del_0086",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004480,
+    "name": "Knowledge_AbyssRuins_Del_0087",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004481,
+    "name": "Knowledge_AbyssRuins_Del_0088",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004482,
+    "name": "Knowledge_AbyssRuins_Del_0089",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004483,
+    "name": "Knowledge_AbyssRuins_Del_0090",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004484,
+    "name": "Knowledge_AbyssRuins_Del_0091",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004485,
+    "name": "Knowledge_AbyssRuins_Del_0092",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004486,
+    "name": "Knowledge_AbyssRuins_Del_0093",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004487,
+    "name": "Knowledge_AbyssRuins_Del_0094",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004488,
+    "name": "Knowledge_AbyssRuins_Del_0095",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004489,
+    "name": "Knowledge_AbyssRuins_Del_0096",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004490,
+    "name": "Knowledge_AbyssRuins_Del_0097",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004491,
+    "name": "Knowledge_AbyssRuins_Del_0098",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004492,
+    "name": "Knowledge_AbyssRuins_Del_0099",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004493,
+    "name": "Knowledge_AbyssRuins_Del_0100",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004494,
+    "name": "Knowledge_AbyssRuins_Kwe_0051",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004495,
+    "name": "Knowledge_AbyssRuins_Kwe_0052",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004496,
+    "name": "Knowledge_AbyssRuins_Kwe_0053",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004497,
+    "name": "Knowledge_AbyssRuins_Kwe_0054",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004498,
+    "name": "Knowledge_AbyssRuins_Kwe_0055",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004499,
+    "name": "Knowledge_AbyssRuins_Kwe_0056",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004500,
+    "name": "Knowledge_AbyssRuins_Kwe_0057",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004501,
+    "name": "Knowledge_AbyssRuins_Kwe_0058",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004502,
+    "name": "Knowledge_AbyssRuins_Kwe_0059",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004503,
+    "name": "Knowledge_AbyssRuins_Kwe_0060",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004504,
+    "name": "Knowledge_AbyssRuins_Kwe_0061",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004505,
+    "name": "Knowledge_AbyssRuins_Kwe_0062",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004506,
+    "name": "Knowledge_AbyssRuins_Kwe_0063",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004507,
+    "name": "Knowledge_AbyssRuins_Kwe_0064",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004508,
+    "name": "Knowledge_AbyssRuins_Kwe_0065",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004509,
+    "name": "Knowledge_AbyssRuins_Kwe_0066",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004510,
+    "name": "Knowledge_AbyssRuins_Kwe_0067",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004511,
+    "name": "Knowledge_AbyssRuins_Kwe_0068",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004512,
+    "name": "Knowledge_AbyssRuins_Kwe_0069",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004513,
+    "name": "Knowledge_AbyssRuins_Kwe_0070",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004514,
+    "name": "Knowledge_AbyssRuins_Kwe_0071",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004515,
+    "name": "Knowledge_AbyssRuins_Kwe_0072",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004516,
+    "name": "Knowledge_AbyssRuins_Kwe_0073",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004517,
+    "name": "Knowledge_AbyssRuins_Kwe_0074",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004518,
+    "name": "Knowledge_AbyssRuins_Kwe_0075",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004519,
+    "name": "Knowledge_AbyssRuins_Kwe_0076",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004520,
+    "name": "Knowledge_AbyssRuins_Kwe_0077",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004521,
+    "name": "Knowledge_AbyssRuins_Kwe_0078",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004522,
+    "name": "Knowledge_AbyssRuins_Kwe_0079",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004523,
+    "name": "Knowledge_AbyssRuins_Kwe_0080",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004524,
+    "name": "Knowledge_AbyssRuins_Kwe_0081",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004525,
+    "name": "Knowledge_AbyssRuins_Kwe_0082",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004526,
+    "name": "Knowledge_AbyssRuins_Kwe_0083",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004527,
+    "name": "Knowledge_AbyssRuins_Kwe_0084",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004528,
+    "name": "Knowledge_AbyssRuins_Kwe_0085",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004529,
+    "name": "Knowledge_AbyssRuins_Kwe_0086",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004530,
+    "name": "Knowledge_AbyssRuins_Kwe_0087",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004531,
+    "name": "Knowledge_AbyssRuins_Kwe_0088",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004532,
+    "name": "Knowledge_AbyssRuins_Kwe_0089",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004533,
+    "name": "Knowledge_AbyssRuins_Kwe_0090",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004534,
+    "name": "Knowledge_AbyssRuins_Kwe_0091",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004535,
+    "name": "Knowledge_AbyssRuins_Kwe_0092",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004536,
+    "name": "Knowledge_AbyssRuins_Kwe_0093",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004537,
+    "name": "Knowledge_AbyssRuins_Kwe_0094",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004538,
+    "name": "Knowledge_AbyssRuins_Kwe_0095",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004539,
+    "name": "Knowledge_AbyssRuins_Kwe_0096",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004540,
+    "name": "Knowledge_AbyssRuins_Kwe_0097",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004541,
+    "name": "Knowledge_AbyssRuins_Kwe_0098",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004542,
+    "name": "Knowledge_AbyssRuins_Kwe_0099",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004543,
+    "name": "Knowledge_AbyssRuins_Kwe_0100",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004544,
+    "name": "Knowledge_AbyssRuins_CD_0051",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004545,
+    "name": "Knowledge_AbyssRuins_CD_0052",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004546,
+    "name": "Knowledge_AbyssRuins_CD_0053",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004547,
+    "name": "Knowledge_AbyssRuins_CD_0054",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004548,
+    "name": "Knowledge_AbyssRuins_CD_0055",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004549,
+    "name": "Knowledge_AbyssRuins_CD_0056",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004550,
+    "name": "Knowledge_AbyssRuins_CD_0057",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004551,
+    "name": "Knowledge_AbyssRuins_CD_0058",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004552,
+    "name": "Knowledge_AbyssRuins_CD_0059",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004553,
+    "name": "Knowledge_AbyssRuins_CD_0060",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004554,
+    "name": "Knowledge_AbyssRuins_CD_0061",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004555,
+    "name": "Knowledge_AbyssRuins_CD_0062",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004556,
+    "name": "Knowledge_AbyssRuins_CD_0063",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004557,
+    "name": "Knowledge_AbyssRuins_CD_0064",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004558,
+    "name": "Knowledge_AbyssRuins_CD_0065",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004559,
+    "name": "Knowledge_AbyssRuins_CD_0066",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004560,
+    "name": "Knowledge_AbyssRuins_CD_0067",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004561,
+    "name": "Knowledge_AbyssRuins_CD_0068",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004562,
+    "name": "Knowledge_AbyssRuins_CD_0069",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004563,
+    "name": "Knowledge_AbyssRuins_CD_0070",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004564,
+    "name": "Knowledge_AbyssRuins_CD_0071",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004565,
+    "name": "Knowledge_AbyssRuins_CD_0072",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004566,
+    "name": "Knowledge_AbyssRuins_CD_0073",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004567,
+    "name": "Knowledge_AbyssRuins_CD_0074",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004568,
+    "name": "Knowledge_AbyssRuins_CD_0075",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004569,
+    "name": "Knowledge_AbyssRuins_CD_0076",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004570,
+    "name": "Knowledge_AbyssRuins_CD_0077",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004571,
+    "name": "Knowledge_AbyssRuins_CD_0078",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004572,
+    "name": "Knowledge_AbyssRuins_CD_0079",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004573,
+    "name": "Knowledge_AbyssRuins_CD_0080",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004574,
+    "name": "Knowledge_AbyssRuins_CD_0081",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004575,
+    "name": "Knowledge_AbyssRuins_CD_0082",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004576,
+    "name": "Knowledge_AbyssRuins_CD_0083",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004577,
+    "name": "Knowledge_AbyssRuins_CD_0084",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004578,
+    "name": "Knowledge_AbyssRuins_CD_0085",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004579,
+    "name": "Knowledge_AbyssRuins_CD_0086",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004580,
+    "name": "Knowledge_AbyssRuins_CD_0087",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004581,
+    "name": "Knowledge_AbyssRuins_CD_0088",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004582,
+    "name": "Knowledge_AbyssRuins_CD_0089",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004583,
+    "name": "Knowledge_AbyssRuins_CD_0090",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004584,
+    "name": "Knowledge_AbyssRuins_CD_0091",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004585,
+    "name": "Knowledge_AbyssRuins_CD_0092",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004586,
+    "name": "Knowledge_AbyssRuins_CD_0093",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004587,
+    "name": "Knowledge_AbyssRuins_CD_0094",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004588,
+    "name": "Knowledge_AbyssRuins_CD_0095",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004589,
+    "name": "Knowledge_AbyssRuins_CD_0096",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004590,
+    "name": "Knowledge_AbyssRuins_CD_0097",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004591,
+    "name": "Knowledge_AbyssRuins_CD_0098",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004592,
+    "name": "Knowledge_AbyssRuins_CD_0099",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004593,
+    "name": "Knowledge_AbyssRuins_CD_0100",
+    "display_name": "Abyss Nexus"
+  },
+  {
+    "key": 1004712,
+    "name": "Knowledge_LevelGimmickIcon_AbyssBridge",
+    "display_name": "Skybridge Gate"
+  },
+  {
+    "key": 1004786,
+    "name": "Knowledge_LevelGimmickIcon_VisioneChip",
+    "display_name": "Memory Fragment"
+  },
+  {
+    "key": 1005147,
+    "name": "Knowledge_LevelGimmickIcon_Pond",
+    "display_name": "Pond"
+  },
+  {
+    "key": 1004758,
+    "name": "Knowledge_LevelGimmickIcon_Well",
+    "display_name": "Well"
+  },
+  {
+    "key": 1004790,
+    "name": "Knowledge_LevelGimmickIcon_Bell",
+    "display_name": "Bells"
+  },
+  {
+    "key": 1004140,
+    "name": "Knowledge_LevelGimmickIcon_Craft_Anvil",
+    "display_name": "Anvil"
+  },
+  {
+    "key": 1005475,
+    "name": "Knowledge_LevelGimmickIcon_Craft_Sewing",
+    "display_name": "Loom"
+  },
+  {
+    "key": 1005476,
+    "name": "Knowledge_LevelGimmickIcon_Tool_Carpenter",
+    "display_name": "Workstation"
+  },
+  {
+    "key": 1005065,
+    "name": "Knowledge_LevelGimmickIcon_ClawMachine",
+    "display_name": "Claw Machine"
+  },
+  {
+    "key": 1005066,
+    "name": "Knowledge_LevelGimmickIcon_Pinball",
+    "display_name": "Pinball"
+  },
+  {
+    "key": 1005367,
+    "name": "Knowledge_LevelGimmickIcon_Cushionball",
+    "display_name": "Orb Roll"
+  },
+  {
+    "key": 1004597,
+    "name": "Knowledge_LevelGimmickIcon_begonia",
+    "display_name": "Begonia"
+  },
+  {
+    "key": 1004598,
+    "name": "Knowledge_LevelGimmickIcon_marigold",
+    "display_name": "Marigold"
+  },
+  {
+    "key": 1004599,
+    "name": "Knowledge_LevelGimmickIcon_peony",
+    "display_name": "Peony"
+  },
+  {
+    "key": 1004600,
+    "name": "Knowledge_LevelGimmickIcon_variegatum",
+    "display_name": "Snapdragon"
+  },
+  {
+    "key": 1004601,
+    "name": "Knowledge_LevelGimmickIcon_oliganthus",
+    "display_name": "Lily of the Valley"
+  },
+  {
+    "key": 1004602,
+    "name": "Knowledge_LevelGimmickIcon_pansy",
+    "display_name": "Pansy"
+  },
+  {
+    "key": 1004603,
+    "name": "Knowledge_LevelGimmickIcon_rosemary_white",
+    "display_name": "White Rosemaries"
+  },
+  {
+    "key": 1004604,
+    "name": "Knowledge_LevelGimmickIcon_rosemary_pink",
+    "display_name": "Pink Rosemaries"
+  },
+  {
+    "key": 1004605,
+    "name": "Knowledge_LevelGimmickIcon_rosemary_yellow",
+    "display_name": "Yellow Rosemaries"
+  },
+  {
+    "key": 1004606,
+    "name": "Knowledge_LevelGimmickIcon_bush_sage",
+    "display_name": "Croton"
+  },
+  {
+    "key": 1004607,
+    "name": "Knowledge_LevelGimmickIcon_weed_sophora",
+    "display_name": "Shrubby Sophora"
+  },
+  {
+    "key": 1004608,
+    "name": "Knowledge_LevelGimmickIcon_weed_croton_04",
+    "display_name": "Satintail Root"
+  },
+  {
+    "key": 1004609,
+    "name": "Knowledge_LevelGimmickIcon_bush_sage_red",
+    "display_name": "Red Croton"
+  },
+  {
+    "key": 1004610,
+    "name": "Knowledge_LevelGimmickIcon_weed_harsam",
+    "display_name": "False Starwort"
+  },
+  {
+    "key": 1004611,
+    "name": "Knowledge_LevelGimmickIcon_villosa",
+    "display_name": "Dunbaria"
+  },
+  {
+    "key": 1004612,
+    "name": "Knowledge_LevelGimmickIcon_rock_orchids",
+    "display_name": "Dendrobium Orchid"
+  },
+  {
+    "key": 1004613,
+    "name": "Knowledge_LevelGimmickIcon_Oleander",
+    "display_name": "Rosebay"
+  },
+  {
+    "key": 1004614,
+    "name": "Knowledge_LevelGimmickIcon_lavender_blue",
+    "display_name": "Blue Lavender"
+  },
+  {
+    "key": 1004615,
+    "name": "Knowledge_LevelGimmickIcon_lavender_white",
+    "display_name": "White Lavender"
+  },
+  {
+    "key": 1004616,
+    "name": "Knowledge_LevelGimmickIcon_lavender_yellow",
+    "display_name": "Yellow Lavender"
+  },
+  {
+    "key": 1004617,
+    "name": "Knowledge_LevelGimmickIcon_lavender",
+    "display_name": "Lavender"
+  },
+  {
+    "key": 1004618,
+    "name": "Knowledge_LevelGimmickIcon_rosemary",
+    "display_name": "Rosemary"
+  },
+  {
+    "key": 1004619,
+    "name": "Knowledge_LevelGimmickIcon_mushroom_phellinus",
+    "display_name": "Pine Mushroom"
+  },
+  {
+    "key": 1004620,
+    "name": "Knowledge_LevelGimmickIcon_mushroom_shiitake",
+    "display_name": "Oakwood Mushrooms"
+  },
+  {
+    "key": 1004621,
+    "name": "Knowledge_LevelGimmickIcon_mushroom_hericium",
+    "display_name": "Coral Mushroom"
+  },
+  {
+    "key": 1004622,
+    "name": "Knowledge_LevelGimmickIcon_ginseng",
+    "display_name": "Wild Ginseng"
+  },
+  {
+    "key": 1004623,
+    "name": "Knowledge_LevelGimmickIcon_blueberry",
+    "display_name": "Blueberry"
+  },
+  {
+    "key": 1004624,
+    "name": "Knowledge_LevelGimmickIcon_blackberry",
+    "display_name": "Blackberry"
+  },
+  {
+    "key": 1004625,
+    "name": "Knowledge_LevelGimmickIcon_raspberry",
+    "display_name": "Raspberry"
+  },
+  {
+    "key": 1004626,
+    "name": "Knowledge_LevelGimmickIcon_cotton",
+    "display_name": "Cotton"
+  },
+  {
+    "key": 1004627,
+    "name": "Knowledge_LevelGimmickIcon_veratrum",
+    "display_name": "False Hellebore"
+  },
+  {
+    "key": 1004628,
+    "name": "Knowledge_LevelGimmickIcon_linum",
+    "display_name": "Flax"
+  },
+  {
+    "key": 1004629,
+    "name": "Knowledge_LevelGimmickIcon_Coffee",
+    "display_name": "Coffee Cherry"
+  },
+  {
+    "key": 1004630,
+    "name": "Knowledge_LevelGimmickIcon_Cacao",
+    "display_name": "Cacao"
+  },
+  {
+    "key": 1004631,
+    "name": "Knowledge_LevelGimmickIcon_ginseng_02",
+    "display_name": "Ginseng"
+  },
+  {
+    "key": 1004632,
+    "name": "Knowledge_LevelGimmickIcon_glowfruit",
+    "display_name": "Shineberry"
+  },
+  {
+    "key": 1004633,
+    "name": "Knowledge_LevelGimmickIcon_desertwatermelon",
+    "display_name": "Desert Melon"
+  },
+  {
+    "key": 1004634,
+    "name": "Knowledge_LevelGimmickIcon_Pineapple",
+    "display_name": "Pineapple"
+  },
+  {
+    "key": 1004635,
+    "name": "Knowledge_LevelGimmickIcon_apple",
+    "display_name": "Apples"
+  },
+  {
+    "key": 1004636,
+    "name": "Knowledge_LevelGimmickIcon_Pomegranate",
+    "display_name": "Pomegranates"
+  },
+  {
+    "key": 1004637,
+    "name": "Knowledge_LevelGimmickIcon_Figs",
+    "display_name": "Fig"
+  },
+  {
+    "key": 1004638,
+    "name": "Knowledge_LevelGimmickIcon_grape",
+    "display_name": "Grapes"
+  },
+  {
+    "key": 1004639,
+    "name": "Knowledge_LevelGimmickIcon_peach",
+    "display_name": "Peach"
+  },
+  {
+    "key": 1004640,
+    "name": "Knowledge_LevelGimmickIcon_orange",
+    "display_name": "Orange"
+  },
+  {
+    "key": 1004641,
+    "name": "Knowledge_LevelGimmickIcon_tomato",
+    "display_name": "Tomato"
+  },
+  {
+    "key": 1004642,
+    "name": "Knowledge_LevelGimmickIcon_corn",
+    "display_name": "Corn"
+  },
+  {
+    "key": 1004643,
+    "name": "Knowledge_LevelGimmickIcon_potato",
+    "display_name": "Potatoes"
+  },
+  {
+    "key": 1004644,
+    "name": "Knowledge_LevelGimmickIcon_sweetpotato",
+    "display_name": "Sweet Potato"
+  },
+  {
+    "key": 1004645,
+    "name": "Knowledge_LevelGimmickIcon_cucumber",
+    "display_name": "Cucumber"
+  },
+  {
+    "key": 1004646,
+    "name": "Knowledge_LevelGimmickIcon_navet",
+    "display_name": "Turnip"
+  },
+  {
+    "key": 1004647,
+    "name": "Knowledge_LevelGimmickIcon_redbeet",
+    "display_name": "Beet"
+  },
+  {
+    "key": 1004648,
+    "name": "Knowledge_LevelGimmickIcon_lentils",
+    "display_name": "Lentils"
+  },
+  {
+    "key": 1004649,
+    "name": "Knowledge_LevelGimmickIcon_parsley",
+    "display_name": "Parsley"
+  },
+  {
+    "key": 1004650,
+    "name": "Knowledge_LevelGimmickIcon_Asparagus",
+    "display_name": "Asparagus"
+  },
+  {
+    "key": 1004651,
+    "name": "Knowledge_LevelGimmickIcon_Victorialis",
+    "display_name": "Wild Garlic"
+  },
+  {
+    "key": 1004652,
+    "name": "Knowledge_LevelGimmickIcon_Fennel",
+    "display_name": "Fennel"
+  },
+  {
+    "key": 1004653,
+    "name": "Knowledge_LevelGimmickIcon_Buckwheat",
+    "display_name": "Buckwheat"
+  },
+  {
+    "key": 1004654,
+    "name": "Knowledge_LevelGimmickIcon_peas",
+    "display_name": "Peas"
+  },
+  {
+    "key": 1004655,
+    "name": "Knowledge_LevelGimmickIcon_bean",
+    "display_name": "Beans"
+  },
+  {
+    "key": 1004656,
+    "name": "Knowledge_LevelGimmickIcon_carrot",
+    "display_name": "Carrot"
+  },
+  {
+    "key": 1004657,
+    "name": "Knowledge_LevelGimmickIcon_garlic",
+    "display_name": "Garlic"
+  },
+  {
+    "key": 1004658,
+    "name": "Knowledge_LevelGimmickIcon_onion",
+    "display_name": "Onions"
+  },
+  {
+    "key": 1004659,
+    "name": "Knowledge_LevelGimmickIcon_cabbage",
+    "display_name": "Cabbage"
+  },
+  {
+    "key": 1004660,
+    "name": "Knowledge_LevelGimmickIcon_pumpkin",
+    "display_name": "Pumpkin"
+  },
+  {
+    "key": 1004661,
+    "name": "Knowledge_LevelGimmickIcon_Elderberry",
+    "display_name": "Elderberries"
+  },
+  {
+    "key": 1004662,
+    "name": "Knowledge_LevelGimmickIcon_Strawberry",
+    "display_name": "Strawberry"
+  },
+  {
+    "key": 1004663,
+    "name": "Knowledge_LevelGimmickIcon_Barley",
+    "display_name": "Barley"
+  },
+  {
+    "key": 1004664,
+    "name": "Knowledge_LevelGimmickIcon_Wheat",
+    "display_name": "Wheat"
+  },
+  {
+    "key": 1005196,
+    "name": "Knowledge_LevelGimmickIcon_Trade",
+    "display_name": "Trading Post"
+  },
+  {
+    "key": 1005197,
+    "name": "Knowledge_LevelGimmickIcon_RoyalSupply",
+    "display_name": "Royal Trading Post"
+  },
+  {
+    "key": 1004665,
+    "name": "Knowledge_LevelGimmickIcon_Hospital",
+    "display_name": "Infirmary"
+  },
+  {
+    "key": 1004667,
+    "name": "Knowledge_LevelGimmickIcon_Barrack",
+    "display_name": "Barracks"
+  },
+  {
+    "key": 1004702,
+    "name": "Knowledge_LevelGimmickIcon_Food",
+    "display_name": "Food Storage"
+  },
+  {
+    "key": 1004703,
+    "name": "Knowledge_LevelGimmickIcon_Wood",
+    "display_name": "Timber Warehouse"
+  },
+  {
+    "key": 1004704,
+    "name": "Knowledge_LevelGimmickIcon_Armory",
+    "display_name": "Barracks"
+  },
+  {
+    "key": 1004705,
+    "name": "Knowledge_LevelGimmickIcon_Traing",
+    "display_name": "Training Field"
+  },
+  {
+    "key": 1005339,
+    "name": "Knowledge_LevelGimmickIcon_Artillery",
+    "display_name": "Firing Command Post"
+  },
+  {
+    "key": 1004773,
+    "name": "Knowledge_LevelGimmickIcon_SiegeTower",
+    "display_name": "Siege Tower"
+  },
+  {
+    "key": 1005334,
+    "name": "Knowledge_LevelGimmickIcon_Council",
+    "display_name": "Council"
+  },
+  {
+    "key": 1005335,
+    "name": "Knowledge_LevelGimmickIcon_Research",
+    "display_name": "Institute"
+  },
+  {
+    "key": 1005658,
+    "name": "Knowledge_Roger",
+    "display_name": "Roger"
+  },
+  {
+    "key": 1005659,
+    "name": "Knowledge_Devella",
+    "display_name": "Devella"
+  },
+  {
+    "key": 1005664,
+    "name": "Knowledge_Pailune_Carriage",
+    "display_name": "Vancel"
+  },
+  {
+    "key": 1005660,
+    "name": "Knowledge_Murray",
+    "display_name": "Murray"
+  },
+  {
+    "key": 1005661,
+    "name": "Knowledge_Batone",
+    "display_name": "Barton"
+  },
+  {
+    "key": 1005662,
+    "name": "Knowledge_Nasr",
+    "display_name": "Nasr"
+  },
+  {
+    "key": 1005340,
+    "name": "Knowledge_Jasper",
+    "display_name": "Jasper"
+  },
+  {
+    "key": 1005657,
+    "name": "Knowledge_Bassian",
+    "display_name": "Bartian"
+  },
+  {
+    "key": 1004869,
+    "name": "Knowledge_MachineTank",
+    "display_name": "Dreadnought"
+  },
+  {
+    "key": 1005067,
+    "name": "Knowledge_Garkhan",
+    "display_name": "Garkhan"
+  },
+  {
+    "key": 1005069,
+    "name": "Knowledge_Roy",
+    "display_name": "Roy"
   }
 ]

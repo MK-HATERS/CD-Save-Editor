@@ -9866,7 +9866,10 @@ QCheckBox::indicator {{
         self._update_status(f"Dragon knowledge added: {msg}. Save with Ctrl+S.")
         QMessageBox.information(self, "Dragon Knowledge Added",
             f"{msg}\n\nQuests: NOT modified\n\n"
-            "Save (Ctrl+S) and reload in-game.")
+            "Save (Ctrl+S) and reload in-game.\n\n"
+            "The game only lets you summon the dragon after the 'Shattered Ties' "
+            "story quest. This option does not touch quests, so the dragon "
+            "stays locked until you reach that quest.")
 
     def _unlock_dragon_mount_no_quests(self) -> None:
         if not self._save_data:
@@ -9880,7 +9883,8 @@ QCheckBox::indicator {{
             "2. Inject ~150 filtered knowledge entries:\n"
             "   - Riding, dragon, skills, UI, dyes, tools, minigames\n"
             "   - No quests/abyss/nodes/factions/regions/NPCs/animals/bosses\n\n"
-            "NO quest changes.\n\n"
+            "NO quest changes, so the dragon stays locked in-game until\n"
+            "you complete the 'Shattered Ties' story quest yourself.\n\n"
             "Requirements:\n"
             "- A save with at least one mercenary/horse\n\n"
             "Continue?",
@@ -10018,16 +10022,18 @@ QCheckBox::indicator {{
             self._populate_equipment()
             self._populate_inventory()
             self._update_status(
-                f"Dragon unlocked (no quests)! {orig_count}→{orig_count+1} mercs, "
+                f"Dragon added (no quests)! {orig_count}→{orig_count+1} mercs, "
                 f"{po_fixed} POs fixed. Save with Ctrl+S."
             )
 
-            QMessageBox.information(self, "Dragon Mount Unlocked (No Quests)",
+            QMessageBox.information(self, "Dragon Added (No Quests)",
                 f"Dragon (Blackstar) added to your mercenary list!\n\n"
                 f"Mercenaries: {orig_count} → {orig_count + 1}\n"
                 f"Quests: NOT modified\n"
                 f"Knowledge: ~150 filtered entries injected\n\n"
-                f"Save (Ctrl+S) and reload in-game.")
+                f"Save (Ctrl+S) and reload in-game.\n\n"
+                f"The dragon stays locked until you complete the "
+                f"'Shattered Ties' story quest.")
 
         except Exception as e:
             import traceback; traceback.print_exc()
@@ -10137,7 +10143,7 @@ QCheckBox::indicator {{
             for base in [os.path.dirname(os.path.abspath(__file__)), getattr(sys, '_MEIPASS', '')]:
                 p = os.path.join(base, 'quest_names.json')
                 if os.path.isfile(p):
-                    with open(p, 'r') as f:
+                    with open(p, 'r', encoding='utf-8') as f:
                         data = _json.load(f)
                     self._quest_names = {e['key']: e.get('display', e['name']) for e in data}
                     break
@@ -10681,6 +10687,8 @@ QCheckBox::indicator {{
         self._qe_window = None
         self._qe_entries = []
         self._qe_deep_data = None
+        self._quest_names = {}
+        self._load_quest_names()
 
     def _qe_load(self) -> None:
         if not self._save_data:
@@ -11189,14 +11197,19 @@ QCheckBox::indicator {{
         raw = self._save_data.decompressed_blob
         count = 0
         missing = 0
+        patches = []
         for sk in stage_keys:
             stage = self._qe_deep_data.stage_map.get(sk)
             if stage and stage.state_offset:
+                patches.append((stage.state_offset, bytes(raw[stage.state_offset:stage.state_offset + 1]), b'\x05'))
                 raw[stage.state_offset] = 5
                 stage.state = 5
                 count += 1
             else:
                 missing += 1
+        if patches:
+            self._undo_stack.append(UndoEntry(
+                description=f"Complete stages for quest {quest_key}", patches=patches))
 
         msg = f"Completed {count}/{len(stage_keys)} stages for {quest_name}"
         if missing:
@@ -11229,12 +11242,17 @@ QCheckBox::indicator {{
 
         raw = self._save_data.decompressed_blob
         count = 0
+        patches = []
         for sk in stage_keys:
             stage = self._qe_deep_data.stage_map.get(sk)
             if stage and stage.state_offset:
+                patches.append((stage.state_offset, bytes(raw[stage.state_offset:stage.state_offset + 1]), b'\x02'))
                 raw[stage.state_offset] = 2
                 stage.state = 2
                 count += 1
+        if patches:
+            self._undo_stack.append(UndoEntry(
+                description=f"Reset stages for quest {quest_key}", patches=patches))
 
         self._qe_stage_status.setText(f"Reset {count}/{len(stage_keys)} stages for {quest_name}")
         self._qe_show_stages(None)
@@ -12763,7 +12781,7 @@ QCheckBox::indicator {{
             for base in [os.path.dirname(os.path.abspath(__file__)), getattr(sys, '_MEIPASS', '')]:
                 p = os.path.join(base, 'quest_names.json')
                 if os.path.isfile(p):
-                    with open(p, 'r') as f:
+                    with open(p, 'r', encoding='utf-8') as f:
                         self._qdb_entries = _json.load(f)
                     for e in self._qdb_entries:
                         loc = get_localized_name('quests', e.get('key', ''), '')
@@ -14939,10 +14957,12 @@ QCheckBox::indicator {{
             patches=[(abs_data_start, old_bytes, new_bytes)],
         ))
         self._dirty = True
-        if value == 0xFF:
-            self._debug_fog_status.setText(f"{codelist_count}/{codelist_count} pixels revealed")
-        else:
-            self._debug_fog_status.setText(f"0/{codelist_count} pixels revealed (fogged)")
+        # The status label lives on the debug tab, which isn't always built.
+        if hasattr(self, '_debug_fog_status'):
+            if value == 0xFF:
+                self._debug_fog_status.setText(f"{codelist_count}/{codelist_count} pixels revealed")
+            else:
+                self._debug_fog_status.setText(f"0/{codelist_count} pixels revealed (fogged)")
         self._update_status(f"Map {'revealed' if value == 0xFF else 're-fogged'} ({codelist_count} fog bytes)")
         save_reply = QMessageBox.question(
             self, "Map Modified",

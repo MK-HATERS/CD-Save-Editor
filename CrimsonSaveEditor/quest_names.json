@@ -4488,5 +4488,1005 @@
     "key": 1000177,
     "name": "AnimalDocumentary_CD",
     "display": "Crimson Desert Animals Collection"
+  },
+  {
+    "key": 1000668,
+    "name": "ReBlockading_Node_Her_PervinFort_Reconstruction",
+    "display": "ReBlockading_Node_Her_PervinFort_Reconstruction"
+  },
+  {
+    "key": 1000596,
+    "name": "ReBlockading_Node_Her_FortWarspike_Reconstruction",
+    "display": "ReBlockading_Node_Her_FortWarspike_Reconstruction"
+  },
+  {
+    "key": 1000661,
+    "name": "ReBlockading_Node_Her_FortAnvil_Reconstruction",
+    "display": "ReBlockading_Node_Her_FortAnvil_Reconstruction"
+  },
+  {
+    "key": 1000675,
+    "name": "ReBlockading_Node_Her_KarinQuarry_Reconstruction",
+    "display": "ReBlockading_Node_Her_KarinQuarry_Reconstruction"
+  },
+  {
+    "key": 1000691,
+    "name": "ReBlockading_Node_Her_SouthQuarry_Reconstruction",
+    "display": "ReBlockading_Node_Her_SouthQuarry_Reconstruction"
+  },
+  {
+    "key": 1000693,
+    "name": "ReBlockading_Node_Her_FortHellwood_Reconstruction",
+    "display": "ReBlockading_Node_Her_FortHellwood_Reconstruction"
+  },
+  {
+    "key": 1000695,
+    "name": "ReBlockading_Node_Her_RootFort_Reconstruction",
+    "display": "ReBlockading_Node_Her_RootFort_Reconstruction"
+  },
+  {
+    "key": 1000696,
+    "name": "ReBlockading_Node_Kwe_FortAskelund_Reconstruction",
+    "display": "ReBlockading_Node_Kwe_FortAskelund_Reconstruction"
+  },
+  {
+    "key": 1000680,
+    "name": "ReBlockading_Node_Kwe_VatnhollFortress_Reconstruction",
+    "display": "ReBlockading_Node_Kwe_VatnhollFortress_Reconstruction"
+  },
+  {
+    "key": 1000681,
+    "name": "ReBlockading_Node_Kwe_SteinnfellFortress_Reconstruction",
+    "display": "ReBlockading_Node_Kwe_SteinnfellFortress_Reconstruction"
+  },
+  {
+    "key": 1000697,
+    "name": "ReBlockading_Node_Del_MarniMechFactory_Reconstruction",
+    "display": "ReBlockading_Node_Del_MarniMechFactory_Reconstruction"
+  },
+  {
+    "key": 1000698,
+    "name": "ReBlockading_Node_Del_ValvegardWallFort_Reconstruction",
+    "display": "ReBlockading_Node_Del_ValvegardWallFort_Reconstruction"
+  },
+  {
+    "key": 1000699,
+    "name": "ReBlockading_Node_Del_MarniAirLab_Reconstruction",
+    "display": "ReBlockading_Node_Del_MarniAirLab_Reconstruction"
+  },
+  {
+    "key": 1000705,
+    "name": "ReBlockading_Node_Neut_MarnisOutpost_Reconstruction",
+    "display": "ReBlockading_Node_Neut_MarnisOutpost_Reconstruction"
+  },
+  {
+    "key": 1000706,
+    "name": "ReBlockading_Node_Del_MarniLab_Reconstruction",
+    "display": "ReBlockading_Node_Del_MarniLab_Reconstruction"
+  },
+  {
+    "key": 1000708,
+    "name": "ReBlockading_Node_Dem_BloodsteelCamp_Reconstruction",
+    "display": "ReBlockading_Node_Dem_BloodsteelCamp_Reconstruction"
+  },
+  {
+    "key": 1000683,
+    "name": "ReBlockading_Node_Dem_Flame_Knights_Reconstruction",
+    "display": "ReBlockading_Node_Dem_Flame_Knights_Reconstruction"
+  },
+  {
+    "key": 1000688,
+    "name": "ReBlockading_Node_Dem_ScorchrockCastle_Reconstruction",
+    "display": "ReBlockading_Node_Dem_ScorchrockCastle_Reconstruction"
+  },
+  {
+    "key": 1000712,
+    "name": "ReBlockading_Node_Crim_RedMountainFort_Reconstruction",
+    "display": "ReBlockading_Node_Crim_RedMountainFort_Reconstruction"
+  },
+  {
+    "key": 1000713,
+    "name": "ReBlockading_Node_Crim_FortManub_Reconstruction",
+    "display": "ReBlockading_Node_Crim_FortManub_Reconstruction"
+  },
+  {
+    "key": 1000715,
+    "name": "ReBlockading_Node_Crim_IsvatuFortress_Reconstruction",
+    "display": "ReBlockading_Node_Crim_IsvatuFortress_Reconstruction"
+  },
+  {
+    "key": 1000869,
+    "name": "LevelSequencerSpawn_AllSchedule_03_m06",
+    "display": "LevelSequencerSpawn_AllSchedule_03_m06"
+  },
+  {
+    "key": 1000551,
+    "name": "LevelSequencerSpawn_Faction_m06_00",
+    "display": "LevelSequencerSpawn_Faction_m06_00"
+  },
+  {
+    "key": 1000381,
+    "name": "LevelSequencerSpawn_Faction_m09_m02",
+    "display": "LevelSequencerSpawn_Faction_m09_m02"
+  },
+  {
+    "key": 1000390,
+    "name": "Challenge_LegendAnimal_II",
+    "display": "Mysterious Animals"
+  },
+  {
+    "key": 1000689,
+    "name": "Challenge_Minigame_II",
+    "display": "Toys"
+  },
+  {
+    "key": 1000717,
+    "name": "Challenge_Pet_I",
+    "display": "Pets"
+  },
+  {
+    "key": 1000424,
+    "name": "Quest_Node_Crim_Urdavah_Normal",
+    "display": "Urdavah"
+  },
+  {
+    "key": 1000457,
+    "name": "Quest_Faction_Hellhounds_Normal",
+    "display": "Fort Hellwood Normal"
+  },
+  {
+    "key": 1000329,
+    "name": "Quest_Node_Her_ScholarStoneInstitute_AnamorphicSword",
+    "display": "Where Starlight Converges"
+  },
+  {
+    "key": 1000361,
+    "name": "Quest_Node_Kwe_AshclawKeep_Normal",
+    "display": "Ashclaw Keep"
+  },
+  {
+    "key": 1000458,
+    "name": "Quest_Node_Kwe_FortAskelund_Normal",
+    "display": "Fort Askelund Normal"
+  },
+  {
+    "key": 1000376,
+    "name": "Quest_Node_Kwe_BeighenVillage_Pailune_Block",
+    "display": "Pailune Beighen Occupied"
+  },
+  {
+    "key": 1000377,
+    "name": "Quest_Node_Kwe_BeighenCandlery_Pailune_Block",
+    "display": "Pailune Beighen Candlery Occupied"
+  },
+  {
+    "key": 1000425,
+    "name": "Quest_Node_OdeckVillage_Normal",
+    "display": "Odeck"
+  },
+  {
+    "key": 1000426,
+    "name": "Quest_Node_Kwe_SkoghornVillage_Normal",
+    "display": "Skoghorn"
+  },
+  {
+    "key": 1000427,
+    "name": "Quest_Node_Her_PervinFort_Reoccupation",
+    "display": "Re-Blockade - Fort Perwin"
+  },
+  {
+    "key": 1000466,
+    "name": "Quest_Node_Her_PervinFort_Invasion",
+    "display": "Engagement - Fort Perwin"
+  },
+  {
+    "key": 1000587,
+    "name": "Quest_Node_Her_PervinFort_Reconstruction",
+    "display": "Reconstruct - Fort Perwin"
+  },
+  {
+    "key": 1000428,
+    "name": "Quest_Node_Her_FortWarspike_Reoccupation",
+    "display": "Re-blockaded - Fort Warspike"
+  },
+  {
+    "key": 1000467,
+    "name": "Quest_Node_Her_FortWarspike_Invasion",
+    "display": "Engagement - Fort Warspike"
+  },
+  {
+    "key": 1000598,
+    "name": "Quest_Node_Her_FortWarspike_Reconstruction",
+    "display": "Reconstruct - Fort Warspike"
+  },
+  {
+    "key": 1000429,
+    "name": "Quest_Node_Her_FortAnvil_Reoccupation",
+    "display": "Re-Blockade - Fort Anvil"
+  },
+  {
+    "key": 1000468,
+    "name": "Quest_Node_Her_FortAnvil_Invasion",
+    "display": "Engagement - Fort Anvil"
+  },
+  {
+    "key": 1000599,
+    "name": "Quest_Node_Her_FortAnvil_Reconstruction",
+    "display": "Reconstruct - Fort Anvil"
+  },
+  {
+    "key": 1000430,
+    "name": "Quest_Node_Her_KarinQuarry_Reoccupation",
+    "display": "Re-Blockade - Karin Quarry"
+  },
+  {
+    "key": 1000469,
+    "name": "Quest_Node_Her_KarinQuarry_Invasion",
+    "display": "Engagement - Karin Quarry"
+  },
+  {
+    "key": 1000601,
+    "name": "Quest_Node_Her_KarinQuarry_Reconstruction",
+    "display": "Reconstruct - Karin Quarry"
+  },
+  {
+    "key": 1000432,
+    "name": "Quest_Node_Her_SouthQuarry_Reoccupation",
+    "display": "Re-Blockade - Southern Quarry"
+  },
+  {
+    "key": 1000471,
+    "name": "Quest_Node_Her_SouthQuarry_Invasion",
+    "display": "Engagement - Southern Quarry"
+  },
+  {
+    "key": 1000605,
+    "name": "Quest_Node_Her_SouthQuarry_Reconstruction",
+    "display": "Reconstruct - Southern Quarry"
+  },
+  {
+    "key": 1000440,
+    "name": "Quest_Node_Her_FortHellwood_Reoccupation",
+    "display": "Re-blockaded - Fort Hellwood"
+  },
+  {
+    "key": 1000552,
+    "name": "Quest_Node_Her_FortHellwood_Invasion",
+    "display": "Engagement - Fort Hellwood"
+  },
+  {
+    "key": 1000607,
+    "name": "Quest_Node_Her_FortHellwood_Reconstruction",
+    "display": "Reconstruct - Fort Hellwood"
+  },
+  {
+    "key": 1000431,
+    "name": "Quest_Node_Her_RootFort_Reoccupation",
+    "display": "Re-blockaded - Roothold"
+  },
+  {
+    "key": 1000472,
+    "name": "Quest_Node_Her_RootFort_Invasion",
+    "display": "Engagement - Roothold"
+  },
+  {
+    "key": 1000611,
+    "name": "Quest_Node_Her_RootFort_Reconstruction",
+    "display": "Reconstruct - Roothold"
+  },
+  {
+    "key": 1000441,
+    "name": "Quest_Node_Her_DragonKillCastle_Reoccupation",
+    "display": "Re-Blockade - Drakesfall Castle"
+  },
+  {
+    "key": 1000473,
+    "name": "Quest_Node_Her_DragonKillCastle_Invasion",
+    "display": "Engagement - Drakesfall Castle"
+  },
+  {
+    "key": 1000618,
+    "name": "Quest_Node_Her_DragonKillCastle_Reconstruction",
+    "display": "Reconstruct - Drakesfall Castle"
+  },
+  {
+    "key": 1000434,
+    "name": "Quest_Node_Kwe_FortAskelund_Reoccupation",
+    "display": "Re-Blockade - Fort Askelund"
+  },
+  {
+    "key": 1000474,
+    "name": "Quest_Node_Kwe_FortAskelund_Invasion",
+    "display": "Engagement - Fort Askelund"
+  },
+  {
+    "key": 1000632,
+    "name": "Quest_Node_Kwe_FortAskelund_Reconstruction",
+    "display": "Reconstruct - Fort Askelund"
+  },
+  {
+    "key": 1000435,
+    "name": "Quest_Node_Kwe_VatnhollFortress_Reoccupation",
+    "display": "Re-Blockade - Vat'nholl Fortress"
+  },
+  {
+    "key": 1000475,
+    "name": "Quest_Node_Kwe_VatnhollFortress_Invasion",
+    "display": "Engagement - Vat'nholl Fortress"
+  },
+  {
+    "key": 1000633,
+    "name": "Quest_Node_Kwe_VatnhollFortress_Reconstruction",
+    "display": "Reconstruct - Vat'nholl Fortress"
+  },
+  {
+    "key": 1000436,
+    "name": "Quest_Node_Kwe_SteinnfellFortress_Reoccupation",
+    "display": "Re-Blockade - Steinnfell Fortress"
+  },
+  {
+    "key": 1000476,
+    "name": "Quest_Node_Kwe_SteinnfellFortress_Invasion",
+    "display": "Engagement - Steinnfell Fortress"
+  },
+  {
+    "key": 1000634,
+    "name": "Quest_Node_Kwe_SteinnfellFortress_Reconstruction",
+    "display": "Reconstruct - Steinnfell Fortress"
+  },
+  {
+    "key": 1000442,
+    "name": "Quest_Node_Dem_BloodsteelCamp_Reoccupation",
+    "display": "Re-Blockade - Bloodsteel Camp"
+  },
+  {
+    "key": 1000477,
+    "name": "Quest_Node_Dem_BloodsteelCamp_Invasion",
+    "display": "Engagement - Bloodsteel Camp"
+  },
+  {
+    "key": 1000636,
+    "name": "Quest_Node_Dem_BloodsteelCamp_Reconstruction",
+    "display": "Reconstruct - Bloodsteel Camp"
+  },
+  {
+    "key": 1000443,
+    "name": "Quest_Node_Dem_Flame_Knights_Reoccupation",
+    "display": "Re-Blockade - Flame Knights Castle"
+  },
+  {
+    "key": 1000478,
+    "name": "Quest_Node_Dem_Flame_Knights_Invasion",
+    "display": "Engagement - Flame Knights Castle"
+  },
+  {
+    "key": 1000637,
+    "name": "Quest_Node_Dem_Flame_Knights_Reconstruction",
+    "display": "Reconstruct - Flame Knights Castle"
+  },
+  {
+    "key": 1000444,
+    "name": "Quest_Node_Dem_ScorchrockCastle_Reoccupation",
+    "display": "Re-Blockade - Scorchrock Castle"
+  },
+  {
+    "key": 1000479,
+    "name": "Quest_Node_Dem_ScorchrockCastle_Invasion",
+    "display": "Engagement - Scorchrock Castle"
+  },
+  {
+    "key": 1000638,
+    "name": "Quest_Node_Dem_ScorchrockCastle_Reconstruction",
+    "display": "Reconstruct - Scorchrock Castle"
+  },
+  {
+    "key": 1000445,
+    "name": "Quest_Node_Dem_BurnhandQuarry_Reoccupation",
+    "display": "Re-blockaded - Burnhand Quarry"
+  },
+  {
+    "key": 1000655,
+    "name": "Quest_Node_Dem_BurnhandQuarry_Invasion",
+    "display": "Engagement - Burnhand Quarry"
+  },
+  {
+    "key": 1000640,
+    "name": "Quest_Node_Dem_BurnhandQuarry_Reconstruction",
+    "display": "Reconstruct - Burnhand Quarry"
+  },
+  {
+    "key": 1000446,
+    "name": "Quest_Node_Del_MarniMechFactory_Reoccupation",
+    "display": "Re-blockaded - Marni Mechworks"
+  },
+  {
+    "key": 1000644,
+    "name": "Quest_Node_Del_MarniMechFactory_Reconstruction",
+    "display": "Reconstruct - Marni Mechworks"
+  },
+  {
+    "key": 1000447,
+    "name": "Quest_Node_Del_ValvegardWallFort_Reoccupation",
+    "display": "Re-blockaded - Valvegard Garrison"
+  },
+  {
+    "key": 1000645,
+    "name": "Quest_Node_Del_ValvegardWallFort_Reconstruction",
+    "display": "Reconstruct - Valvegard Garrison"
+  },
+  {
+    "key": 1000448,
+    "name": "Quest_Node_Del_MarniAirLab_Reoccupation",
+    "display": "Re-blockaded - Aeronautical Research Base"
+  },
+  {
+    "key": 1000646,
+    "name": "Quest_Node_Del_MarniAirLab_Reconstruction",
+    "display": "Reconstruct - Aeronautical Research Base"
+  },
+  {
+    "key": 1000449,
+    "name": "Quest_Node_Neut_MarnisOutpost_Reoccupation",
+    "display": "Re-blockaded - Marni's Outpost"
+  },
+  {
+    "key": 1000648,
+    "name": "Quest_Node_Neut_MarnisOutpost_Reconstruction",
+    "display": "Reconstruct - Marni's Outpost"
+  },
+  {
+    "key": 1000450,
+    "name": "Quest_Node_Del_MarniLab_Reoccupation",
+    "display": "Re-blockaded - Marni's Laboratorium"
+  },
+  {
+    "key": 1000651,
+    "name": "Quest_Node_Del_MarniLab_Reconstruction",
+    "display": "Reconstruct - Marni's Laboratorium"
+  },
+  {
+    "key": 1000451,
+    "name": "Quest_Node_Del_WindCliffFort_Reoccupation",
+    "display": "Re-Blockade - Fort Windridge"
+  },
+  {
+    "key": 1000658,
+    "name": "Quest_Node_Del_WindCliffFort_Invasion",
+    "display": "Engagement - Fort Windridge"
+  },
+  {
+    "key": 1000654,
+    "name": "Quest_Node_Del_WindCliffFort_Reconstruction",
+    "display": "Reconstruct - Fort Windridge"
+  },
+  {
+    "key": 1000437,
+    "name": "Quest_Node_Crim_RedMountainFort_Reoccupation",
+    "display": "Re-Blockade - Crimson Mountains Fortress"
+  },
+  {
+    "key": 1000553,
+    "name": "Quest_Node_Crim_RedMountainFort_Invasion",
+    "display": "Engagement - Crimson Mountains Fortress"
+  },
+  {
+    "key": 1000622,
+    "name": "Quest_Node_Crim_RedMountainFort_Reconstruction",
+    "display": "Reconstruct - Crimson Mountains Fortress"
+  },
+  {
+    "key": 1000438,
+    "name": "Quest_Node_Crim_FortManub_Reoccupation",
+    "display": "Re-Blockade - Fort Manub"
+  },
+  {
+    "key": 1000555,
+    "name": "Quest_Node_Crim_FortManub_Invasion",
+    "display": "Engagement - Fort Manub"
+  },
+  {
+    "key": 1000624,
+    "name": "Quest_Node_Crim_FortManub_Reconstruction",
+    "display": "Reconstruct - Fort Manub"
+  },
+  {
+    "key": 1000439,
+    "name": "Quest_Node_Crim_IsvatuFortress_Reoccupation",
+    "display": "Re-Blockaded - Izvatu Fortress"
+  },
+  {
+    "key": 1000556,
+    "name": "Quest_Node_Crim_IsvatuFortress_Invasion",
+    "display": "Engagement - Izvatu Fortress"
+  },
+  {
+    "key": 1000625,
+    "name": "Quest_Node_Crim_IsvatuFortress_Reconstruction",
+    "display": "Reconstruct - Izvatu Fortress"
+  },
+  {
+    "key": 1000480,
+    "name": "Quest_Node_Her_DrakefallBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Drakesfall Gorge Bandit Camp"
+  },
+  {
+    "key": 1000481,
+    "name": "Quest_Node_Her_ArboriaBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Arboria Forest Bandit Camp"
+  },
+  {
+    "key": 1000482,
+    "name": "Quest_Node_Her_MountainAreaBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Hernandian Mountains Bandit Camp"
+  },
+  {
+    "key": 1000483,
+    "name": "Quest_Node_Her_ShadowforestBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Duskwood Bandit Camp"
+  },
+  {
+    "key": 1000484,
+    "name": "Quest_Node_Her_RoccaHillBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Southern Rocca's Hill Bandit Camp"
+  },
+  {
+    "key": 1000485,
+    "name": "Quest_Node_Her_SunrisePlainBanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Sunrise Plains Bandit Camp"
+  },
+  {
+    "key": 1000486,
+    "name": "Quest_Node_Her_FoggyWindBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Mistwind Bandit Camp"
+  },
+  {
+    "key": 1000487,
+    "name": "Quest_Node_Her_RiverTerraceBanditCamp_Reoccupation",
+    "display": "Faction Spawn - Southern Riverside Bandit Camp"
+  },
+  {
+    "key": 1000488,
+    "name": "Quest_Node_Her_RiverTerraceBanditCamp_I_Reoccupation",
+    "display": "Faction Spawn - Northern Riverside Bandit Camp"
+  },
+  {
+    "key": 1000489,
+    "name": "Quest_Node_Her_AnvilHillBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Anvil Hill Bandit Camp"
+  },
+  {
+    "key": 1000490,
+    "name": "Quest_Node_Her_RoccaHillBanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Northern Rocca's Hill Bandit Camp"
+  },
+  {
+    "key": 1000491,
+    "name": "Quest_Node_Her_HowlingHillCamp_Reoccupation",
+    "display": "Re-blockaded - Haunted Hill Bandit Camp"
+  },
+  {
+    "key": 1000492,
+    "name": "Quest_Node_Her_GreenFieldHillyAreaCamp_Reoccupation",
+    "display": "Re-blockaded - Greenfield Highlands Bandit Camp"
+  },
+  {
+    "key": 1000493,
+    "name": "Quest_Node_Her_GreenFieldThiefCamp_Reoccupation",
+    "display": "Re-blockaded - Greenfield Bandit Camp"
+  },
+  {
+    "key": 1000494,
+    "name": "Quest_Node_Her_GreenHillThiefCamp_Reoccupation",
+    "display": "Re-blockaded - Greenhill Bandit Camp"
+  },
+  {
+    "key": 1000495,
+    "name": "Quest_Node_Her_SteelMountainsCamp_Reoccupation",
+    "display": "Re-blockaded - Steel Mountains Bandit Camp"
+  },
+  {
+    "key": 1000496,
+    "name": "Quest_Node_Her_SouthernDeepForestCamp_Reoccupation",
+    "display": "Re-blockaded - Southern Deepwoods Bandit Camp"
+  },
+  {
+    "key": 1000497,
+    "name": "Quest_Node_Her_SunrisePlainBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Sunrise Cliff Bandit Camp"
+  },
+  {
+    "key": 1000498,
+    "name": "Quest_Node_Her_WhiteMountainBanditCamp_Reoccupation",
+    "display": "Re-blockaded - Argent Peaks Bandit Camp"
+  },
+  {
+    "key": 1000499,
+    "name": "Quest_Node_Her_EastGoblinCamp_Reoccupation",
+    "display": "Re-blockaded - Eastern Goblin Bandit Camp"
+  },
+  {
+    "key": 1000557,
+    "name": "Quest_Node_Hernand_Bandit_I_Reoccupation",
+    "display": "Re-blockaded - Hernand Bandits' Outpost"
+  },
+  {
+    "key": 1000500,
+    "name": "Quest_Node_Dem_BanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Ironwood Forest Bandit Camp"
+  },
+  {
+    "key": 1000501,
+    "name": "Quest_Node_Dem_BanditCamp_II_Reoccupation",
+    "display": "Re-blockaded - Ironwood Basin Bandit Camp"
+  },
+  {
+    "key": 1000502,
+    "name": "Quest_Node_Dem_BanditCamp_III_Reoccupation",
+    "display": "Re-blockaded - Riverside Cliff Bandit Camp"
+  },
+  {
+    "key": 1000503,
+    "name": "Quest_Node_Dem_BanditCamp_IV_Reoccupation",
+    "display": "Re-blockaded - Ironwood Bandit Camp"
+  },
+  {
+    "key": 1000504,
+    "name": "Quest_Node_Dem_SouthendCamp_Reoccupation",
+    "display": "Re-blockaded - Eldertree Research Camp"
+  },
+  {
+    "key": 1000505,
+    "name": "Quest_Node_Dem_CrescentCamp_Reoccupation",
+    "display": "Re-blockaded - Crescent Camp"
+  },
+  {
+    "key": 1000506,
+    "name": "Quest_Node_Del_BanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Coastal Cliff Bandit Camp"
+  },
+  {
+    "key": 1000511,
+    "name": "Quest_Node_Del_BanditCamp_II_Reoccupation",
+    "display": "Re-blockaded - Benus River Bandit Camp"
+  },
+  {
+    "key": 1000513,
+    "name": "Quest_Node_Del_BanditCamp_III_Reoccupation",
+    "display": "Re-blockaded - Timberdale Bandit Camp"
+  },
+  {
+    "key": 1000583,
+    "name": "Quest_Node_Crim_SeabreezeRuin_Reoccupation",
+    "display": "Re-blockaded - Seawind Ruins"
+  },
+  {
+    "key": 1000514,
+    "name": "Quest_Node_Kwe_BanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Deepwoods Bandit Camp"
+  },
+  {
+    "key": 1000515,
+    "name": "Quest_Node_Kwe_BanditCamp_II_Reoccupation",
+    "display": "Re-blockaded - Southern Pailune Bandit Camp"
+  },
+  {
+    "key": 1000516,
+    "name": "Quest_Node_Kwe_BanditCamp_III_Reoccupation",
+    "display": "Re-blockaded - Denn River Bandit Camp"
+  },
+  {
+    "key": 1000517,
+    "name": "Quest_Node_Kwe_BanditCamp_IV_Reoccupation",
+    "display": "Re-blockaded - Mountain Bandit Camp"
+  },
+  {
+    "key": 1000518,
+    "name": "Quest_Node_Kwe_BanditCamp_V_Reoccupation",
+    "display": "Re-blockaded - Northern Pailune Bandit Camp"
+  },
+  {
+    "key": 1000519,
+    "name": "Quest_Node_Kwe_BanditCamp_VI_Reoccupation",
+    "display": "Re-blockaded - Black Wall Bandit Camp"
+  },
+  {
+    "key": 1000520,
+    "name": "Quest_Node_Kwe_BanditCamp_VII_Reoccupation",
+    "display": "Re-blockaded - Snowfield Bandit Camp"
+  },
+  {
+    "key": 1000521,
+    "name": "Quest_Node_Kwe_BanditCamp_VIII_Reoccupation",
+    "display": "Re-blockaded - Five-Finger Mountain Bandit Camp"
+  },
+  {
+    "key": 1000522,
+    "name": "Quest_Node_Kwe_BanditCamp_IX_Reoccupation",
+    "display": "Re-blockaded - Wayward Woods Bandit Camp"
+  },
+  {
+    "key": 1000523,
+    "name": "Quest_Node_Kwe_PitfallCamp_Reoccupation",
+    "display": "Re-blockaded - Pitfall Camp"
+  },
+  {
+    "key": 1000524,
+    "name": "Quest_Node_Crim_BanditCamp_I_Reoccupation",
+    "display": "Re-blockaded - Redrock Bandit Camp"
+  },
+  {
+    "key": 1000525,
+    "name": "Quest_Node_Crim_BanditCamp_II_Reoccupation",
+    "display": "Re-blockaded - Izvatu Bandit Camp"
+  },
+  {
+    "key": 1000526,
+    "name": "Quest_Node_Crim_BanditCamp_III_Reoccupation",
+    "display": "Re-blockaded - Rockledge Bandit Camp"
+  },
+  {
+    "key": 1000527,
+    "name": "Quest_Node_Crim_BanditCamp_IV_Reoccupation",
+    "display": "Re-blockaded - Saltshade Bandit Camp"
+  },
+  {
+    "key": 1000528,
+    "name": "Quest_Node_Crim_BanditCamp_VI_Reoccupation",
+    "display": "Re-blockaded - Sandshift Basin Bandit Camp"
+  },
+  {
+    "key": 1000529,
+    "name": "Quest_Node_Crim_BanditCamp_VII_Reoccupation",
+    "display": "Re-blockaded - Rockshade Bandit Camp"
+  },
+  {
+    "key": 1000530,
+    "name": "Quest_Node_Crim_BanditCamp_VIII_Reoccupation",
+    "display": "Re-blockaded - Gloomy Forest Bandit Camp"
+  },
+  {
+    "key": 1000531,
+    "name": "Quest_Node_Crim_BanditCamp_IX_Reoccupation",
+    "display": "Re-blockaded - Wasteshade Bandit Camp"
+  },
+  {
+    "key": 1000532,
+    "name": "Quest_Node_Crim_BanditCamp_X_Reoccupation",
+    "display": "Re-blockaded - Desertshade Bandit Camp"
+  },
+  {
+    "key": 1000533,
+    "name": "Quest_Node_Crim_BanditCamp_XI_Reoccupation",
+    "display": "Re-blockaded - Saltroad Edge Bandit Camp"
+  },
+  {
+    "key": 1000534,
+    "name": "Quest_Node_Crim_BanditCamp_XIV_Reoccupation",
+    "display": "Re-blockaded - Damp Rainforest Bandit Camp"
+  },
+  {
+    "key": 1000535,
+    "name": "Quest_Node_Crim_ArimajahrCamp_Reoccupation",
+    "display": "Re-blockaded - Arima-jahr Camp"
+  },
+  {
+    "key": 1000536,
+    "name": "Quest_Node_Crim_KhafijahrCamp_Reoccupation",
+    "display": "Re-blockaded - Khafi-jahr Camp"
+  },
+  {
+    "key": 1000537,
+    "name": "Quest_Node_Crim_GhadirjahrCamp_Reoccupation",
+    "display": "Re-blockaded - Ghadir-jahr Camp"
+  },
+  {
+    "key": 1000538,
+    "name": "Quest_Node_Crim_QudimjahrCamp_Reoccupation",
+    "display": "Re-blockaded - Qudim-jahr Camp"
+  },
+  {
+    "key": 1000539,
+    "name": "Quest_Node_Crim_YalwijahrCamp_Reoccupation",
+    "display": "Re-blockaded - Yalwi-jahr Camp"
+  },
+  {
+    "key": 1000540,
+    "name": "Quest_Node_Crim_ShiqarjahrCamp_Reoccupation",
+    "display": "Re-blockaded - Shiqar-jahr Camp"
+  },
+  {
+    "key": 1000541,
+    "name": "Quest_Node_Crim_SakhajahrCamp_Reoccupation",
+    "display": "Re-blockaded - Sakha-jahr Camp"
+  },
+  {
+    "key": 1000542,
+    "name": "Quest_Node_Crim_BaisunjahrCamp_Reoccupation",
+    "display": "Re-blockaded - Baisun-jahr Camp"
+  },
+  {
+    "key": 1000543,
+    "name": "Quest_Node_Crim_MustawijahrCamp_Reoccupation",
+    "display": "Re-blockaded - Mustawi-jahr Camp"
+  },
+  {
+    "key": 1000544,
+    "name": "Quest_Node_Crim_AsaharamCamp_Reoccupation",
+    "display": "Re-blockaded - Asaha-ram Camp"
+  },
+  {
+    "key": 1000545,
+    "name": "Quest_Node_Crim_KuhteramCamp_Reoccupation",
+    "display": "Re-blockaded - Kuhte-ram Camp"
+  },
+  {
+    "key": 1000546,
+    "name": "Quest_Node_Crim_HariyahramCamp_Reoccupation",
+    "display": "Re-blockaded - Hariyah-ram Camp"
+  },
+  {
+    "key": 1000547,
+    "name": "Quest_Node_Crim_KharatiramCamp_Reoccupation",
+    "display": "Re-blockaded - Kharati-ram Camp"
+  },
+  {
+    "key": 1000548,
+    "name": "Quest_Node_Crim_MakharamCamp_Reoccupation",
+    "display": "Re-blockaded - Makha-ram Camp"
+  },
+  {
+    "key": 1000549,
+    "name": "Quest_Node_Crim_BanditCamp_XII_Reoccupation",
+    "display": "Re-blockaded - Border Trail Bandit Camp"
+  },
+  {
+    "key": 1000550,
+    "name": "Quest_Node_Crim_BanditCamp_XIII_Reoccupation",
+    "display": "Re-blockaded - Valley of the Moon Bandit Camp"
+  },
+  {
+    "key": 1000558,
+    "name": "Quest_Node_Crim_Ruins_0012_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000559,
+    "name": "Quest_Node_Crim_Ruins_0014_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000560,
+    "name": "Quest_Node_Crim_Ruins_0015_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000561,
+    "name": "Quest_Node_Crim_Ruins_0016_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000562,
+    "name": "Quest_Node_Crim_Ruins_0017_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000571,
+    "name": "Quest_Node_Crim_Ruins_0018_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000572,
+    "name": "Quest_Node_Crim_Ruins_0022_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000573,
+    "name": "Quest_Node_Crim_Ruins_0023_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000574,
+    "name": "Quest_Node_Crim_Ruins_0020_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000575,
+    "name": "Quest_Node_Crim_Ruins_0021_Reoccupation",
+    "display": "Re-blockaded - Desert Ruins"
+  },
+  {
+    "key": 1000576,
+    "name": "Quest_Node_Crim_Ruins_0024_Reoccupation",
+    "display": "Re-blockaded - Jungle Ruins"
+  },
+  {
+    "key": 1000577,
+    "name": "Quest_Node_Crim_Ruins_0025_Reoccupation",
+    "display": "Re-blockaded - Jungle Ruins"
+  },
+  {
+    "key": 1000578,
+    "name": "Quest_Node_Crim_Ruins_0026_Reoccupation",
+    "display": "Re-blockaded - Jungle Ruins"
+  },
+  {
+    "key": 1000581,
+    "name": "Quest_Node_Crim_Ruins_0027_Reoccupation",
+    "display": "Re-blockaded - Jungle Ruins"
+  },
+  {
+    "key": 1000584,
+    "name": "Quest_Node_Crim_SandslumberRuins_Reoccupation",
+    "display": "Re-blockaded - Sandrest Ruins"
+  },
+  {
+    "key": 1000585,
+    "name": "Quest_Node_Crim_StonecrackRuins_Reoccupation",
+    "display": "Re-blockaded - Rockshard Valley Ruins"
+  },
+  {
+    "key": 1000459,
+    "name": "Quest_Goblin_Master_Doo_Blood_Throne",
+    "display": "Bloodstained Throne"
+  },
+  {
+    "key": 1000373,
+    "name": "Quest_Epilogue_Abyss",
+    "display": "???"
+  },
+  {
+    "key": 1000720,
+    "name": "Shop_VelluaVillage",
+    "display": "Vellua"
+  },
+  {
+    "key": 1000758,
+    "name": "Shop_Street_Trader_GoldleafGuildhouse",
+    "display": "Goldleaf Merchant Guild"
+  },
+  {
+    "key": 1000754,
+    "name": "Shop_Street_Trader_Silvermoon",
+    "display": "Silvermoon Trade Group"
+  },
+  {
+    "key": 1000757,
+    "name": "Shop_Street_Trader_Redwind",
+    "display": "Redwind Merchant Guild"
+  },
+  {
+    "key": 1000586,
+    "name": "Shop_Street_Trader",
+    "display": "Free Trading"
+  },
+  {
+    "key": 1000372,
+    "name": "Func_GameplayVariable",
+    "display": "GameplayVariable Check Quest"
+  },
+  {
+    "key": 1000829,
+    "name": "Func_GameplayVariable_Enhanced",
+    "display": "GameplayVariable Check Quest"
+  },
+  {
+    "key": 1000716,
+    "name": "Quest_PoliticianStory_Damian",
+    "display": "Quest_PoliticianStory_Damian"
+  },
+  {
+    "key": 1000732,
+    "name": "Quest_EngineerStory_Oongka",
+    "display": "Quest_EngineerStory_Oongka"
+  },
+  {
+    "key": 1000723,
+    "name": "Quest_MapmakerStory_Kliff",
+    "display": "Quest_MapmakerStory_Kliff"
+  },
+  {
+    "key": 1000740,
+    "name": "Quest_OceanStory_Remote_Island",
+    "display": "Quest_OceanStory_Remote_Island"
   }
 ]

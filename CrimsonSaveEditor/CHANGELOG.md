@@ -1,5 +1,22 @@
 # Changelog
 
+## Stand Alone Save Editor (no game mods) v2.1.3 — Quest data and icons
+
+- Quest Editor "Complete/Reset Quest Stages" no longer crashes, and both can
+  be undone.
+- The quest-to-stage map those buttons use was wrong: 351 of 358 links pointed
+  at stages owned by other quests. It is rebuilt from the 2.03.02 client and
+  now covers 1,003 quests.
+- Abyss Gates "Reveal Map" no longer crashes after applying.
+- Knowledge, quest, mission and stage lists refreshed from 2.03.02: 1,192 new
+  knowledge entries, 200 quests, 990 missions, 1,820 stages. One knowledge key
+  the game removed is no longer injected.
+- 647 new item icons extracted from the client. Icons ship as
+  `icons_local.zip`: put it next to the exe (no need to extract).
+- Dragon (No Quests) now says plainly that the dragon stays locked until the
+  "Shattered Ties" story quest is completed.
+- `refresh_static_data.py` regenerates the data and icons after a game update.
+
 ## Stand Alone Save Editor (no game mods) v2.1.2 — Save-safety fixes
 
 - Undo after a size-changing edit (Add Pack, knowledge inject, dyes, sockets,
