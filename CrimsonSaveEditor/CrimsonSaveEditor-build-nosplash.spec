@@ -1,7 +1,7 @@
 a = Analysis(
     ['main.py'],
-    pathex=[],
-    binaries=[],
+    pathex=['../CrimsonGameMods'],
+    binaries=[('../CrimsonGameMods/dmm_parser/dmm_parser.pyd', 'dmm_parser')],
     datas=[
         ('parc_parser.dll', '.'),
         ('item_names.json', '.'),
@@ -54,6 +54,9 @@ a = Analysis(
         'crimson_rs.create_pack',
         'crimson_rs.pack_mod',
         'crimson_rs.validate_game_dir',
+        'dmm_parser',
+        'dmm_parser.enums',
+        'table_layout',
     ],
     hookspath=[],
     hooksconfig={},

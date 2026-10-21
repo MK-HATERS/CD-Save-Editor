@@ -1,5 +1,20 @@
 # Changelog
 
+## Stand Alone Save Editor (no game mods) v2.1.1 — Game 2.03.02 support
+
+- Item list refreshed from the 2.03.02 client: 582 new items, current English
+  names and stack limits (6,818 known records).
+- "Refresh from local game" now reads English names and stack limits from the
+  client's per-category `eng/item.paloc`, not just internal names.
+- Removed false item matches in vendor data (shown as `Unknown (28)`,
+  `Unknown (999)`, etc.). The schema parse is now authoritative when every
+  item block parses.
+- Items whose record omits the slot field, and second copies of an item number
+  (equipped + bag), now appear in the list.
+- Fixed edits on a duplicated item number landing on the other copy.
+- Game-data features read the 2.01+ staticinfo archive names through the shared
+  `dmm_parser`, which is now bundled with the build.
+
 ## Stand Alone Save Editor (no game mods) v2.1.0 (2.1.0) — Pre-release testing
 
 This is a testing release. Use a copied save slot and keep the original backup

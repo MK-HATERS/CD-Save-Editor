@@ -481,14 +481,20 @@ def _try_import_parc():
 
 
 def scan_items_parc(data: bytes | bytearray) -> Tuple[List[SaveItem], str]:
+    items, status, _complete = _scan_items_parc_detail(data)
+    return items, status
+
+
+def _scan_items_parc_detail(data: bytes | bytearray) -> Tuple[List[SaveItem], str, bool]:
+    """Like scan_items_parc, plus whether every item-bearing block parsed."""
     parc_mod, err = _try_import_parc()
     if parc_mod is None:
-        return [], err
+        return [], err, False
 
     try:
         parc_blob = parc_mod.parse_parc_blob(bytes(data))
     except Exception as e:
-        return [], f"PARC parse failed: {e}"
+        return [], f"PARC parse failed: {e}", False
 
     item_type_idx = None
     for idx, td in parc_blob.type_by_index.items():
@@ -497,12 +503,12 @@ def scan_items_parc(data: bytes | bytearray) -> Tuple[List[SaveItem], str]:
             break
 
     if item_type_idx is None:
-        return [], "ItemSaveData type not found in schema"
+        return [], "ItemSaveData type not found in schema", False
 
     try:
         bp = parc_mod.BlockParser(parc_blob)
     except Exception as e:
-        return [], f"BlockParser init failed: {e}"
+        return [], f"BlockParser init failed: {e}", False
 
     items: List[SaveItem] = []
     parse_errors = 0
@@ -529,14 +535,14 @@ def scan_items_parc(data: bytes | bytearray) -> Tuple[List[SaveItem], str]:
         items.extend(found)
 
     if not items:
-        return [], f"PARC parsed 0 items ({parse_errors} block errors)"
+        return [], f"PARC parsed 0 items ({parse_errors} block errors)", False
 
     _classify_items(data, items)
 
     status = f"PARC mode: {len(items)} items, 22 fields tracked per item"
     if parse_errors:
         status += f" ({parse_errors} block parse errors)"
-    return items, status
+    return items, status, parse_errors == 0
 
 
 def _find_item_fields_in_parsed(
@@ -1006,20 +1012,39 @@ def enrich_items_with_parc(
     data: bytes | bytearray,
     items: List[SaveItem],
 ) -> Tuple[int, str]:
-    parc_items, status = scan_items_parc(data)
+    parc_items, status, complete = _scan_items_parc_detail(data)
     if not parc_items:
         return 0, status
 
-    parc_by_no: Dict[int, SaveItem] = {}
-    for pi in parc_items:
-        parc_by_no[pi.item_no] = pi
+    # Match on record offset: the same _itemNo can appear in two records
+    # (e.g. an equipped copy and an inventory copy), and keying by number
+    # handed one record the other's field offsets.
+    parc_by_offset: Dict[int, SaveItem] = {pi.offset: pi for pi in parc_items}
+
+    dropped = added = 0
+    if complete:
+        # The sentinel scan also matches StoreSaveData records that only look
+        # like items (stack 0x03000000, keys like 15/999), and it skips items
+        # whose presence mask omits _slotNo.  With every block parsed, the
+        # schema result is authoritative: drop unconfirmed hits, add misses.
+        confirmed = [
+            item for item in items
+            if (pi := parc_by_offset.get(item.offset)) is not None
+            and pi.item_no == item.item_no and pi.item_key == item.item_key
+        ]
+        dropped = len(items) - len(confirmed)
+        seen = {item.offset for item in confirmed}
+        missing = [pi for pi in parc_items if pi.offset not in seen]
+        added = len(missing)
+        items[:] = sorted(confirmed + missing, key=lambda item: item.offset)
 
     bag_ranges = _extract_bag_ranges(data)
 
     enriched = 0
     for item in items:
-        pi = parc_by_no.get(item.item_no)
-        if pi is not None and pi.field_offsets:
+        pi = parc_by_offset.get(item.offset)
+        if (pi is not None and pi.item_no == item.item_no
+                and pi.item_key == item.item_key and pi.field_offsets):
             item.field_offsets = pi.field_offsets
             item.parc_parsed = True
             # The sentinel scanner uses the pre-1.14 fixed prefix and can
@@ -1038,7 +1063,10 @@ def enrich_items_with_parc(
                 item.bag = bname
                 break
 
-    return enriched, f"PARC mode: {enriched}/{len(items)} items enriched with exact field offsets"
+    status = f"PARC mode: {enriched}/{len(items)} items enriched with exact field offsets"
+    if dropped or added:
+        status += f" ({dropped} false matches removed, {added} missed items added)"
+    return enriched, status
 
 
 def apply_item_swap_parc(

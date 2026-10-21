@@ -89,6 +89,14 @@ def _log_shutdown() -> None:
 
 atexit.register(_log_shutdown)
 
+# crimson_rs / dmm_parser / table_layout live in ../CrimsonGameMods. Frozen
+# builds bundle them (see CrimsonSaveEditor.spec pathex); source runs need the
+# sibling folder on sys.path, or every game-data read fails on 2.01+ names.
+if not getattr(sys, "frozen", False):
+    _shared = os.path.join(os.path.dirname(_application_dir()), "CrimsonGameMods")
+    if os.path.isdir(_shared) and _shared not in sys.path:
+        sys.path.append(_shared)
+
 from PySide6.QtWidgets import QApplication
 from PySide6.QtGui import QFont
 from PySide6.QtCore import Qt, QtMsgType, qInstallMessageHandler

@@ -157,6 +157,7 @@ class ItemNameDB:
             )
         except Exception as exc:
             return False, f"Could not read local item data: {exc}"
+        client_names = _load_client_item_names(game_path, body)
 
         if len(header) < 2:
             return False, "Local item-data header is invalid."
@@ -181,13 +182,18 @@ class ItemNameDB:
                 parsed += 1
                 extracted_keys.add(record_key)
                 existing = previous.get(record_key)
+                client_name, client_stack = client_names.get(record_key, ("", 0))
                 display = existing.name if existing and existing.name else internal.replace("_", " ")
+                # The client name wins unless ours is a hand-written variant
+                # that still contains it (e.g. "[Demeniss Poster] - <name>").
+                if client_name and client_name not in display:
+                    display = client_name
                 self.items[record_key] = ItemInfo(
                     item_key=record_key,
                     name=display,
                     internal_name=internal,
                     category=(existing.category if existing else _guess_item_category(internal)),
-                    max_stack=(existing.max_stack if existing else 0),
+                    max_stack=(client_stack or (existing.max_stack if existing else 0)),
                 )
                 if existing:
                     updated += 1
@@ -230,6 +236,29 @@ class ItemNameDB:
             f"Local game scan complete: {len(extracted_keys)} current client items; "
             f"{len(self.items)} total known ({added} added, {updated} refreshed)." + suffix
         )
+
+
+def _load_client_item_names(game_path: str, body: bytes) -> Dict[int, tuple[str, int]]:
+    """{item key: (English name, max stack)} from the installed client.
+
+    Since 2.03 the English strings are split per category under
+    stringtable/binary__/eng; item names are in item.paloc. Returns {} if
+    either table cannot be read, so the sync falls back to internal names.
+    """
+    try:
+        import crimson_rs
+        paloc = crimson_rs.parse_paloc_bytes(bytes(crimson_rs.extract_file(
+            game_path, "0020", "gamedata/stringtable/binary__/eng", "item.paloc")))
+        records = crimson_rs.parse_iteminfo_from_bytes(bytes(body))
+    except Exception:
+        return {}
+    strings = {int(e["string_key"]): e["string_value"]
+               for e in paloc if str(e["string_key"]).isdigit()}
+    return {
+        int(rec["key"]): (strings.get(int(rec["item_name"]["index"]), "").strip(),
+                          int(rec.get("max_stack_count") or 0))
+        for rec in records
+    }
 
 
 def _guess_item_category(internal_name: str) -> str:
