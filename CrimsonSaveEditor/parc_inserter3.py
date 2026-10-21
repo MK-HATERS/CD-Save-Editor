@@ -663,6 +663,34 @@ def _is_real_po(sentinel_abs: int, po_value: int) -> bool:
     return po_value == expected
 
 
+def _reanchor_self_pos(blob: bytearray, orig_blob: bytes, start: int, growth: int) -> int:
+    """Shift every PO at or after `start` that the sentinel scans missed.
+
+    A PO holds its own absolute position + 4. Not every object writes
+    0xFF*8 before it (some carry zeros), so the sentinel-based fixups leave
+    those stale and the native serializer then rejects the save. Moved
+    bytes keep this invariant, so re-anchor every u32 that had it.
+    """
+    if growth == 0:
+        return 0
+    fixed = 0
+    end = len(orig_blob) - 3
+    for align in range(4):
+        first = start + ((align - start) % 4)
+        count = (end - first + 3) // 4
+        if count <= 0:
+            continue
+        values = memoryview(orig_blob[first:first + count * 4]).cast('I')
+        for i, value in enumerate(values):
+            pos = first + 4 * i
+            if value == pos + 4:
+                new_pos = pos + growth
+                if struct.unpack_from('<I', blob, new_pos)[0] != new_pos + 4:
+                    struct.pack_into('<I', blob, new_pos, new_pos + 4)
+                    fixed += 1
+    return fixed
+
+
 def _fixup_external(
     blob: bytearray,
     orig_blob: bytes,
@@ -731,6 +759,7 @@ def _fixup_external(
     ssp = parc.toc_offset + 8
     struct.pack_into('<I', blob, ssp,
                      struct.unpack_from('<I', blob, ssp)[0] + growth)
+    fixed += _reanchor_self_pos(blob, orig_blob, element_end, growth)
 
     return fixed
 
@@ -1069,6 +1098,7 @@ def insert_item_to_inventory(
     ssp = parc.toc_offset + 8
     struct.pack_into('<I', blob, ssp,
                      struct.unpack_from('<I', blob, ssp)[0] + growth)
+    _reanchor_self_pos(blob, orig_blob, insert_pos, growth)
 
     log.info("Fixed %d TOC entries", fixed_toc)
 
@@ -1824,6 +1854,7 @@ def complete_mission_entry(
     ssp = parc.toc_offset + 8
     struct.pack_into('<I', blob, ssp,
                      struct.unpack_from('<I', blob, ssp)[0] + growth)
+    _reanchor_self_pos(blob, orig_blob, insert_pos, growth)
 
     fixed_ts = _fixup_trailing_sizes(blob, orig_blob, insert_pos, growth, 'QuestSaveData')
 
@@ -2300,6 +2331,7 @@ def insert_dye_to_item(
     ssp = parc.toc_offset + 8
     struct.pack_into('<I', blob, ssp,
                      struct.unpack_from('<I', blob, ssp)[0] + growth)
+    _reanchor_self_pos(blob, orig_blob, insert_pos, growth)
 
     fixed_ts = _fixup_trailing_sizes(blob, orig_blob, insert_pos, growth, 'EquipmentSaveData')
 
@@ -2726,6 +2758,7 @@ def inject_knowledge_fast(
     ssp = parc.toc_offset + 8
     struct.pack_into('<I', blob, ssp,
                      struct.unpack_from('<I', blob, ssp)[0] + total_growth)
+    _reanchor_self_pos(blob, orig_blob, block_end, total_growth)
 
     t4 = time.time()
 

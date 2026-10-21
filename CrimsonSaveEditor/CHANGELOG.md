@@ -1,5 +1,13 @@
 # Changelog
 
+## Stand Alone Save Editor (no game mods) v2.1.4 — Insert fix
+
+- Inserts (Add Pack, Clone to Vendor, knowledge inject, dyes, quest/mission
+  inserts, Dragon mount) now update every internal position marker after the
+  insert point. Some markers that are not preceded by 0xFF padding were left
+  stale, so the save validator refused to write the result; this mostly hit
+  edits early in the save.
+
 ## Stand Alone Save Editor (no game mods) v2.1.3 — Quest data and icons
 
 - Quest Editor "Complete/Reset Quest Stages" no longer crashes, and both can
