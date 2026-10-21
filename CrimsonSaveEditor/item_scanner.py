@@ -415,7 +415,9 @@ def apply_item_swap(
 
     patch_at(item.offset + 12)
 
-    region_end = min(item.offset + 300, len(data) - 4)
+    # Unanchored in-record matches are only plausible key references for
+    # large keys; small keys (Copper=1, ...) collide with ordinary values.
+    region_end = min(item.offset + 300, len(data) - 4) if old_key >= 0x10000 else 0
     for pos in range(item.offset + 16, region_end):
         if data[pos:pos + 4] == old_key_bytes:
             patch_at(pos)
@@ -451,7 +453,7 @@ def apply_item_swap(
             dup_key_off = dup_off + 12
             if data[dup_key_off:dup_key_off + 4] == old_key_bytes:
                 patch_at(dup_key_off)
-                dup_end = min(dup_off + 300, len(data) - 4)
+                dup_end = min(dup_off + 300, len(data) - 4) if old_key >= 0x10000 else 0
                 for pos in range(dup_off + 16, dup_end):
                     if data[pos:pos + 4] == old_key_bytes:
                         patch_at(pos)
@@ -1093,20 +1095,10 @@ def apply_item_swap_parc(
             patches.append((pos, old, new_key_bytes))
             patched_offsets.add(pos)
 
-    item_key_off = item.field_offsets.get("_itemKey", item.offset + 12)
-    patch_at(item_key_off)
+    _patch_anchored_key_fields(data, item, old_key_bytes, patch_at)
 
-    tk_off = item.field_offsets.get("_transferredItemKey")
-    if tk_off is not None and tk_off > 0:
-        patch_at(tk_off)
-
-    record_end_off = item.field_offsets.get("_record_end", item.offset + 300)
-    region_start = item_key_off + 4
-    region_end = min(record_end_off, len(data) - 4)
-    for pos in range(region_start, region_end):
-        if data[pos:pos + 4] == old_key_bytes:
-            patch_at(pos)
-
+    # No unanchored "every 4-byte match inside the record" pass: for small
+    # keys (Copper=1, Camp Funds=11, ...) that rewrote ordinary values.
     safe_ranges = _get_item_bearing_ranges(data)
     for rs, re, _ in safe_ranges:
         for pos in range(rs, min(re, len(data) - 12)):
@@ -1116,16 +1108,6 @@ def apply_item_swap_parc(
                 key_pos = pos + 8
                 if key_pos + 4 <= len(data) and data[key_pos:key_pos + 4] == old_key_bytes:
                     patch_at(key_pos)
-
-    equip_scan_start = max(0, item.offset - 16)
-    equip_scan_end = min(len(data) - 40, record_end_off)
-    for scan in range(equip_scan_start, equip_scan_end):
-        if scan + 6 in patched_offsets:
-            continue
-        if (struct.unpack_from("<I", data, scan)[0] == 4
-                and struct.unpack_from("<H", data, scan + 4)[0] == 0x0101
-                and data[scan + 6:scan + 10] == old_key_bytes):
-            patch_at(scan + 6)
 
     for rs, re, _ in safe_ranges:
         for dup_off in range(rs, min(re, len(data) - 40)):
@@ -1139,13 +1121,32 @@ def apply_item_swap_parc(
             dup_key_off = dup_off + 12
             if data[dup_key_off:dup_key_off + 4] == old_key_bytes:
                 patch_at(dup_key_off)
-                dup_end = min(dup_off + 300, len(data) - 4)
-                for pos in range(dup_off + 16, dup_end):
-                    if data[pos:pos + 4] == old_key_bytes:
-                        patch_at(pos)
 
     item.item_key = new_key
     return patches
+
+
+def _patch_anchored_key_fields(data: bytearray, item: SaveItem,
+                               old_key_bytes: bytes, patch_at) -> None:
+    """Patch the item-key fields of one record found via its schema offsets.
+
+    _itemKey, _transferredItemKey when it still names the old key, and the
+    equipment-slot reference (u32 4, u16 0x0101, key) just before or inside
+    the record.
+    """
+    item_key_off = item.field_offsets.get("_itemKey", item.offset + 12)
+    patch_at(item_key_off)
+
+    tk_off = item.field_offsets.get("_transferredItemKey")
+    if tk_off is not None and tk_off > 0 and data[tk_off:tk_off + 4] == old_key_bytes:
+        patch_at(tk_off)
+
+    record_end_off = item.field_offsets.get("_record_end", item.offset + 300)
+    for scan in range(max(0, item.offset - 16), min(len(data) - 40, record_end_off)):
+        if (struct.unpack_from("<I", data, scan)[0] == 4
+                and struct.unpack_from("<H", data, scan + 4)[0] == 0x0101
+                and data[scan + 6:scan + 10] == old_key_bytes):
+            patch_at(scan + 6)
 
 
 def template_item_swap(
@@ -1260,6 +1261,7 @@ def apply_item_swap_all(
     data: bytearray,
     item: SaveItem,
     new_key: int,
+    items: Optional[List[SaveItem]] = None,
 ) -> List[Tuple[int, bytes, bytes]]:
     patches: List[Tuple[int, bytes, bytes]] = []
     old_key = struct.unpack_from("<I", data, item.offset + 12)[0]
@@ -1268,6 +1270,30 @@ def apply_item_swap_all(
 
     if old_key == new_key:
         return patches
+
+    if items is not None and all(it.parc_parsed for it in items):
+        # Every copy is in the schema-checked item list, so patch each one's
+        # key fields instead of every matching 4-byte value in the save.
+        patched: set = set()
+
+        def patch_at(pos: int) -> None:
+            if pos not in patched:
+                patches.append((pos, bytes(data[pos:pos + 4]), new_key_bytes))
+                data[pos:pos + 4] = new_key_bytes
+                patched.add(pos)
+
+        for it in items:
+            if it.item_key == old_key:
+                _patch_anchored_key_fields(data, it, old_key_bytes, patch_at)
+                it.item_key = new_key
+        item.item_key = new_key
+        return patches
+
+    if old_key < 0x10000:
+        raise ValueError(
+            f"Swap All needs the exact item list for small item keys ({old_key}); "
+            "wait for the item scan to finish and try again."
+        )
 
     safe_ranges = _get_item_bearing_ranges(data)
     for rs, re, _ in safe_ranges:

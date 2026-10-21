@@ -1744,10 +1744,7 @@ class QuestEditorWindow(QDialog):
         QApplication.processEvents()
 
         try:
-            self._save_data = save_data
-            self._loaded_path = path
-            self._dirty = False
-            self._undo_stack.clear()
+            self._attach_save_data(save_data, path)
             self._quest_entries = []
             self._mission_entries = []
             self._items = items
@@ -2844,6 +2841,11 @@ class MainWindow(QMainWindow):
             pass
         self._icon_ready.connect(self._apply_icon_to_table)
         self._undo_stack: List[UndoEntry] = []
+        # Undo depth that matches the file on disk; -1 once trimmed away.
+        self._saved_undo_depth: int = 0
+        # (mtime_ns, size) of the save when loaded/written, to catch autosaves.
+        self._loaded_stamp: Optional[tuple] = None
+        self._items_stale: bool = False
         self._loaded_path: str = ""
         self._dirty: bool = False
         self._parc_status: str = ""
@@ -5579,10 +5581,12 @@ QCheckBox::indicator {{
         if fills:
             from parc_inserter3 import fill_socket_slots
             original_blob_size = len(blob)
+            before_fill = bytes(blob)
             ok, new_blob, msg = fill_socket_slots(blob, item, fills)
             if not ok:
                 QMessageBox.warning(self, "Sockets", f"Fill failed: {msg}")
                 return
+            self._push_undo_snapshot(before_fill, "Socket fill")
             self._save_data.decompressed_blob[:] = new_blob
             blob = self._save_data.decompressed_blob
             delta = len(blob) - original_blob_size
@@ -5593,10 +5597,12 @@ QCheckBox::indicator {{
         if clears:
             from parc_inserter3 import clear_socket_slots
             original_blob_size = len(blob)
+            before_clear = bytes(blob)
             ok, new_blob, msg = clear_socket_slots(blob, item, list(clears.keys()))
             if not ok:
                 QMessageBox.warning(self, "Sockets", f"Clear failed: {msg}")
                 return
+            self._push_undo_snapshot(before_clear, "Socket clear")
             self._save_data.decompressed_blob[:] = new_blob
             blob = self._save_data.decompressed_blob
             delta = len(blob) - original_blob_size
@@ -6366,7 +6372,9 @@ QCheckBox::indicator {{
 
             if ok:
                 blob = bytearray(new_blob)
-                inserted = len(batch)
+                # The batch stops at the first failing item: "Inserted N/M ..."
+                m = re.match(r"Inserted (\d+)/", msg)
+                inserted = int(m.group(1)) if m else len(batch)
             else:
                 inserted = 0
                 QMessageBox.warning(self, "Pack Insert", f"Batch insert failed:\n{msg}")
@@ -6378,7 +6386,10 @@ QCheckBox::indicator {{
             self._save_data.decompressed_blob = bytearray(blob)
             self._dirty = True
             self._scan_and_populate()
+        if inserted == 0:
+            return
 
+        failed = len(batch) - inserted
         result_msg = f"Inserted {inserted}/{len(items)} items."
         if failed > 0:
             result_msg += f" {failed} failed."
@@ -9789,6 +9800,74 @@ QCheckBox::indicator {{
             import traceback; traceback.print_exc()
             QMessageBox.critical(self, "Dragon Mount Error", str(e))
 
+    # Riding, dragon, skills, UI, dyes, tools and minigame knowledge for the
+    # no-quests dragon unlock. No quest/abyss/node/faction/region/NPC keys.
+    _DRAGON_KNOWLEDGE_KEYS = (
+        40038, 1000174, 1000175, 1000187, 1000189, 1000697, 1000720,
+        1000948, 1001892, 1003893, 1004138, 1004154, 1004176, 1004177,
+        1004178, 2147483119, 2147483121, 2147483122, 2147483123,
+        2147483124, 2147483125, 2147483126, 2147483127, 2147483128,
+        2147483130, 2147483131, 2147483132, 2147483133, 2147483134,
+        2147483135, 2601, 2602, 2603, 2617, 2618,
+        1000560, 1001083, 1003311,
+        40001, 40002, 40003, 40012, 40013, 40014, 40018, 40024, 40028,
+        40030, 40034, 40036, 40039, 40048, 40063, 40064, 40065, 40068,
+        40069, 40071, 40072, 40082, 40086, 40089, 40090, 40091, 40114,
+        1000000, 1000001, 1000013, 1000014, 1000024, 1000034, 1000037,
+        1000100, 1000101, 1000109, 1000134, 1000137, 1000138, 1000210,
+        1000230, 1000490, 1000493, 1000908, 1000929, 1001116, 1001117,
+        1001710, 1001744, 1001756, 1001760, 1001789, 1002348, 1002349,
+        1002351, 1002352, 1002710, 1002741, 1002743, 1003088, 1003090,
+        1003108, 1003245, 1003269, 1003273, 1003274, 1003279, 1003346,
+        1003359, 1003482, 1003505, 1003508, 1003512, 1003513, 1003518,
+        1003519, 1003521, 1003522, 1003523, 1003524, 1003525, 1003571,
+        1000372, 1000375, 1000738, 1001290, 1001297, 1001298, 1001434,
+        1001435, 1001436, 1001453, 1001463, 1001464, 1001465, 1001541,
+        1001542, 1001550, 1001553, 1001704, 1002592, 1003325, 1003334,
+        1003341, 1003467, 1003468, 1003470, 1003472, 1003473, 1003474,
+        1003475, 1003476, 1003477, 1003480, 1003481, 1003492, 1003494,
+        1003495, 1003500, 1003501, 1003502, 1003503, 1003504, 1003507,
+        1003510,
+        1000070, 1000574, 1001100, 1001422,
+        1000297, 1000464, 1000776, 1001287, 1001511, 1001516,
+        2147483447, 2147483454,
+        1001304, 1001664, 1001692, 1001695, 1001700, 1001895, 1001897,
+        1001651, 1002833, 1003658, 1003790,
+    )
+
+    def _inject_dragon_knowledge_only(self) -> None:
+        """Dragon already in the mercenary list: add only the missing knowledge."""
+        reply = QMessageBox.question(
+            self, "Dragon Mount",
+            "Dragon (Blackstar) is already in your mercenary list, so it won't "
+            "be added again.\n\n"
+            "Add the missing dragon knowledge instead (riding, dragon skills, "
+            "UI, dyes, tools, minigames)?\n\n"
+            "NO quest changes.",
+            QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes,
+        )
+        if reply != QMessageBox.Yes:
+            return
+        import parc_inserter3 as pi
+        ok, new_blob, msg = pi.inject_all_knowledge(
+            bytearray(self._save_data.decompressed_blob),
+            keys_filter=self._DRAGON_KNOWLEDGE_KEYS)
+        if not ok:
+            QMessageBox.critical(self, "Dragon Mount", f"Knowledge inject failed:\n{msg}")
+            return
+        if bytes(new_blob) == bytes(self._save_data.decompressed_blob):
+            QMessageBox.information(self, "Dragon Mount",
+                "The dragon and all of its knowledge are already in this save. "
+                "Nothing to add.")
+            return
+        self._save_data.decompressed_blob = bytearray(new_blob)
+        self._dirty = True
+        self._undo_stack.append(UndoEntry(description="Dragon knowledge (no quests)"))
+        self._update_status(f"Dragon knowledge added: {msg}. Save with Ctrl+S.")
+        QMessageBox.information(self, "Dragon Knowledge Added",
+            f"{msg}\n\nQuests: NOT modified\n\n"
+            "Save (Ctrl+S) and reload in-game.")
+
     def _unlock_dragon_mount_no_quests(self) -> None:
         if not self._save_data:
             QMessageBox.warning(self, "Dragon Mount", "Load a save file first.")
@@ -9835,8 +9914,9 @@ QCheckBox::indicator {{
                                     for cf in elem.child_fields:
                                         if cf.name == '_characterKey' and cf.present:
                                             if struct.unpack_from('<I', raw, cf.start_offset)[0] == 1000799:
-                                                QMessageBox.information(self, "Dragon Mount",
-                                                    "Dragon is already in your mercenary list!")
+                                                # Already owned: still add the
+                                                # dragon knowledge, no second entry.
+                                                self._inject_dragon_knowledge_only()
                                                 return
 
             name_to_idx = {parc.types[i].name: i for i in range(len(parc.types))}
@@ -9922,39 +10002,8 @@ QCheckBox::indicator {{
 
             po_fixed = pi._fixup_external(blob, raw, parc, merc_toc, insert_pos, growth)
 
-            dragon_knowledge_keys = [
-                40038, 1000174, 1000175, 1000187, 1000189, 1000697, 1000720,
-                1000948, 1001892, 1003893, 1004138, 1004154, 1004176, 1004177,
-                1004178, 2147483119, 2147483121, 2147483122, 2147483123,
-                2147483124, 2147483125, 2147483126, 2147483127, 2147483128,
-                2147483130, 2147483131, 2147483132, 2147483133, 2147483134,
-                2147483135, 2601, 2602, 2603, 2617, 2618,
-                1000560, 1001083, 1003311,
-                40001, 40002, 40003, 40012, 40013, 40014, 40018, 40024, 40028,
-                40030, 40034, 40036, 40039, 40048, 40063, 40064, 40065, 40068,
-                40069, 40071, 40072, 40082, 40086, 40089, 40090, 40091, 40114,
-                1000000, 1000001, 1000013, 1000014, 1000024, 1000034, 1000037,
-                1000100, 1000101, 1000109, 1000134, 1000137, 1000138, 1000210,
-                1000230, 1000490, 1000493, 1000908, 1000929, 1001116, 1001117,
-                1001710, 1001744, 1001756, 1001760, 1001789, 1002348, 1002349,
-                1002351, 1002352, 1002710, 1002741, 1002743, 1003088, 1003090,
-                1003108, 1003245, 1003269, 1003273, 1003274, 1003279, 1003346,
-                1003359, 1003482, 1003505, 1003508, 1003512, 1003513, 1003518,
-                1003519, 1003521, 1003522, 1003523, 1003524, 1003525, 1003571,
-                1000372, 1000375, 1000738, 1001290, 1001297, 1001298, 1001434,
-                1001435, 1001436, 1001453, 1001463, 1001464, 1001465, 1001541,
-                1001542, 1001550, 1001553, 1001704, 1002592, 1003325, 1003334,
-                1003341, 1003467, 1003468, 1003470, 1003472, 1003473, 1003474,
-                1003475, 1003476, 1003477, 1003480, 1003481, 1003492, 1003494,
-                1003495, 1003500, 1003501, 1003502, 1003503, 1003504, 1003507,
-                1003510,
-                1000070, 1000574, 1001100, 1001422,
-                1000297, 1000464, 1000776, 1001287, 1001511, 1001516,
-                2147483447, 2147483454,
-                1001304, 1001664, 1001692, 1001695, 1001700, 1001895, 1001897,
-                1001651, 1002833, 1003658, 1003790,
-            ]
-            ok, new_blob, msg = pi.inject_all_knowledge(blob, keys_filter=dragon_knowledge_keys)
+            ok, new_blob, msg = pi.inject_all_knowledge(
+                blob, keys_filter=self._DRAGON_KNOWLEDGE_KEYS)
             if ok:
                 blob = bytearray(new_blob)
 
@@ -14391,16 +14440,29 @@ QCheckBox::indicator {{
             QApplication.processEvents()
 
             import threading
+            from PySide6.QtWidgets import QProgressDialog
 
             self._fast_inject_keys = to_inject
             self._fast_inject_done = False
             self._fast_inject_result = (False, None, "")
+            # The worker gets a private copy taken here, on the GUI thread.
+            # The result is only applied if the same save is still loaded and
+            # unchanged; otherwise it would wipe edits or land in another slot.
+            source_save = self._save_data
+            source_bytes = bytes(source_save.decompressed_blob)
+
+            busy = QProgressDialog(
+                f"Fast injecting {len(to_inject)} knowledge entries...", None, 0, 0, self)
+            busy.setWindowTitle("Knowledge")
+            busy.setWindowModality(Qt.ApplicationModal)
+            busy.setMinimumDuration(0)
+            busy.show()
 
             def _do_fast_inject():
                 try:
                     from parc_inserter3 import inject_knowledge_fast
-                    blob = bytearray(self._save_data.decompressed_blob)
-                    ok, new_blob, msg = inject_knowledge_fast(blob, keys_filter=self._fast_inject_keys)
+                    ok, new_blob, msg = inject_knowledge_fast(
+                        bytearray(source_bytes), keys_filter=self._fast_inject_keys)
                     self._fast_inject_result = (ok, new_blob, msg)
                 except Exception as e:
                     self._fast_inject_result = (False, None, str(e))
@@ -14415,8 +14477,18 @@ QCheckBox::indicator {{
                     self._know_status.setText(f"Fast injecting {len(to_inject)} entries... (working)")
                     QTimer.singleShot(200, _check_done)
                     return
+                busy.close()
 
                 ok, new_blob, msg = self._fast_inject_result
+                if ok and new_blob is not None and (
+                        self._save_data is not source_save
+                        or bytes(source_save.decompressed_blob) != source_bytes):
+                    self._know_status.setText("Fast inject discarded: the save changed while it ran.")
+                    QMessageBox.warning(self, "Fast Inject Discarded",
+                        "The save was changed or another save was loaded while the "
+                        "inject was running, so its result was not applied.\n\n"
+                        "Run Fast Inject again.")
+                    return
                 if ok and new_blob is not None:
                     self._save_data.decompressed_blob = bytearray(new_blob)
                     self._dirty = True
@@ -31351,10 +31423,7 @@ QCheckBox::indicator {{
         if not path:
             return
         try:
-            self._save_data = load_raw_stream(path)
-            self._loaded_path = path
-            self._dirty = False
-            self._undo_stack.clear()
+            self._attach_save_data(load_raw_stream(path), path)
             self._scan_and_populate()
             self._update_status(f"Loaded raw stream: {os.path.basename(path)}")
         except Exception as e:
@@ -31398,6 +31467,8 @@ QCheckBox::indicator {{
             self._load_save(saves[idx]["path"])
 
     def _load_save(self, path: str) -> None:
+        if not self._confirm_discard_unsaved("load another save"):
+            return
         self._start_save_load(path)
         return
 
@@ -31502,6 +31573,29 @@ QCheckBox::indicator {{
                 raise NativeBackendError(
                     "The original loaded save is unavailable. Reopen it before writing."
                 )
+            warnings = []
+            if _is_game_running():
+                warnings.append(
+                    "Crimson Desert is running. The game can autosave over this "
+                    "file, or overwrite it again after you save."
+                )
+            if (os.path.normcase(os.path.abspath(path))
+                    == os.path.normcase(os.path.abspath(self._loaded_path))
+                    and self._loaded_stamp is not None
+                    and self._file_stamp(path) != self._loaded_stamp):
+                warnings.append(
+                    "This save file changed on disk after you opened it "
+                    "(probably a game autosave). Saving replaces that newer "
+                    "progress with the version open in the editor."
+                )
+            if warnings:
+                reply = QMessageBox.warning(
+                    self, "Save Anyway?",
+                    "\n\n".join(warnings) + "\n\nSave anyway?",
+                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
+                )
+                if reply != QMessageBox.Yes:
+                    return
             reply = QMessageBox.question(
                 self, "Backup Save?",
                 "Create a backup of your current save before writing changes?\n\n"
@@ -31524,6 +31618,8 @@ QCheckBox::indicator {{
                 path,
             )
             self._loaded_path = path
+            self._loaded_stamp = self._file_stamp(path)
+            self._saved_undo_depth = len(self._undo_stack)
             self._dirty = False
 
             slot_dir = os.path.basename(os.path.dirname(path))
@@ -31558,6 +31654,7 @@ QCheckBox::indicator {{
         if not self._save_data:
             return
 
+        self._items_stale = False
         self._quest_entries = []
         self._mission_entries = []
         self._items = scan_items(self._save_data.decompressed_blob)
@@ -31583,6 +31680,11 @@ QCheckBox::indicator {{
             enriched, parc_status = enrich_items_with_parc(
                 self._save_data.decompressed_blob, self._items
             )
+            # Enrichment can add items the sentinel scan missed; name them.
+            for item in self._items:
+                if not item.name:
+                    item.name = self._name_db.get_name(item.item_key)
+                    item.category = self._name_db.get_category(item.item_key)
             self._parc_status = parc_status
             if enriched > 0:
                 self._status_parc_label.setText(parc_status)
@@ -32895,10 +32997,16 @@ QCheckBox::indicator {{
         if reply != QMessageBox.Yes:
             return
 
-        patches = apply_item_swap_all(self._save_data.decompressed_blob, item, new_key)
+        old_key = item.item_key
+        try:
+            patches = apply_item_swap_all(
+                self._save_data.decompressed_blob, item, new_key, self._items)
+        except ValueError as e:
+            QMessageBox.warning(self, "Swap All", str(e))
+            return
 
         for it in self._items:
-            if it.item_key == item.item_key or it.item_key == new_key:
+            if it.item_key in (old_key, new_key):
                 it.name = self._name_db.get_name(new_key)
                 it.category = self._name_db.get_category(new_key)
                 it.item_key = new_key
@@ -33587,6 +33695,8 @@ QCheckBox::indicator {{
                     return
 
             shutil.copy2(backup_path, self._loaded_path)
+            # The restore prompt above already covered losing in-editor edits.
+            self._dirty = False
             self._load_save(self._loaded_path)
             self._update_status(f"Restored from backup: {os.path.basename(backup_path)}")
         except Exception as e:
@@ -34282,20 +34392,95 @@ QCheckBox::indicator {{
         self._save_config()
         self._update_status(f"UI scale: {int(scale * 100)}%")
 
+    _MAX_UNDO_SNAPSHOTS = 15
+
+    @staticmethod
+    def _file_stamp(path: str) -> Optional[tuple]:
+        try:
+            st = os.stat(path)
+        except OSError:
+            return None
+        return (st.st_mtime_ns, st.st_size)
+
+    def _attach_save_data(self, save_data: SaveData, path: str) -> None:
+        """Make save_data current and reset undo/dirty state for it."""
+        self._save_data = save_data
+        self._loaded_path = path
+        self._dirty = False
+        self._undo_stack.clear()
+        self._saved_undo_depth = 0
+        self._loaded_stamp = self._file_stamp(path)
+        save_data.on_blob_replaced = self._on_blob_replaced
+
+    def _push_undo_snapshot(self, old_blob: bytes, description: str) -> None:
+        self._undo_stack.append(UndoEntry(description=description, snapshot=old_blob))
+        snapshots = [i for i, e in enumerate(self._undo_stack) if e.snapshot is not None]
+        if len(snapshots) > self._MAX_UNDO_SNAPSHOTS:
+            # Entries older than a snapshot only apply on top of it, so the
+            # oldest snapshot and everything before it go together.
+            cut = snapshots[0] + 1
+            del self._undo_stack[:cut]
+            self._saved_undo_depth = (
+                self._saved_undo_depth - cut if self._saved_undo_depth >= cut else -1
+            )
+
+    def _confirm_discard_unsaved(self, action: str) -> bool:
+        if not self._dirty or not self._save_data:
+            return True
+        reply = QMessageBox.warning(
+            self, "Unsaved Changes",
+            f"You have unsaved edits to this save.\n\nDiscard them and {action}?",
+            QMessageBox.Discard | QMessageBox.Cancel, QMessageBox.Cancel,
+        )
+        return reply == QMessageBox.Discard
+
+    def closeEvent(self, event) -> None:
+        if not self._confirm_discard_unsaved("close the editor"):
+            event.ignore()
+            return
+        super().closeEvent(event)
+
+    def _mark_modified(self) -> None:
+        self._dirty = True
+
+    def _on_blob_replaced(self, old_blob: bytes) -> None:
+        """SaveData hook: an insert/splice replaced the whole blob."""
+        self._push_undo_snapshot(old_blob, "Structural edit")
+        self._dirty = True
+        # Every SaveItem offset now points into the old layout.
+        if not self._items_stale:
+            self._items_stale = True
+            QTimer.singleShot(0, self._rescan_if_stale)
+
+    def _rescan_if_stale(self) -> None:
+        if self._items_stale and self._save_data:
+            self._scan_and_populate()
+
     def _undo(self) -> None:
         if not self._undo_stack or not self._save_data:
             self._update_status("Nothing to undo.")
             return
 
+        # Inserts push a snapshot from the SaveData hook and then often an
+        # empty "description" entry; fold those into the snapshot below.
+        description = ""
         entry = self._undo_stack.pop()
+        while not entry.patches and entry.snapshot is None and self._undo_stack:
+            description = description or entry.description
+            entry = self._undo_stack.pop()
+        description = description or entry.description
         blob = self._save_data.decompressed_blob
 
-        for offset, old_bytes, _new_bytes in entry.patches:
-            blob[offset:offset + len(old_bytes)] = old_bytes
+        if entry.snapshot is not None:
+            # Slice-assign: keeps the bytearray identity and skips the hook.
+            blob[:] = entry.snapshot
+        else:
+            for offset, old_bytes, _new_bytes in entry.patches:
+                blob[offset:offset + len(old_bytes)] = old_bytes
 
         self._scan_and_populate()
-        self._dirty = bool(self._undo_stack)
-        self._update_status(f"Undone: {entry.description}")
+        self._dirty = len(self._undo_stack) != self._saved_undo_depth
+        self._update_status(f"Undone: {description}")
 
 
     _GUIDES = {

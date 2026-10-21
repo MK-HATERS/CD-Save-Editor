@@ -54,14 +54,15 @@ class SaveData:
     file_path: str = ""
     is_raw_stream: bool = False
 
-
-@dataclass
-class ItemInfo:
-    item_key: int = 0
-    name: str = ""
-    internal_name: str = ""
-    category: str = "Misc"
-    max_stack: int = 0
+    def __setattr__(self, name, value) -> None:
+        # Inserts build a new blob and assign it here. Offsets recorded
+        # against the old blob are then meaningless, so tell the owner
+        # (MainWindow) to snapshot for undo and rescan item offsets.
+        old = self.__dict__.get(name) if name == "decompressed_blob" else None
+        object.__setattr__(self, name, value)
+        hook = self.__dict__.get("on_blob_replaced")
+        if old is not None and value is not old and hook is not None:
+            hook(bytes(old))
 
 
 @dataclass
@@ -71,3 +72,14 @@ class UndoEntry:
     old_bytes: bytes = b""
     new_bytes: bytes = b""
     patches: list = field(default_factory=list)
+    # Whole blob before a size-changing edit; restored instead of patches.
+    snapshot: Optional[bytes] = None
+
+
+@dataclass
+class ItemInfo:
+    item_key: int = 0
+    name: str = ""
+    internal_name: str = ""
+    category: str = "Misc"
+    max_stack: int = 0

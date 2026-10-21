@@ -201,6 +201,11 @@ def _find_field(obj, field_name: str):
     return None
 
 
+# Item numbers are save-instance IDs; current saves are past 1,000,000.
+# Matches item_scanner._MAX_ITEM_NO.
+_MAX_ITEM_NO = 9_999_999_999
+
+
 def _get_max_item_no(result: dict) -> int:
     _SAFE_BLOCKS = {
         'InventorySaveData', 'EquipmentSaveData',
@@ -213,7 +218,7 @@ def _get_max_item_no(result: dict) -> int:
         if field.name == '_itemNo' and field.value_repr:
             try:
                 v = int(field.value_repr)
-                if 0 < v < 999999 and v > max_no:
+                if 0 < v <= _MAX_ITEM_NO and v > max_no:
                     max_no = v
             except (ValueError, TypeError):
                 pass
@@ -397,6 +402,145 @@ def build_item_from_template(
         struct.pack_into('<I', item, po_pos, target_abs + po_pos + 4)
 
     return item
+
+
+_CLONE_FIELDS = ('_saveVersion', '_itemNo', '_itemKey', '_slotNo',
+                 '_stackCount', '_transferredItemKey')
+
+
+def _element_field_positions(elem) -> dict:
+    """Field positions of a parsed ItemSaveData element, relative to it."""
+    fp = {}
+    for cf in (elem.child_fields or []):
+        if cf.present and cf.name in _CLONE_FIELDS:
+            fp[cf.name] = {'rel_offset': cf.start_offset - elem.start_offset,
+                           'size': cf.end_offset - cf.start_offset}
+    return fp
+
+
+def _iter_item_elements(result: dict):
+    """Every ItemSaveData element in inventory bags and store sold lists."""
+    for obj in result['objects']:
+        if obj.class_name == 'InventorySaveData':
+            inv_list = _find_field(obj, '_inventorylist')
+            for bag in (inv_list.list_elements or []) if inv_list else []:
+                items_field = _find_field(bag, '_itemList')
+                yield from (items_field.list_elements or []) if items_field else []
+        elif obj.class_name == 'StoreSaveData':
+            stores = _find_field(obj, '_storeDataList')
+            for store in (stores.list_elements or []) if stores else []:
+                sold = _find_field(store, '_storeSoldItemDataList')
+                yield from (sold.list_elements or []) if sold else []
+
+
+def _element_item_key(blob: bytes, elem) -> int:
+    for cf in (elem.child_fields or []):
+        if cf.name == '_itemKey' and cf.present:
+            return struct.unpack_from('<I', blob, cf.start_offset)[0]
+    return 0
+
+
+def _pick_item_template(blob: bytes, result: dict, item_key: int,
+                        fallback_elements) -> Tuple[bytearray, dict, Optional[int]]:
+    """Choose the record a new item is built from.
+
+    Prefers a live record of the same item from this save, then a bundled
+    template whose layout matches this save, then a live record from the
+    target list. The bundled templates come from an older save format (3-byte
+    field mask vs 4 on 2.03); inserting one breaks the parse of the whole
+    block, so a mismatched template is never used.
+
+    Returns (binary, field_positions, source_offset); source_offset is None
+    for a bundled template. Build live records with build_item_from_live.
+    """
+    def usable(elem):
+        fp = _element_field_positions(elem)
+        return fp if {'_itemNo', '_itemKey', '_stackCount'} <= fp.keys() else None
+
+    live = [e for e in _iter_item_elements(result) if usable(e)]
+    if not live:
+        raise ValueError("No item records in this save to build the new item from.")
+
+    # Prefer records with a slot field: they carry the full fixed prefix.
+    same = [e for e in live if _element_item_key(blob, e) == item_key]
+    same.sort(key=lambda e: '_slotNo' not in _element_field_positions(e))
+    if same:
+        e = same[0]
+        return bytearray(blob[e.start_offset:e.end_offset]), _element_field_positions(e), e.start_offset
+
+    live_mask_len = struct.unpack_from('<H', blob, live[0].start_offset)[0]
+    exact = _get_templates().get(str(item_key))
+    if exact:
+        binary = bytearray(bytes.fromhex(exact['hex']))
+        if struct.unpack_from('<H', binary, 0)[0] == live_mask_len:
+            # Type index sits after the mask; copy the live save's value.
+            type_pos = 2 + live_mask_len
+            binary[type_pos:type_pos + 2] = blob[live[0].start_offset + type_pos:
+                                                 live[0].start_offset + type_pos + 2]
+            return binary, exact.get('field_positions', {}), None
+
+    candidates = [e for e in (fallback_elements or []) if usable(e)] or live
+    candidates.sort(key=lambda e: '_slotNo' not in _element_field_positions(e))
+    e = candidates[0]
+    return bytearray(blob[e.start_offset:e.end_offset]), _element_field_positions(e), e.start_offset
+
+
+def build_item_from_live(
+    record: bytearray,
+    field_positions: dict,
+    source_offset: int,
+    item_key: int,
+    item_no: int,
+    stack_count: int = 1,
+    slot_no: Optional[int] = None,
+    target_abs: int = 0,
+) -> bytearray:
+    """Re-key a copy of a live ItemSaveData record for insertion at target_abs.
+
+    Only schema-located fields are written. _transferredItemKey is stored
+    either as the plain key or as 0x0101 plus the key's low 16 bits; keep
+    whichever form the donor used, and leave it alone if it names another
+    item.
+    """
+    item = bytearray(record)
+    fp = field_positions
+
+    def at(name):
+        return fp[name]['rel_offset']
+
+    old_key = struct.unpack_from('<I', item, at('_itemKey'))[0]
+    struct.pack_into('<q', item, at('_itemNo'), item_no)
+    struct.pack_into('<I', item, at('_itemKey'), item_key)
+    struct.pack_into('<q', item, at('_stackCount'), stack_count)
+    if slot_no is not None and '_slotNo' in fp:
+        struct.pack_into('<H', item, at('_slotNo'), slot_no)
+    if '_transferredItemKey' in fp:
+        pos = at('_transferredItemKey')
+        tk = struct.unpack_from('<I', item, pos)[0]
+        if tk == old_key:
+            struct.pack_into('<I', item, pos, item_key)
+        elif tk == ((old_key & 0xFFFF) << 16) | 0x0101:
+            struct.pack_into('<I', item, pos, ((item_key & 0xFFFF) << 16) | 0x0101)
+
+    shift = target_abs - source_offset
+    for i in range(len(item) - 12):
+        if item[i:i + 8] == SENTINEL:
+            po = struct.unpack_from('<I', item, i + 8)[0]
+            struct.pack_into('<I', item, i + 8, po + shift)
+    return item
+
+
+def verify_items_parse(orig_blob: bytes, new_blob: bytes, added: int) -> Tuple[bool, str]:
+    """Check the schema item parse still covers every block after an insert."""
+    from item_scanner import _scan_items_parc_detail
+    before, _, before_ok = _scan_items_parc_detail(orig_blob)
+    after, status, after_ok = _scan_items_parc_detail(new_blob)
+    if before_ok and not after_ok:
+        return False, f"Insert aborted: the edited save no longer parses cleanly ({status})."
+    if before_ok and len(after) != len(before) + added:
+        return False, (f"Insert aborted: expected {len(before) + added} items after the "
+                       f"insert, found {len(after)}.")
+    return True, "Item parse OK"
 
 
 def _infer_field_positions(template: bytearray) -> dict:
@@ -746,6 +890,9 @@ def insert_items_batch(
     ok, msg = verify_tree(orig_blob, bytes(current_blob))
     if not ok:
         return False, blob, f"Batch verification failed after {inserted} items: {msg}"
+    ok, item_msg = verify_items_parse(orig_blob, bytes(current_blob), inserted)
+    if not ok:
+        return False, blob, item_msg
 
     return True, bytes(current_blob), f"Inserted {inserted}/{len(items)} items. {msg}"
 
@@ -816,21 +963,11 @@ def insert_item_to_inventory(
     log.info("Bag max slot: %d, assigning slot: %d, itemNo: %d", max_slot, slot_no, new_no)
 
     tk = template_key if template_key > 0 else item_key
-    tmpl = load_item_template(tk)
-    if not tmpl:
-        if target_items.list_elements:
-            last_item_elem = target_items.list_elements[-1]
-            tmpl_binary = bytearray(orig_blob[last_item_elem.start_offset:last_item_elem.end_offset])
-            tmpl_fp = _infer_field_positions(tmpl_binary)
-            if tmpl_fp:
-                tmpl = (tmpl_binary, tmpl_fp)
-                log.info("Cloned template from bag item (%dB)", len(tmpl_binary))
-    if not tmpl:
-        tmpl = load_item_template(751134)
-    if not tmpl:
-        return False, blob, "No template available"
-
-    template_binary, field_positions = tmpl
+    try:
+        template_binary, field_positions, source_offset = _pick_item_template(
+            orig_blob, result, tk, target_items.list_elements)
+    except ValueError as e:
+        return False, blob, str(e)
 
     schema = _parse_schema(orig_blob)
     save_type_idx = -1
@@ -845,13 +982,20 @@ def insert_item_to_inventory(
     last_item = target_items.list_elements[-1]
     insert_pos = last_item.end_offset
 
-    new_item = build_item_from_template(
-        template_binary, field_positions,
-        item_key=item_key, item_no=new_no,
-        stack_count=stack_count, slot_no=slot_no,
-        target_abs=insert_pos, save_type_index=save_type_idx,
-        socket_type_index=socket_type_idx,
-    )
+    if source_offset is not None:
+        new_item = build_item_from_live(
+            template_binary, field_positions, source_offset,
+            item_key=item_key, item_no=new_no, stack_count=stack_count,
+            slot_no=slot_no, target_abs=insert_pos,
+        )
+    else:
+        new_item = build_item_from_template(
+            template_binary, field_positions,
+            item_key=item_key, item_no=new_no,
+            stack_count=stack_count, slot_no=slot_no,
+            target_abs=insert_pos, save_type_index=save_type_idx,
+            socket_type_index=socket_type_idx,
+        )
     growth = len(new_item)
     log.info("Inserting %dB item at 0x%X (after last item)", growth, insert_pos)
 
@@ -980,6 +1124,9 @@ def insert_item_to_inventory(
                 )
         except Exception as e:
             return False, blob, f"Tree verification error: {e}"
+        ok, item_msg = verify_items_parse(orig_blob, bytes(blob), 1)
+        if not ok:
+            return False, orig_blob, item_msg
 
         msg = (
             f"Item {item_key} x{stack_count} inserted (no={new_no}, slot={slot_no}).\n"
@@ -1031,50 +1178,30 @@ def insert_item_to_store(
     if not target_store:
         return False, blob, "No store with sold items found. Sell an item to a vendor first."
 
-    store_max = 0
-    for elem in sold_list.list_elements:
-        for ef in (elem.child_fields or []):
-            if ef.name == '_itemNo' and ef.present:
-                v = struct.unpack_from('<q', orig_blob, ef.start_offset)[0]
-                if 0 < v < 999999 and v > store_max:
-                    store_max = v
-    new_no = store_max + 1
-    log.info("Store max itemNo: %d, assigning: %d", store_max, new_no)
+    # A store-local max collides with inventory items; use the save-wide max.
+    new_no = _get_max_item_no(result) + 1
+    log.info("Save max itemNo: %d, assigning: %d", new_no - 1, new_no)
 
     last_sold = sold_list.list_elements[-1]
     target_abs = last_sold.end_offset
 
-    new_item = None
-    tk = template_key if template_key > 0 else item_key
-    tmpl = load_item_template(tk)
-    if tmpl:
-        template_binary, field_positions = tmpl
-        schema = result.get('schema', {})
-        save_type_idx = -1
-        socket_type_idx = -1
-        if isinstance(schema, dict):
-            for idx, td in schema.items():
-                if hasattr(td, 'name') and td.name == 'ItemSaveData':
-                    save_type_idx = idx
-                elif hasattr(td, 'name') and td.name == 'ItemSocketSaveData':
-                    socket_type_idx = idx
+    template_binary, field_positions, source_offset = _pick_item_template(
+        orig_blob, result, template_key if template_key > 0 else item_key,
+        sold_list.list_elements)
+    if source_offset is not None:
+        new_item = build_item_from_live(
+            template_binary, field_positions, source_offset,
+            item_key=item_key, item_no=new_no, stack_count=stack_count,
+            slot_no=0, target_abs=target_abs,
+        )
+    else:
         new_item = build_item_from_template(
             template_binary, field_positions,
             item_key=item_key, item_no=new_no,
             stack_count=stack_count, slot_no=0,
-            target_abs=target_abs, save_type_index=save_type_idx,
-            socket_type_index=socket_type_idx,
-        )
-        log.info("Using master template for store item %d (%dB)", item_key, len(new_item))
-
-    if new_item is None:
-        new_item = clone_item_from_save(
-            orig_blob, last_sold,
-            item_key=item_key, item_no=new_no,
-            stack_count=stack_count, slot_no=0,
             target_abs=target_abs,
         )
-        log.info("Using clone from existing sold item for store item %d", item_key)
+    log.info("Built store item %d (%dB)", item_key, len(new_item))
 
     new_element, growth = _rebuild_element_with_item(
         orig_blob, target_store, sold_list, new_item, ts_array,
@@ -1082,6 +1209,7 @@ def insert_item_to_store(
 
     e_start = target_store.start_offset
     e_end = target_store.end_offset
+    blob = bytearray(orig_blob)
     blob[e_start:e_end] = new_element
 
     import parc_serializer as ps
@@ -1097,7 +1225,10 @@ def insert_item_to_store(
 
     ok, msg = verify_tree(orig_blob, bytes(blob), '_storeSoldItemDataList')
     if not ok:
-        return False, blob, f"Verification failed: {msg}"
+        return False, orig_blob, f"Verification failed: {msg}"
+    ok, item_msg = verify_items_parse(orig_blob, bytes(blob), 1)
+    if not ok:
+        return False, orig_blob, item_msg
 
     return True, bytes(blob), f"Inserted item key={item_key} x{stack_count} to store. Fixed {fixed} external POs. {msg}"
 

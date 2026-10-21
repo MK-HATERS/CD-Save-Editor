@@ -1,5 +1,29 @@
 # Changelog
 
+## Stand Alone Save Editor (no game mods) v2.1.2 — Save-safety fixes
+
+- Undo after a size-changing edit (Add Pack, knowledge inject, dyes, sockets,
+  vendor clone, mercenary edits, quest inserts) no longer writes old bytes at
+  shifted offsets. Those edits now keep a full snapshot, and undo restores it.
+- Add Pack and Clone/Add to Vendor build new items from a live record in your
+  save instead of the bundled templates, which use an older save format and
+  broke the inventory/store parse. New items get a real item number instead of
+  1, 2, 3... Every insert is re-checked and refused if the item parse is not
+  complete afterwards.
+- Add Pack no longer crashes after inserting (which invited inserting twice).
+- The item list is rescanned after any insert, so later edits use current offsets.
+- Fast Inject (Knowledge) blocks the window while it runs and discards its
+  result if the save changed or another save was loaded meanwhile.
+- Item Swap on small item keys (Copper, Camp Funds, ...) and Swap All only
+  patch item-key fields instead of every matching value in the save.
+- Prompts before closing or loading another save with unsaved edits.
+- Warns before saving if the game is running or the save changed on disk since
+  it was opened (an autosave).
+- Dragon (Blackstar) No Quests: if the dragon is already in your mercenary
+  list, it now adds the missing dragon knowledge instead of stopping. Quests
+  are not touched.
+- Quest Editor edits mark the save as modified.
+
 ## Stand Alone Save Editor (no game mods) v2.1.1 — Game 2.03.02 support
 
 - Item list refreshed from the 2.03.02 client: 582 new items, current English
